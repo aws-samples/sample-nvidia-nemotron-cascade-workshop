@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-jakarta: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --bg-deep: oklch(12% 0.008 260);
+  --bg-surface: oklch(16% 0.006 260);
+  --bg-elevated: oklch(20% 0.005 260);
+  --border-subtle: oklch(25% 0.005 260);
+  --text-primary: oklch(95% 0.005 260);
+  --text-secondary: oklch(70% 0.005 260);
+  --text-muted: oklch(55% 0.005 260);
+
+  /* Model accent colors */
+  --sonnet-amber: oklch(75% 0.15 70);
+  --sonnet-amber-dim: oklch(45% 0.1 70);
+  --nano-green: oklch(72% 0.2 145);
+  --nano-green-dim: oklch(42% 0.12 145);
+  --routed-teal: oklch(70% 0.12 195);
+  --routed-teal-dim: oklch(42% 0.08 195);
+
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Timer pulse */
+@keyframes timer-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.timer-pulse {
+  animation: timer-pulse 1.2s ease-in-out infinite;
+}
+
+/* Result snap-in */
+@keyframes snap-in {
+  0% { opacity: 0; transform: translateY(8px) scale(0.98); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.animate-snap-in {
+  animation: snap-in 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Stagger delays */
+.stagger-1 { animation-delay: 0ms; }
+.stagger-2 { animation-delay: 80ms; }
+.stagger-3 { animation-delay: 160ms; }
+
+/* Comparison banner slide-up */
+@keyframes slide-up {
+  0% { opacity: 0; transform: translateY(16px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slide-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Entrance for panels */
+@keyframes panel-enter {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-panel-enter {
+  animation: panel-enter 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .timer-pulse,
+  .animate-snap-in,
+  .animate-slide-up,
+  .animate-panel-enter {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

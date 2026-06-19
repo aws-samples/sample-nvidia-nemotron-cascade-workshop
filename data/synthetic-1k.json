@@ -1,0 +1,6002 @@
+[
+  {
+    "id": "S-0001",
+    "subject": "Page freezes",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0002",
+    "subject": "Slack integration broken",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Source__c.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0003",
+    "subject": "Critical: writes failing",
+    "body": "Saw a login from an IP I don't recognize. Need to lock account immediately.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0004",
+    "subject": "Forgot password link expired",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0005",
+    "subject": "Mobile app laggy",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0006",
+    "subject": "Charged twice this month",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0007",
+    "subject": "Reports take forever to load",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0008",
+    "subject": "Hubspot fields missing",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0009",
+    "subject": "Refund for cancelled plan",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0010",
+    "subject": "Update payment method",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0011",
+    "subject": "Mobile app laggy",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0012",
+    "subject": "MFA code never arrives",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0013",
+    "subject": "Slack integration broken",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Source__c.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0014",
+    "subject": "Why was I billed?",
+    "body": "I see two charges of $105 on Nov 1. Please refund the duplicate.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0015",
+    "subject": "Where is the API key?",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0016",
+    "subject": "Critical: writes failing",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0017",
+    "subject": "Forgot password link expired",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0018",
+    "subject": "Why was I billed?",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0019",
+    "subject": "Hubspot fields missing",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0020",
+    "subject": "Feature request: dark mode",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0021",
+    "subject": "Visual glitch in modal",
+    "body": "Modal close button overlaps with the X icon at <624px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0022",
+    "subject": "Custom domain setup",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0023",
+    "subject": "BUG: button does nothing",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0024",
+    "subject": "Setting up webhooks",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0025",
+    "subject": "BUG: wrong data in filter",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0026",
+    "subject": "Charged twice this month",
+    "body": "Cancelled in November but still got charged. Invoice #INV-58256.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0027",
+    "subject": "Zapier zap stopped firing",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 11.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0028",
+    "subject": "Update payment method",
+    "body": "I see two charges of $425 on Nov 2. Please refund the duplicate.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0029",
+    "subject": "Excited for v3",
+    "body": "Just wanted to say the team is excited. Keep up the great work!",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0030",
+    "subject": "Account locked",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0031",
+    "subject": "Forgot password link expired",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0032",
+    "subject": "DPA signature",
+    "body": "Article 15 GDPR — please export all personal data tied to my account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0033",
+    "subject": "Feature request: dark mode",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0034",
+    "subject": "Subprocessor list",
+    "body": "Article 15 GDPR — please export all personal data tied to my account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0035",
+    "subject": "DPA signature",
+    "body": "Can you share the current subprocessor list?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0036",
+    "subject": "Refund for cancelled plan",
+    "body": "Cancelled in November but still got charged. Invoice #INV-98942.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0037",
+    "subject": "Zapier zap stopped firing",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Plan__c.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0038",
+    "subject": "Pagination cursor invalid",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0039",
+    "subject": "Loving the product",
+    "body": "Demo went well — we're moving forward with procurement.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0040",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0041",
+    "subject": "Security: suspected breach",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0042",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0043",
+    "subject": "Custom domain setup",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0044",
+    "subject": "Feature request: dark mode",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0045",
+    "subject": "Can't log in",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0046",
+    "subject": "Reports take forever to load",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0047",
+    "subject": "Why was I billed?",
+    "body": "Tried to update my card and it kept failing — error code BIL-778.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0048",
+    "subject": "Mobile app laggy",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0049",
+    "subject": "Feedback after demo",
+    "body": "Demo went well — we're moving forward with procurement.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0050",
+    "subject": "Mobile app laggy",
+    "body": "Search returns results in 13s — used to be subsecond.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0051",
+    "subject": "Wrong currency shown",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0052",
+    "subject": "Feature request: dark mode",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0053",
+    "subject": "Charged twice this month",
+    "body": "Cancelled in October but still got charged. Invoice #INV-74003.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0054",
+    "subject": "Page freezes",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0055",
+    "subject": "Audit log export",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0056",
+    "subject": "Invoice question",
+    "body": "Cancelled in November but still got charged. Invoice #INV-70328.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0057",
+    "subject": "Subprocessor list",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0058",
+    "subject": "Pagination cursor invalid",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0059",
+    "subject": "Feature request: dark mode",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0060",
+    "subject": "Setting up webhooks",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0061",
+    "subject": "DPA signature",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0062",
+    "subject": "BUG: wrong data in filter",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0063",
+    "subject": "How do I export data?",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0064",
+    "subject": "Forgot password link expired",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0065",
+    "subject": "Setting up webhooks",
+    "body": "Following your docs but step 3 doesn't match what I see.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0066",
+    "subject": "Custom domain setup",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0067",
+    "subject": "How do I export data?",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0068",
+    "subject": "Inviting teammates",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0069",
+    "subject": "Quick compliment",
+    "body": "Just wanted to say the team is excited. Keep up the great work!",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0070",
+    "subject": "Custom domain setup",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0071",
+    "subject": "P0: dashboard showing wrong customer's data",
+    "body": "Every write is failing with 'workspace not found' — auth checks out.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0072",
+    "subject": "Schema change broke our integration",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0073",
+    "subject": "Update payment method",
+    "body": "Tried to update my card and it kept failing — error code BIL-181.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0074",
+    "subject": "Invoice question",
+    "body": "I see two charges of $707 on Nov 23. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0075",
+    "subject": "Hubspot fields missing",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 6.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0076",
+    "subject": "Zapier zap stopped firing",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0077",
+    "subject": "Wrong currency shown",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0078",
+    "subject": "Mobile app laggy",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0079",
+    "subject": "Refund for cancelled plan",
+    "body": "Cancelled in October but still got charged. Invoice #INV-38999.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0080",
+    "subject": "Data residency question",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0081",
+    "subject": "Wrong currency shown",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0082",
+    "subject": "Charged twice this month",
+    "body": "I see two charges of $505 on Nov 8. Please refund the duplicate.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0083",
+    "subject": "MFA code never arrives",
+    "body": "MFA SMS never delivered. Tried 3 times, $43 users affected.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0084",
+    "subject": "Dashboard slow",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0085",
+    "subject": "Refund for cancelled plan",
+    "body": "Cancelled in October but still got charged. Invoice #INV-25747.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0086",
+    "subject": "Can't log in",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0087",
+    "subject": "How do I export data?",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0088",
+    "subject": "Visual glitch in modal",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0089",
+    "subject": "Webhook signature mismatch",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0090",
+    "subject": "Salesforce sync errors",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0091",
+    "subject": "BUG: wrong data in filter",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0092",
+    "subject": "Can't log in",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0093",
+    "subject": "Why was I billed?",
+    "body": "I see two charges of $270 on Nov 18. Please refund the duplicate.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0094",
+    "subject": "Charged twice this month",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0095",
+    "subject": "SOC2 report request",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0096",
+    "subject": "Where is the API key?",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0097",
+    "subject": "Refund for cancelled plan",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0098",
+    "subject": "Pagination cursor invalid",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0099",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0100",
+    "subject": "Zapier zap stopped firing",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Plan__c.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0101",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0102",
+    "subject": "Invoice question",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0103",
+    "subject": "Why was I billed?",
+    "body": "Cancelled in October but still got charged. Invoice #INV-94540.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0104",
+    "subject": "Reports take forever to load",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0105",
+    "subject": "Zapier zap stopped firing",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0106",
+    "subject": "Wrong currency shown",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0107",
+    "subject": "Hubspot fields missing",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 6.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0108",
+    "subject": "Feature request: dark mode",
+    "body": "Audit log export to S3 would be great for SOC2.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0109",
+    "subject": "MFA code never arrives",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0110",
+    "subject": "Can't log in",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0111",
+    "subject": "Why was I billed?",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0112",
+    "subject": "Zapier zap stopped firing",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 14.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0113",
+    "subject": "Zapier zap stopped firing",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Owner__c.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0114",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Modal close button overlaps with the X icon at <744px width.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0115",
+    "subject": "Account locked",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0116",
+    "subject": "Can't log in",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0117",
+    "subject": "Refund for cancelled plan",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0118",
+    "subject": "Search is sluggish",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0119",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0120",
+    "subject": "Notion connection",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0121",
+    "subject": "Search is sluggish",
+    "body": "Search returns results in 5s — used to be subsecond.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0122",
+    "subject": "Can't log in",
+    "body": "MFA SMS never delivered. Tried 3 times, $28 users affected.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0123",
+    "subject": "Invoice question",
+    "body": "I see two charges of $602 on Nov 9. Please refund the duplicate.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0124",
+    "subject": "Can't log in",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0125",
+    "subject": "Loving the product",
+    "body": "Just wanted to say the team is excited. Keep up the great work!",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0126",
+    "subject": "BUG: button does nothing",
+    "body": "Modal close button overlaps with the X icon at <536px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0127",
+    "subject": "Account locked",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0128",
+    "subject": "Page freezes",
+    "body": "Search returns results in 4s — used to be subsecond.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0129",
+    "subject": "Zapier zap stopped firing",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0130",
+    "subject": "SSO not working",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0131",
+    "subject": "Update payment method",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0132",
+    "subject": "Account locked",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0133",
+    "subject": "Wrong currency shown",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0134",
+    "subject": "Forgot password link expired",
+    "body": "MFA SMS never delivered. Tried 3 times, $41 users affected.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0135",
+    "subject": "Mobile app laggy",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0136",
+    "subject": "Quick compliment",
+    "body": "Looking forward to the v3 release!",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0137",
+    "subject": "Reports take forever to load",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0138",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0139",
+    "subject": "Search is sluggish",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0140",
+    "subject": "Hubspot fields missing",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Owner__c.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0141",
+    "subject": "BUG: wrong data in filter",
+    "body": "Modal close button overlaps with the X icon at <640px width.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0142",
+    "subject": "Update payment method",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0143",
+    "subject": "Can't log in",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0144",
+    "subject": "Custom fields on tickets",
+    "body": "Audit log export to S3 would be great for SOC2.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0145",
+    "subject": "Hubspot fields missing",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0146",
+    "subject": "Slack integration broken",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Owner__c.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0147",
+    "subject": "Inviting teammates",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0148",
+    "subject": "Why was I billed?",
+    "body": "Cancelled in September but still got charged. Invoice #INV-40374.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0149",
+    "subject": "Charged twice this month",
+    "body": "I see two charges of $979 on Nov 7. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0150",
+    "subject": "Custom domain setup",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0151",
+    "subject": "Dashboard slow",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0152",
+    "subject": "Salesforce sync errors",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Source__c.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0153",
+    "subject": "MFA code never arrives",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0154",
+    "subject": "Reports take forever to load",
+    "body": "Search returns results in 7s — used to be subsecond.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0155",
+    "subject": "Forgot password link expired",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0156",
+    "subject": "Bulk edit support",
+    "body": "Audit log export to S3 would be great for SOC2.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0157",
+    "subject": "Mobile app laggy",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0158",
+    "subject": "SSO not working",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0159",
+    "subject": "Inviting teammates",
+    "body": "Following your docs but step 8 doesn't match what I see.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0160",
+    "subject": "Custom domain setup",
+    "body": "Following your docs but step 3 doesn't match what I see.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0161",
+    "subject": "Update payment method",
+    "body": "Cancelled in September but still got charged. Invoice #INV-85409.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0162",
+    "subject": "Dashboard slow",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0163",
+    "subject": "Visual glitch in modal",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0164",
+    "subject": "Refund for cancelled plan",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0165",
+    "subject": "Setting up webhooks",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0166",
+    "subject": "BUG: wrong data in filter",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0167",
+    "subject": "Refund for cancelled plan",
+    "body": "Cancelled in November but still got charged. Invoice #INV-52594.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0168",
+    "subject": "URGENT: data missing",
+    "body": "All POST /v1/items returning 503 since 4:47 UTC. Customer-facing impact.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0169",
+    "subject": "Search is sluggish",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0170",
+    "subject": "Salesforce sync errors",
+    "body": "Slack messages stopped posting at 9:44 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0171",
+    "subject": "Critical: writes failing",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0172",
+    "subject": "Where is the API key?",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0173",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0174",
+    "subject": "OpenAPI spec out of date",
+    "body": "Cursor returned by /v1/items?cursor=... yields 'invalid_cursor' on next page.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0175",
+    "subject": "Reports take forever to load",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0176",
+    "subject": "Forgot password link expired",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0177",
+    "subject": "SSO not working",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0178",
+    "subject": "Dashboard slow",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0179",
+    "subject": "Slack integration broken",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0180",
+    "subject": "Refund for cancelled plan",
+    "body": "I see two charges of $178 on Nov 25. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0181",
+    "subject": "Inviting teammates",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0182",
+    "subject": "Salesforce sync errors",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0183",
+    "subject": "SOC2 report request",
+    "body": "Where can I sign your DPA?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0184",
+    "subject": "Thanks!",
+    "body": "Looking forward to the v3 release!",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0185",
+    "subject": "Read-only role",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0186",
+    "subject": "Salesforce sync errors",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Owner__c.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0187",
+    "subject": "Page freezes",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0188",
+    "subject": "Invoice question",
+    "body": "I see two charges of $50 on Nov 13. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0189",
+    "subject": "P0: dashboard showing wrong customer's data",
+    "body": "~40% of our records disappeared overnight. Last good sync at 4:20 UTC.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0190",
+    "subject": "BUG: button does nothing",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0191",
+    "subject": "BUG: button does nothing",
+    "body": "Modal close button overlaps with the X icon at <615px width.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0192",
+    "subject": "Account locked",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0193",
+    "subject": "Update payment method",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0194",
+    "subject": "Wrong currency shown",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0195",
+    "subject": "DPA signature",
+    "body": "Where can I sign your DPA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0196",
+    "subject": "Mobile app laggy",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0197",
+    "subject": "BUG: button does nothing",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0198",
+    "subject": "Critical: writes failing",
+    "body": "All POST /v1/items returning 503 since 21:40 UTC. Customer-facing impact.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0199",
+    "subject": "Dashboard slow",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0200",
+    "subject": "BUG: wrong data in filter",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0201",
+    "subject": "Custom domain setup",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0202",
+    "subject": "Where is the API key?",
+    "body": "Following your docs but step 3 doesn't match what I see.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0203",
+    "subject": "Zapier zap stopped firing",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 24.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0204",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0205",
+    "subject": "Account locked",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0206",
+    "subject": "Update payment method",
+    "body": "Tried to update my card and it kept failing — error code BIL-512.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0207",
+    "subject": "Why was I billed?",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0208",
+    "subject": "Read-only role",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0209",
+    "subject": "BUG: wrong data in filter",
+    "body": "Modal close button overlaps with the X icon at <491px width.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0210",
+    "subject": "Update payment method",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0211",
+    "subject": "Bulk edit support",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0212",
+    "subject": "Can't log in",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0213",
+    "subject": "How do I export data?",
+    "body": "Following your docs but step 2 doesn't match what I see.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0214",
+    "subject": "Zapier zap stopped firing",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Owner__c.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0215",
+    "subject": "Bulk edit support",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0216",
+    "subject": "URGENT: data missing",
+    "body": "~40% of our records disappeared overnight. Last good sync at 22:52 UTC.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0217",
+    "subject": "Refund for cancelled plan",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0218",
+    "subject": "Notion connection",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0219",
+    "subject": "MFA code never arrives",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0220",
+    "subject": "Forgot password link expired",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0221",
+    "subject": "GDPR data request",
+    "body": "Where can I sign your DPA?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0222",
+    "subject": "How do I export data?",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0223",
+    "subject": "Read-only role",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0224",
+    "subject": "Quick compliment",
+    "body": "Just wanted to say the team is excited. Keep up the great work!",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0225",
+    "subject": "Page freezes",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0226",
+    "subject": "Inviting teammates",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0227",
+    "subject": "Schema change broke our integration",
+    "body": "Cursor returned by /v1/items?cursor=... yields 'invalid_cursor' on next page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0228",
+    "subject": "Read-only role",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0229",
+    "subject": "Page freezes",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0230",
+    "subject": "Account locked",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0231",
+    "subject": "Can't log in",
+    "body": "MFA SMS never delivered. Tried 3 times, $42 users affected.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0232",
+    "subject": "MFA code never arrives",
+    "body": "MFA SMS never delivered. Tried 3 times, $24 users affected.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0233",
+    "subject": "Inviting teammates",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0234",
+    "subject": "Can't log in",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0235",
+    "subject": "Refund for cancelled plan",
+    "body": "Cancelled in November but still got charged. Invoice #INV-89506.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0236",
+    "subject": "BUG: button does nothing",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0237",
+    "subject": "OpenAPI spec out of date",
+    "body": "Cursor returned by /v1/items?cursor=... yields 'invalid_cursor' on next page.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0238",
+    "subject": "Charged twice this month",
+    "body": "Cancelled in October but still got charged. Invoice #INV-61954.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0239",
+    "subject": "BUG: button does nothing",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0240",
+    "subject": "Forgot password link expired",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0241",
+    "subject": "Why was I billed?",
+    "body": "Tried to update my card and it kept failing — error code BIL-151.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0242",
+    "subject": "Wrong currency shown",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0243",
+    "subject": "Zapier zap stopped firing",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0244",
+    "subject": "Security: suspected breach",
+    "body": "All POST /v1/items returning 503 since 17:31 UTC. Customer-facing impact.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0245",
+    "subject": "Visual glitch in modal",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0246",
+    "subject": "Salesforce sync errors",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 26.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0247",
+    "subject": "Custom domain setup",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0248",
+    "subject": "Forgot password link expired",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0249",
+    "subject": "Dashboard slow",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0250",
+    "subject": "Webhook signature mismatch",
+    "body": "Computing HMAC SHA256 of raw body — never matches your X-Signature.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0251",
+    "subject": "Search is sluggish",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0252",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Modal close button overlaps with the X icon at <386px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0253",
+    "subject": "Refund for cancelled plan",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0254",
+    "subject": "BUG: button does nothing",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0255",
+    "subject": "Schema change broke our integration",
+    "body": "OpenAPI spec missing the new /v2/exports endpoint.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0256",
+    "subject": "Invoice question",
+    "body": "I see two charges of $681 on Nov 17. Please refund the duplicate.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0257",
+    "subject": "Custom domain setup",
+    "body": "Following your docs but step 4 doesn't match what I see.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0258",
+    "subject": "Forgot password link expired",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0259",
+    "subject": "Critical: writes failing",
+    "body": "~40% of our records disappeared overnight. Last good sync at 18:22 UTC.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0260",
+    "subject": "Slack integration broken",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0261",
+    "subject": "Invoice question",
+    "body": "I see two charges of $897 on Nov 17. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0262",
+    "subject": "Invoice question",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0263",
+    "subject": "Inviting teammates",
+    "body": "Following your docs but step 7 doesn't match what I see.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0264",
+    "subject": "Forgot password link expired",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0265",
+    "subject": "API rate limit unclear",
+    "body": "Cursor returned by /v1/items?cursor=... yields 'invalid_cursor' on next page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0266",
+    "subject": "Refund for cancelled plan",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0267",
+    "subject": "Read-only role",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0268",
+    "subject": "Audit log export",
+    "body": "Audit log export to S3 would be great for SOC2.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0269",
+    "subject": "Update payment method",
+    "body": "Tried to update my card and it kept failing — error code BIL-606.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0270",
+    "subject": "Page freezes",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0271",
+    "subject": "Why was I billed?",
+    "body": "I see two charges of $814 on Nov 18. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0272",
+    "subject": "Can't log in",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0273",
+    "subject": "Refund for cancelled plan",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0274",
+    "subject": "Wrong currency shown",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0275",
+    "subject": "Account locked",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0276",
+    "subject": "Refund for cancelled plan",
+    "body": "Cancelled in November but still got charged. Invoice #INV-16452.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0277",
+    "subject": "Bulk edit support",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0278",
+    "subject": "Pagination cursor invalid",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0279",
+    "subject": "Can't log in",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0280",
+    "subject": "Slack integration broken",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Stage__c.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0281",
+    "subject": "Visual glitch in modal",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0282",
+    "subject": "Dashboard slow",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0283",
+    "subject": "Read-only role",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0284",
+    "subject": "SSO not working",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0285",
+    "subject": "Wrong currency shown",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0286",
+    "subject": "Schema change broke our integration",
+    "body": "Cursor returned by /v1/items?cursor=... yields 'invalid_cursor' on next page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0287",
+    "subject": "Notion connection",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0288",
+    "subject": "Can't log in",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0289",
+    "subject": "Notion connection",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0290",
+    "subject": "Subprocessor list",
+    "body": "Where can I sign your DPA?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0291",
+    "subject": "Invoice question",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0292",
+    "subject": "Invoice question",
+    "body": "Cancelled in September but still got charged. Invoice #INV-78293.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0293",
+    "subject": "Audit log export",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0294",
+    "subject": "Feedback after demo",
+    "body": "Demo went well — we're moving forward with procurement.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0295",
+    "subject": "Update payment method",
+    "body": "Cancelled in September but still got charged. Invoice #INV-42652.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0296",
+    "subject": "Inviting teammates",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0297",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Modal close button overlaps with the X icon at <488px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0298",
+    "subject": "Custom domain setup",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0299",
+    "subject": "Salesforce sync errors",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0300",
+    "subject": "Visual glitch in modal",
+    "body": "Modal close button overlaps with the X icon at <348px width.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0301",
+    "subject": "Webhook signature mismatch",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0302",
+    "subject": "Notion connection",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Stage__c.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0303",
+    "subject": "Visual glitch in modal",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0304",
+    "subject": "Page freezes",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0305",
+    "subject": "Why was I billed?",
+    "body": "I see two charges of $832 on Nov 19. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0306",
+    "subject": "Critical: writes failing",
+    "body": "All POST /v1/items returning 503 since 10:17 UTC. Customer-facing impact.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0307",
+    "subject": "Charged twice this month",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0308",
+    "subject": "Can't log in",
+    "body": "MFA SMS never delivered. Tried 3 times, $19 users affected.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0309",
+    "subject": "Audit log export",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0310",
+    "subject": "Slack integration broken",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Region__c.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0311",
+    "subject": "Visual glitch in modal",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0312",
+    "subject": "Forgot password link expired",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0313",
+    "subject": "Thanks!",
+    "body": "Demo went well — we're moving forward with procurement.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0314",
+    "subject": "Hubspot fields missing",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0315",
+    "subject": "Slack integration broken",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 22.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0316",
+    "subject": "How do I export data?",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0317",
+    "subject": "Custom fields on tickets",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0318",
+    "subject": "Schema change broke our integration",
+    "body": "Computing HMAC SHA256 of raw body — never matches your X-Signature.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0319",
+    "subject": "GDPR data request",
+    "body": "Where can I sign your DPA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0320",
+    "subject": "Where is the API key?",
+    "body": "Following your docs but step 3 doesn't match what I see.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0321",
+    "subject": "SSO not working",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0322",
+    "subject": "Custom fields on tickets",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0323",
+    "subject": "Page freezes",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0324",
+    "subject": "Where is the API key?",
+    "body": "Following your docs but step 1 doesn't match what I see.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0325",
+    "subject": "Custom domain setup",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0326",
+    "subject": "Setting up webhooks",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0327",
+    "subject": "Invoice question",
+    "body": "Tried to update my card and it kept failing — error code BIL-611.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0328",
+    "subject": "BUG: button does nothing",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0329",
+    "subject": "Refund for cancelled plan",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0330",
+    "subject": "Pagination cursor invalid",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0331",
+    "subject": "Custom domain setup",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0332",
+    "subject": "Can't log in",
+    "body": "MFA SMS never delivered. Tried 3 times, $40 users affected.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0333",
+    "subject": "Inviting teammates",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0334",
+    "subject": "Visual glitch in modal",
+    "body": "Modal close button overlaps with the X icon at <543px width.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0335",
+    "subject": "Wrong currency shown",
+    "body": "Modal close button overlaps with the X icon at <368px width.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0336",
+    "subject": "How do I export data?",
+    "body": "Following your docs but step 2 doesn't match what I see.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0337",
+    "subject": "SOC2 report request",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0338",
+    "subject": "Salesforce sync errors",
+    "body": "Slack messages stopped posting at 10:20 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0339",
+    "subject": "Custom fields on tickets",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0340",
+    "subject": "Webhook signature mismatch",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0341",
+    "subject": "Notion connection",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0342",
+    "subject": "Why was I billed?",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0343",
+    "subject": "Account locked",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0344",
+    "subject": "Wrong currency shown",
+    "body": "Modal close button overlaps with the X icon at <560px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0345",
+    "subject": "BUG: wrong data in filter",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0346",
+    "subject": "Audit log export",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0347",
+    "subject": "Why was I billed?",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0348",
+    "subject": "Feature request: dark mode",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0349",
+    "subject": "Why was I billed?",
+    "body": "Cancelled in October but still got charged. Invoice #INV-58105.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0350",
+    "subject": "Invoice question",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0351",
+    "subject": "Update payment method",
+    "body": "Tried to update my card and it kept failing — error code BIL-267.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0352",
+    "subject": "Setting up webhooks",
+    "body": "Following your docs but step 1 doesn't match what I see.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0353",
+    "subject": "Notion connection",
+    "body": "Slack messages stopped posting at 9:00 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0354",
+    "subject": "DPA signature",
+    "body": "Where can I sign your DPA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0355",
+    "subject": "Can't log in",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0356",
+    "subject": "GDPR data request",
+    "body": "Can you share the current subprocessor list?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0357",
+    "subject": "Why was I billed?",
+    "body": "Cancelled in September but still got charged. Invoice #INV-37715.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0358",
+    "subject": "How do I export data?",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0359",
+    "subject": "DPA signature",
+    "body": "Need your latest SOC2 Type 2 report for our security review.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0360",
+    "subject": "Visual glitch in modal",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0361",
+    "subject": "Search is sluggish",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0362",
+    "subject": "MFA code never arrives",
+    "body": "MFA SMS never delivered. Tried 3 times, $21 users affected.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0363",
+    "subject": "Can't log in",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0364",
+    "subject": "Wrong currency shown",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0365",
+    "subject": "Subprocessor list",
+    "body": "Can you share the current subprocessor list?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0366",
+    "subject": "Notion connection",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0367",
+    "subject": "Update payment method",
+    "body": "Tried to update my card and it kept failing — error code BIL-290.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0368",
+    "subject": "Excited for v3",
+    "body": "Tell your engineers the new dashboard is gorgeous.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0369",
+    "subject": "Visual glitch in modal",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0370",
+    "subject": "Setting up webhooks",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0371",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0372",
+    "subject": "Can't log in",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0373",
+    "subject": "Salesforce sync errors",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 9.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0374",
+    "subject": "Invoice question",
+    "body": "I see two charges of $533 on Nov 23. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0375",
+    "subject": "Visual glitch in modal",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0376",
+    "subject": "Custom domain setup",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0377",
+    "subject": "Invoice question",
+    "body": "Tried to update my card and it kept failing — error code BIL-986.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0378",
+    "subject": "Mobile app laggy",
+    "body": "Search returns results in 2s — used to be subsecond.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0379",
+    "subject": "Can't log in",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0380",
+    "subject": "Custom domain setup",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0381",
+    "subject": "Account locked",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0382",
+    "subject": "Visual glitch in modal",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0383",
+    "subject": "Custom fields on tickets",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0384",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0385",
+    "subject": "Data residency question",
+    "body": "Can you share the current subprocessor list?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0386",
+    "subject": "URGENT: data missing",
+    "body": "All POST /v1/items returning 503 since 13:35 UTC. Customer-facing impact.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0387",
+    "subject": "Invoice question",
+    "body": "Tried to update my card and it kept failing — error code BIL-410.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0388",
+    "subject": "Reports take forever to load",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0389",
+    "subject": "GDPR data request",
+    "body": "Article 15 GDPR — please export all personal data tied to my account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0390",
+    "subject": "BUG: wrong data in filter",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0391",
+    "subject": "Forgot password link expired",
+    "body": "MFA SMS never delivered. Tried 3 times, $18 users affected.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0392",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0393",
+    "subject": "Feature request: dark mode",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0394",
+    "subject": "Why was I billed?",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0395",
+    "subject": "Account locked",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0396",
+    "subject": "Feedback after demo",
+    "body": "Tell your engineers the new dashboard is gorgeous.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0397",
+    "subject": "Setting up webhooks",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0398",
+    "subject": "Charged twice this month",
+    "body": "Tried to update my card and it kept failing — error code BIL-600.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0399",
+    "subject": "Hubspot fields missing",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0400",
+    "subject": "Data residency question",
+    "body": "Article 15 GDPR — please export all personal data tied to my account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0401",
+    "subject": "Subprocessor list",
+    "body": "Where can I sign your DPA?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0402",
+    "subject": "Read-only role",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0403",
+    "subject": "BUG: wrong data in filter",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0404",
+    "subject": "Invoice question",
+    "body": "Cancelled in October but still got charged. Invoice #INV-24013.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0405",
+    "subject": "DPA signature",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0406",
+    "subject": "BUG: wrong data in filter",
+    "body": "Modal close button overlaps with the X icon at <706px width.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0407",
+    "subject": "MFA code never arrives",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0408",
+    "subject": "SSO not working",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0409",
+    "subject": "OpenAPI spec out of date",
+    "body": "Computing HMAC SHA256 of raw body — never matches your X-Signature.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0410",
+    "subject": "Can't log in",
+    "body": "MFA SMS never delivered. Tried 3 times, $10 users affected.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0411",
+    "subject": "Feature request: dark mode",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0412",
+    "subject": "Webhook signature mismatch",
+    "body": "OpenAPI spec missing the new /v2/exports endpoint.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0413",
+    "subject": "Salesforce sync errors",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0414",
+    "subject": "Loving the product",
+    "body": "Just wanted to say the team is excited. Keep up the great work!",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0415",
+    "subject": "MFA code never arrives",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0416",
+    "subject": "Visual glitch in modal",
+    "body": "Modal close button overlaps with the X icon at <550px width.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0417",
+    "subject": "Slack integration broken",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0418",
+    "subject": "P0: dashboard showing wrong customer's data",
+    "body": "Every write is failing with 'workspace not found' — auth checks out.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0419",
+    "subject": "Excited for v3",
+    "body": "Demo went well — we're moving forward with procurement.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0420",
+    "subject": "Refund for cancelled plan",
+    "body": "Tried to update my card and it kept failing — error code BIL-926.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0421",
+    "subject": "Pagination cursor invalid",
+    "body": "Cursor returned by /v1/items?cursor=... yields 'invalid_cursor' on next page.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0422",
+    "subject": "MFA code never arrives",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0423",
+    "subject": "Slack integration broken",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 1.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0424",
+    "subject": "Feature request: dark mode",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0425",
+    "subject": "API rate limit unclear",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0426",
+    "subject": "MFA code never arrives",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0427",
+    "subject": "BUG: wrong data in filter",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0428",
+    "subject": "Forgot password link expired",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0429",
+    "subject": "URGENT: data missing",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0430",
+    "subject": "Update payment method",
+    "body": "I see two charges of $441 on Nov 17. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0431",
+    "subject": "Slack integration broken",
+    "body": "Slack messages stopped posting at 22:26 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0432",
+    "subject": "Zapier zap stopped firing",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0433",
+    "subject": "Setting up webhooks",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0434",
+    "subject": "Mobile app laggy",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0435",
+    "subject": "Setting up webhooks",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0436",
+    "subject": "Slack integration broken",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 11.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0437",
+    "subject": "DPA signature",
+    "body": "Where can I sign your DPA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0438",
+    "subject": "How do I export data?",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0439",
+    "subject": "Salesforce sync errors",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Region__c.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0440",
+    "subject": "Invoice question",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0441",
+    "subject": "Forgot password link expired",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0442",
+    "subject": "SOC2 report request",
+    "body": "Can you share the current subprocessor list?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0443",
+    "subject": "Wrong currency shown",
+    "body": "Modal close button overlaps with the X icon at <715px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0444",
+    "subject": "Where is the API key?",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0445",
+    "subject": "Feature request: dark mode",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0446",
+    "subject": "How do I export data?",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0447",
+    "subject": "API rate limit unclear",
+    "body": "Cursor returned by /v1/items?cursor=... yields 'invalid_cursor' on next page.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0448",
+    "subject": "Why was I billed?",
+    "body": "I see two charges of $663 on Nov 5. Please refund the duplicate.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0449",
+    "subject": "Setting up webhooks",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0450",
+    "subject": "Dashboard slow",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0451",
+    "subject": "Notion connection",
+    "body": "Slack messages stopped posting at 22:07 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0452",
+    "subject": "BUG: button does nothing",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0453",
+    "subject": "Reports take forever to load",
+    "body": "Search returns results in 8s — used to be subsecond.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0454",
+    "subject": "Why was I billed?",
+    "body": "Tried to update my card and it kept failing — error code BIL-849.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0455",
+    "subject": "Setting up webhooks",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0456",
+    "subject": "Security: suspected breach",
+    "body": "~40% of our records disappeared overnight. Last good sync at 18:55 UTC.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0457",
+    "subject": "Thanks!",
+    "body": "Onboarding was the smoothest I've seen for a B2B tool.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0458",
+    "subject": "Zapier zap stopped firing",
+    "body": "Slack messages stopped posting at 4:49 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0459",
+    "subject": "Wrong currency shown",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0460",
+    "subject": "Feedback after demo",
+    "body": "Demo went well — we're moving forward with procurement.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0461",
+    "subject": "Subprocessor list",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0462",
+    "subject": "SSO not working",
+    "body": "MFA SMS never delivered. Tried 3 times, $42 users affected.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0463",
+    "subject": "Audit log export",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0464",
+    "subject": "Search is sluggish",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0465",
+    "subject": "Forgot password link expired",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0466",
+    "subject": "Webhook signature mismatch",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0467",
+    "subject": "OpenAPI spec out of date",
+    "body": "Cursor returned by /v1/items?cursor=... yields 'invalid_cursor' on next page.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0468",
+    "subject": "BUG: button does nothing",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0469",
+    "subject": "Dashboard slow",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0470",
+    "subject": "Critical: writes failing",
+    "body": "Saw a login from an IP I don't recognize. Need to lock account immediately.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0471",
+    "subject": "Search is sluggish",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0472",
+    "subject": "Zapier zap stopped firing",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0473",
+    "subject": "API rate limit unclear",
+    "body": "Cursor returned by /v1/items?cursor=... yields 'invalid_cursor' on next page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0474",
+    "subject": "DPA signature",
+    "body": "Need your latest SOC2 Type 2 report for our security review.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0475",
+    "subject": "Account locked",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0476",
+    "subject": "Inviting teammates",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0477",
+    "subject": "URGENT: data missing",
+    "body": "~40% of our records disappeared overnight. Last good sync at 11:30 UTC.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0478",
+    "subject": "API rate limit unclear",
+    "body": "Computing HMAC SHA256 of raw body — never matches your X-Signature.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0479",
+    "subject": "Can't log in",
+    "body": "MFA SMS never delivered. Tried 3 times, $37 users affected.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0480",
+    "subject": "MFA code never arrives",
+    "body": "MFA SMS never delivered. Tried 3 times, $18 users affected.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0481",
+    "subject": "How do I export data?",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0482",
+    "subject": "Bulk edit support",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0483",
+    "subject": "Custom domain setup",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0484",
+    "subject": "Search is sluggish",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0485",
+    "subject": "Account locked",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0486",
+    "subject": "Excited for v3",
+    "body": "Demo went well — we're moving forward with procurement.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0487",
+    "subject": "Why was I billed?",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0488",
+    "subject": "Quick compliment",
+    "body": "Onboarding was the smoothest I've seen for a B2B tool.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0489",
+    "subject": "Inviting teammates",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0490",
+    "subject": "Setting up webhooks",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0491",
+    "subject": "Refund for cancelled plan",
+    "body": "Tried to update my card and it kept failing — error code BIL-312.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0492",
+    "subject": "Invoice question",
+    "body": "Tried to update my card and it kept failing — error code BIL-476.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0493",
+    "subject": "Update payment method",
+    "body": "Cancelled in October but still got charged. Invoice #INV-64115.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0494",
+    "subject": "Data residency question",
+    "body": "Article 15 GDPR — please export all personal data tied to my account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0495",
+    "subject": "Schema change broke our integration",
+    "body": "Cursor returned by /v1/items?cursor=... yields 'invalid_cursor' on next page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0496",
+    "subject": "Setting up webhooks",
+    "body": "Following your docs but step 4 doesn't match what I see.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0497",
+    "subject": "Account locked",
+    "body": "MFA SMS never delivered. Tried 3 times, $31 users affected.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0498",
+    "subject": "Custom domain setup",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0499",
+    "subject": "Refund for cancelled plan",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0500",
+    "subject": "Wrong currency shown",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0501",
+    "subject": "URGENT: data missing",
+    "body": "~40% of our records disappeared overnight. Last good sync at 16:48 UTC.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0502",
+    "subject": "Loving the product",
+    "body": "Looking forward to the v3 release!",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0503",
+    "subject": "Custom domain setup",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0504",
+    "subject": "Pagination cursor invalid",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0505",
+    "subject": "P0: dashboard showing wrong customer's data",
+    "body": "Every write is failing with 'workspace not found' — auth checks out.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0506",
+    "subject": "Bulk edit support",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0507",
+    "subject": "Account locked",
+    "body": "MFA SMS never delivered. Tried 3 times, $21 users affected.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0508",
+    "subject": "MFA code never arrives",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0509",
+    "subject": "Schema change broke our integration",
+    "body": "Computing HMAC SHA256 of raw body — never matches your X-Signature.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0510",
+    "subject": "Visual glitch in modal",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0511",
+    "subject": "Inviting teammates",
+    "body": "Following your docs but step 6 doesn't match what I see.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0512",
+    "subject": "Dashboard slow",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0513",
+    "subject": "Page freezes",
+    "body": "Search returns results in 4s — used to be subsecond.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0514",
+    "subject": "Reports take forever to load",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0515",
+    "subject": "Custom fields on tickets",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0516",
+    "subject": "Wrong currency shown",
+    "body": "Modal close button overlaps with the X icon at <472px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0517",
+    "subject": "Read-only role",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0518",
+    "subject": "Bulk edit support",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0519",
+    "subject": "Forgot password link expired",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0520",
+    "subject": "Where is the API key?",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0521",
+    "subject": "Where is the API key?",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0522",
+    "subject": "Slack integration broken",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 11.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0523",
+    "subject": "P0: production outage",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0524",
+    "subject": "Wrong currency shown",
+    "body": "Modal close button overlaps with the X icon at <388px width.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0525",
+    "subject": "Setting up webhooks",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0526",
+    "subject": "Setting up webhooks",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0527",
+    "subject": "MFA code never arrives",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0528",
+    "subject": "Forgot password link expired",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0529",
+    "subject": "Salesforce sync errors",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0530",
+    "subject": "Custom fields on tickets",
+    "body": "Audit log export to S3 would be great for SOC2.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0531",
+    "subject": "Charged twice this month",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0532",
+    "subject": "Slack integration broken",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0533",
+    "subject": "BUG: wrong data in filter",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0534",
+    "subject": "Refund for cancelled plan",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0535",
+    "subject": "BUG: wrong data in filter",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0536",
+    "subject": "Forgot password link expired",
+    "body": "MFA SMS never delivered. Tried 3 times, $40 users affected.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0537",
+    "subject": "Update payment method",
+    "body": "Cancelled in September but still got charged. Invoice #INV-12587.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0538",
+    "subject": "P0: dashboard showing wrong customer's data",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0539",
+    "subject": "Where is the API key?",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0540",
+    "subject": "Salesforce sync errors",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0541",
+    "subject": "Notion connection",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Owner__c.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0542",
+    "subject": "Setting up webhooks",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0543",
+    "subject": "Search is sluggish",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0544",
+    "subject": "Data residency question",
+    "body": "Need your latest SOC2 Type 2 report for our security review.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0545",
+    "subject": "Account locked",
+    "body": "MFA SMS never delivered. Tried 3 times, $13 users affected.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0546",
+    "subject": "Custom fields on tickets",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0547",
+    "subject": "Refund for cancelled plan",
+    "body": "Tried to update my card and it kept failing — error code BIL-247.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0548",
+    "subject": "Custom domain setup",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0549",
+    "subject": "Invoice question",
+    "body": "Cancelled in November but still got charged. Invoice #INV-96811.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0550",
+    "subject": "Data residency question",
+    "body": "Where can I sign your DPA?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0551",
+    "subject": "Feedback after demo",
+    "body": "Looking forward to the v3 release!",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0552",
+    "subject": "Setting up webhooks",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0553",
+    "subject": "Feedback after demo",
+    "body": "Demo went well — we're moving forward with procurement.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0554",
+    "subject": "SSO not working",
+    "body": "MFA SMS never delivered. Tried 3 times, $29 users affected.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0555",
+    "subject": "SSO not working",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0556",
+    "subject": "Account locked",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0557",
+    "subject": "API rate limit unclear",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0558",
+    "subject": "Pagination cursor invalid",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0559",
+    "subject": "SOC2 report request",
+    "body": "Article 15 GDPR — please export all personal data tied to my account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0560",
+    "subject": "Visual glitch in modal",
+    "body": "Modal close button overlaps with the X icon at <724px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0561",
+    "subject": "Visual glitch in modal",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0562",
+    "subject": "Hubspot fields missing",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 20.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0563",
+    "subject": "SSO not working",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0564",
+    "subject": "Reports take forever to load",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0565",
+    "subject": "How do I export data?",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0566",
+    "subject": "Account locked",
+    "body": "MFA SMS never delivered. Tried 3 times, $34 users affected.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0567",
+    "subject": "Zapier zap stopped firing",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0568",
+    "subject": "Refund for cancelled plan",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0569",
+    "subject": "Page freezes",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0570",
+    "subject": "Webhook signature mismatch",
+    "body": "Computing HMAC SHA256 of raw body — never matches your X-Signature.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0571",
+    "subject": "Quick compliment",
+    "body": "Looking forward to the v3 release!",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0572",
+    "subject": "Wrong currency shown",
+    "body": "Modal close button overlaps with the X icon at <382px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0573",
+    "subject": "Account locked",
+    "body": "MFA SMS never delivered. Tried 3 times, $39 users affected.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0574",
+    "subject": "Wrong currency shown",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0575",
+    "subject": "Slack integration broken",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0576",
+    "subject": "Quick compliment",
+    "body": "Looking forward to the v3 release!",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0577",
+    "subject": "Visual glitch in modal",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0578",
+    "subject": "OpenAPI spec out of date",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0579",
+    "subject": "Charged twice this month",
+    "body": "Tried to update my card and it kept failing — error code BIL-848.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0580",
+    "subject": "Can't log in",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0581",
+    "subject": "Inviting teammates",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0582",
+    "subject": "Custom domain setup",
+    "body": "Following your docs but step 5 doesn't match what I see.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0583",
+    "subject": "How do I export data?",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0584",
+    "subject": "Schema change broke our integration",
+    "body": "Cursor returned by /v1/items?cursor=... yields 'invalid_cursor' on next page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0585",
+    "subject": "Audit log export",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0586",
+    "subject": "OpenAPI spec out of date",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0587",
+    "subject": "BUG: button does nothing",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0588",
+    "subject": "BUG: wrong data in filter",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0589",
+    "subject": "Zapier zap stopped firing",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0590",
+    "subject": "Visual glitch in modal",
+    "body": "Modal close button overlaps with the X icon at <396px width.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0591",
+    "subject": "Zapier zap stopped firing",
+    "body": "Slack messages stopped posting at 2:06 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0592",
+    "subject": "Feature request: dark mode",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0593",
+    "subject": "Inviting teammates",
+    "body": "Following your docs but step 8 doesn't match what I see.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0594",
+    "subject": "Quick compliment",
+    "body": "Onboarding was the smoothest I've seen for a B2B tool.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0595",
+    "subject": "BUG: wrong data in filter",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0596",
+    "subject": "Why was I billed?",
+    "body": "Cancelled in October but still got charged. Invoice #INV-35892.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0597",
+    "subject": "Can't log in",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0598",
+    "subject": "BUG: wrong data in filter",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0599",
+    "subject": "Audit log export",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0600",
+    "subject": "Quick compliment",
+    "body": "Demo went well — we're moving forward with procurement.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0601",
+    "subject": "MFA code never arrives",
+    "body": "MFA SMS never delivered. Tried 3 times, $15 users affected.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0602",
+    "subject": "Setting up webhooks",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0603",
+    "subject": "P0: production outage",
+    "body": "~40% of our records disappeared overnight. Last good sync at 8:07 UTC.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0604",
+    "subject": "P0: production outage",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0605",
+    "subject": "Inviting teammates",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0606",
+    "subject": "Update payment method",
+    "body": "Cancelled in September but still got charged. Invoice #INV-94389.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0607",
+    "subject": "Security: suspected breach",
+    "body": "Saw a login from an IP I don't recognize. Need to lock account immediately.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0608",
+    "subject": "How do I export data?",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0609",
+    "subject": "Quick compliment",
+    "body": "Onboarding was the smoothest I've seen for a B2B tool.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0610",
+    "subject": "Zapier zap stopped firing",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Stage__c.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0611",
+    "subject": "Charged twice this month",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0612",
+    "subject": "Invoice question",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0613",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0614",
+    "subject": "Data residency question",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0615",
+    "subject": "Reports take forever to load",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0616",
+    "subject": "Charged twice this month",
+    "body": "Tried to update my card and it kept failing — error code BIL-142.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0617",
+    "subject": "Custom fields on tickets",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0618",
+    "subject": "Search is sluggish",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0619",
+    "subject": "Bulk edit support",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0620",
+    "subject": "Why was I billed?",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0621",
+    "subject": "Webhook signature mismatch",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0622",
+    "subject": "Visual glitch in modal",
+    "body": "Modal close button overlaps with the X icon at <782px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0623",
+    "subject": "Setting up webhooks",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0624",
+    "subject": "URGENT: data missing",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0625",
+    "subject": "Bulk edit support",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0626",
+    "subject": "Slack integration broken",
+    "body": "Slack messages stopped posting at 20:27 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0627",
+    "subject": "Slack integration broken",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Source__c.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0628",
+    "subject": "Why was I billed?",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0629",
+    "subject": "OpenAPI spec out of date",
+    "body": "OpenAPI spec missing the new /v2/exports endpoint.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0630",
+    "subject": "Custom domain setup",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0631",
+    "subject": "Invoice question",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0632",
+    "subject": "P0: production outage",
+    "body": "Every write is failing with 'workspace not found' — auth checks out.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0633",
+    "subject": "Inviting teammates",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0634",
+    "subject": "Why was I billed?",
+    "body": "I see two charges of $421 on Nov 23. Please refund the duplicate.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0635",
+    "subject": "SSO not working",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0636",
+    "subject": "API rate limit unclear",
+    "body": "OpenAPI spec missing the new /v2/exports endpoint.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0637",
+    "subject": "GDPR data request",
+    "body": "Need your latest SOC2 Type 2 report for our security review.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0638",
+    "subject": "Account locked",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0639",
+    "subject": "Forgot password link expired",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0640",
+    "subject": "Subprocessor list",
+    "body": "Where can I sign your DPA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0641",
+    "subject": "Refund for cancelled plan",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0642",
+    "subject": "Custom domain setup",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0643",
+    "subject": "BUG: button does nothing",
+    "body": "Modal close button overlaps with the X icon at <425px width.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0644",
+    "subject": "Can't log in",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0645",
+    "subject": "Visual glitch in modal",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0646",
+    "subject": "Page freezes",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0647",
+    "subject": "BUG: wrong data in filter",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0648",
+    "subject": "Refund for cancelled plan",
+    "body": "I see two charges of $865 on Nov 11. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0649",
+    "subject": "Update payment method",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0650",
+    "subject": "Audit log export",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0651",
+    "subject": "Salesforce sync errors",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0652",
+    "subject": "Where is the API key?",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0653",
+    "subject": "Account locked",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0654",
+    "subject": "Where is the API key?",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0655",
+    "subject": "Read-only role",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0656",
+    "subject": "Critical: writes failing",
+    "body": "All POST /v1/items returning 503 since 5:48 UTC. Customer-facing impact.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0657",
+    "subject": "Excited for v3",
+    "body": "Looking forward to the v3 release!",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0658",
+    "subject": "GDPR data request",
+    "body": "Need your latest SOC2 Type 2 report for our security review.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0659",
+    "subject": "Inviting teammates",
+    "body": "Following your docs but step 5 doesn't match what I see.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0660",
+    "subject": "MFA code never arrives",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0661",
+    "subject": "How do I export data?",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0662",
+    "subject": "Setting up webhooks",
+    "body": "Following your docs but step 8 doesn't match what I see.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0663",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0664",
+    "subject": "SOC2 report request",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0665",
+    "subject": "Custom domain setup",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0666",
+    "subject": "Visual glitch in modal",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0667",
+    "subject": "Why was I billed?",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0668",
+    "subject": "P0: dashboard showing wrong customer's data",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0669",
+    "subject": "Feature request: dark mode",
+    "body": "Audit log export to S3 would be great for SOC2.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0670",
+    "subject": "SSO not working",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0671",
+    "subject": "How do I export data?",
+    "body": "Following your docs but step 6 doesn't match what I see.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0672",
+    "subject": "Update payment method",
+    "body": "I see two charges of $344 on Nov 25. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0673",
+    "subject": "Forgot password link expired",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0674",
+    "subject": "Slack integration broken",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 8.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0675",
+    "subject": "Inviting teammates",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0676",
+    "subject": "Slack integration broken",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0677",
+    "subject": "Why was I billed?",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0678",
+    "subject": "Inviting teammates",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0679",
+    "subject": "Mobile app laggy",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0680",
+    "subject": "Subprocessor list",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0681",
+    "subject": "Inviting teammates",
+    "body": "Following your docs but step 4 doesn't match what I see.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0682",
+    "subject": "Custom domain setup",
+    "body": "Following your docs but step 4 doesn't match what I see.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0683",
+    "subject": "Visual glitch in modal",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0684",
+    "subject": "Thanks!",
+    "body": "Looking forward to the v3 release!",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0685",
+    "subject": "P0: dashboard showing wrong customer's data",
+    "body": "Every write is failing with 'workspace not found' — auth checks out.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0686",
+    "subject": "Hubspot fields missing",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 6.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0687",
+    "subject": "Why was I billed?",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0688",
+    "subject": "BUG: wrong data in filter",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0689",
+    "subject": "SSO not working",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0690",
+    "subject": "Account locked",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0691",
+    "subject": "Webhook signature mismatch",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0692",
+    "subject": "BUG: button does nothing",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0693",
+    "subject": "Refund for cancelled plan",
+    "body": "I see two charges of $101 on Nov 28. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0694",
+    "subject": "Dashboard slow",
+    "body": "Search returns results in 7s — used to be subsecond.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0695",
+    "subject": "BUG: button does nothing",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0696",
+    "subject": "Thanks!",
+    "body": "Demo went well — we're moving forward with procurement.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0697",
+    "subject": "Page freezes",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0698",
+    "subject": "Read-only role",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0699",
+    "subject": "Search is sluggish",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0700",
+    "subject": "BUG: button does nothing",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0701",
+    "subject": "P0: production outage",
+    "body": "Saw a login from an IP I don't recognize. Need to lock account immediately.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0702",
+    "subject": "Update payment method",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0703",
+    "subject": "Dashboard slow",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0704",
+    "subject": "Why was I billed?",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0705",
+    "subject": "Subprocessor list",
+    "body": "Need your latest SOC2 Type 2 report for our security review.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0706",
+    "subject": "Setting up webhooks",
+    "body": "Following your docs but step 4 doesn't match what I see.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0707",
+    "subject": "Forgot password link expired",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0708",
+    "subject": "OpenAPI spec out of date",
+    "body": "OpenAPI spec missing the new /v2/exports endpoint.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0709",
+    "subject": "Inviting teammates",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0710",
+    "subject": "Visual glitch in modal",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0711",
+    "subject": "Setting up webhooks",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0712",
+    "subject": "Bulk edit support",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0713",
+    "subject": "Data residency question",
+    "body": "Can you share the current subprocessor list?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0714",
+    "subject": "Why was I billed?",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0715",
+    "subject": "GDPR data request",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0716",
+    "subject": "Mobile app laggy",
+    "body": "Search returns results in 3s — used to be subsecond.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0717",
+    "subject": "Inviting teammates",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0718",
+    "subject": "Reports take forever to load",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0719",
+    "subject": "SSO not working",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0720",
+    "subject": "Invoice question",
+    "body": "Tried to update my card and it kept failing — error code BIL-778.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0721",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0722",
+    "subject": "Slack integration broken",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0723",
+    "subject": "Quick compliment",
+    "body": "Demo went well — we're moving forward with procurement.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0724",
+    "subject": "Webhook signature mismatch",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0725",
+    "subject": "SOC2 report request",
+    "body": "Can you share the current subprocessor list?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0726",
+    "subject": "Audit log export",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0727",
+    "subject": "API rate limit unclear",
+    "body": "OpenAPI spec missing the new /v2/exports endpoint.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0728",
+    "subject": "Pagination cursor invalid",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0729",
+    "subject": "How do I export data?",
+    "body": "Following your docs but step 5 doesn't match what I see.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0730",
+    "subject": "Custom fields on tickets",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0731",
+    "subject": "P0: dashboard showing wrong customer's data",
+    "body": "~40% of our records disappeared overnight. Last good sync at 0:59 UTC.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0732",
+    "subject": "How do I export data?",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0733",
+    "subject": "Page freezes",
+    "body": "Search returns results in 7s — used to be subsecond.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0734",
+    "subject": "Forgot password link expired",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0735",
+    "subject": "Setting up webhooks",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0736",
+    "subject": "Bulk edit support",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0737",
+    "subject": "Account locked",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0738",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0739",
+    "subject": "BUG: button does nothing",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0740",
+    "subject": "Update payment method",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0741",
+    "subject": "GDPR data request",
+    "body": "Where can I sign your DPA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0742",
+    "subject": "Can't log in",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0743",
+    "subject": "Forgot password link expired",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0744",
+    "subject": "Invoice question",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0745",
+    "subject": "Refund for cancelled plan",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0746",
+    "subject": "Custom domain setup",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0747",
+    "subject": "Search is sluggish",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0748",
+    "subject": "Subprocessor list",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0749",
+    "subject": "BUG: wrong data in filter",
+    "body": "Assignee filter shows users from another workspace. Repro on staging.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0750",
+    "subject": "Slack integration broken",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 4.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0751",
+    "subject": "Why was I billed?",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0752",
+    "subject": "Inviting teammates",
+    "body": "Following your docs but step 6 doesn't match what I see.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0753",
+    "subject": "Custom domain setup",
+    "body": "Following your docs but step 1 doesn't match what I see.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0754",
+    "subject": "BUG: button does nothing",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0755",
+    "subject": "Dashboard slow",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0756",
+    "subject": "DPA signature",
+    "body": "Where can I sign your DPA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0757",
+    "subject": "Account locked",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0758",
+    "subject": "Wrong currency shown",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0759",
+    "subject": "Critical: writes failing",
+    "body": "Every write is failing with 'workspace not found' — auth checks out.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0760",
+    "subject": "MFA code never arrives",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0761",
+    "subject": "Salesforce sync errors",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 18.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0762",
+    "subject": "Can't log in",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0763",
+    "subject": "SSO not working",
+    "body": "MFA SMS never delivered. Tried 3 times, $17 users affected.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0764",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0765",
+    "subject": "Security: suspected breach",
+    "body": "All POST /v1/items returning 503 since 17:14 UTC. Customer-facing impact.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0766",
+    "subject": "Salesforce sync errors",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 19.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0767",
+    "subject": "Wrong currency shown",
+    "body": "Modal close button overlaps with the X icon at <381px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0768",
+    "subject": "Thanks!",
+    "body": "Looking forward to the v3 release!",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0769",
+    "subject": "OpenAPI spec out of date",
+    "body": "Computing HMAC SHA256 of raw body — never matches your X-Signature.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0770",
+    "subject": "BUG: wrong data in filter",
+    "body": "Modal close button overlaps with the X icon at <548px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0771",
+    "subject": "Charged twice this month",
+    "body": "Tried to update my card and it kept failing — error code BIL-737.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0772",
+    "subject": "How do I export data?",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0773",
+    "subject": "Loving the product",
+    "body": "Tell your engineers the new dashboard is gorgeous.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0774",
+    "subject": "Bulk edit support",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0775",
+    "subject": "Salesforce sync errors",
+    "body": "Slack messages stopped posting at 19:39 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0776",
+    "subject": "Page freezes",
+    "body": "Search returns results in 9s — used to be subsecond.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0777",
+    "subject": "BUG: wrong data in filter",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0778",
+    "subject": "Thanks!",
+    "body": "Just wanted to say the team is excited. Keep up the great work!",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0779",
+    "subject": "Can't log in",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0780",
+    "subject": "SSO not working",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0781",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0782",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0783",
+    "subject": "MFA code never arrives",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0784",
+    "subject": "URGENT: data missing",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0785",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0786",
+    "subject": "Update payment method",
+    "body": "I see two charges of $297 on Nov 24. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0787",
+    "subject": "Bulk edit support",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0788",
+    "subject": "Custom domain setup",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0789",
+    "subject": "OpenAPI spec out of date",
+    "body": "OpenAPI spec missing the new /v2/exports endpoint.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0790",
+    "subject": "Invoice question",
+    "body": "Tried to update my card and it kept failing — error code BIL-107.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0791",
+    "subject": "Update payment method",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0792",
+    "subject": "MFA code never arrives",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0793",
+    "subject": "Zapier zap stopped firing",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0794",
+    "subject": "Pagination cursor invalid",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0795",
+    "subject": "Account locked",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0796",
+    "subject": "Where is the API key?",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0797",
+    "subject": "API rate limit unclear",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0798",
+    "subject": "GDPR data request",
+    "body": "Article 15 GDPR — please export all personal data tied to my account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0799",
+    "subject": "Can't log in",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0800",
+    "subject": "URGENT: data missing",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0801",
+    "subject": "Inviting teammates",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0802",
+    "subject": "Wrong currency shown",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0803",
+    "subject": "Inviting teammates",
+    "body": "Following your docs but step 1 doesn't match what I see.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0804",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0805",
+    "subject": "Inviting teammates",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0806",
+    "subject": "Why was I billed?",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0807",
+    "subject": "Forgot password link expired",
+    "body": "MFA SMS never delivered. Tried 3 times, $30 users affected.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0808",
+    "subject": "Excited for v3",
+    "body": "Onboarding was the smoothest I've seen for a B2B tool.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0809",
+    "subject": "Zapier zap stopped firing",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0810",
+    "subject": "Schema change broke our integration",
+    "body": "Computing HMAC SHA256 of raw body — never matches your X-Signature.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0811",
+    "subject": "Subprocessor list",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0812",
+    "subject": "Slack integration broken",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Owner__c.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0813",
+    "subject": "Where is the API key?",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0814",
+    "subject": "Charged twice this month",
+    "body": "Tried to update my card and it kept failing — error code BIL-480.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0815",
+    "subject": "URGENT: data missing",
+    "body": "All POST /v1/items returning 503 since 4:32 UTC. Customer-facing impact.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0816",
+    "subject": "Notion connection",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 20.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0817",
+    "subject": "Custom fields on tickets",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0818",
+    "subject": "DPA signature",
+    "body": "Article 15 GDPR — please export all personal data tied to my account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0819",
+    "subject": "BUG: button does nothing",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0820",
+    "subject": "DPA signature",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0821",
+    "subject": "Wrong currency shown",
+    "body": "Modal close button overlaps with the X icon at <436px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0822",
+    "subject": "How do I export data?",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0823",
+    "subject": "Feature request: dark mode",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0824",
+    "subject": "Refund for cancelled plan",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0825",
+    "subject": "Read-only role",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0826",
+    "subject": "Update payment method",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0827",
+    "subject": "Charged twice this month",
+    "body": "Tried to update my card and it kept failing — error code BIL-949.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0828",
+    "subject": "Invoice question",
+    "body": "I see two charges of $819 on Nov 5. Please refund the duplicate.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0829",
+    "subject": "Why was I billed?",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0830",
+    "subject": "MFA code never arrives",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0831",
+    "subject": "Invoice question",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0832",
+    "subject": "Custom domain setup",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0833",
+    "subject": "How do I export data?",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0834",
+    "subject": "Invoice question",
+    "body": "Cancelled in September but still got charged. Invoice #INV-63711.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0835",
+    "subject": "Slack integration broken",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Owner__c.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0836",
+    "subject": "Custom domain setup",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0837",
+    "subject": "Forgot password link expired",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0838",
+    "subject": "Read-only role",
+    "body": "Audit log export to S3 would be great for SOC2.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0839",
+    "subject": "Inviting teammates",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0840",
+    "subject": "Can't log in",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0841",
+    "subject": "Slack integration broken",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Owner__c.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0842",
+    "subject": "Mobile app laggy",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0843",
+    "subject": "Why was I billed?",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0844",
+    "subject": "Zapier zap stopped firing",
+    "body": "Slack messages stopped posting at 14:30 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0845",
+    "subject": "Account locked",
+    "body": "MFA SMS never delivered. Tried 3 times, $39 users affected.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0846",
+    "subject": "Notion connection",
+    "body": "Slack messages stopped posting at 2:41 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0847",
+    "subject": "Reports take forever to load",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0848",
+    "subject": "Why was I billed?",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0849",
+    "subject": "Audit log export",
+    "body": "Please add dark mode 🙏",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0850",
+    "subject": "BUG: button does nothing",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0851",
+    "subject": "Salesforce sync errors",
+    "body": "Slack messages stopped posting at 11:49 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0852",
+    "subject": "Hubspot fields missing",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0853",
+    "subject": "Refund for cancelled plan",
+    "body": "Cancelled in November but still got charged. Invoice #INV-96891.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0854",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Modal close button overlaps with the X icon at <797px width.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0855",
+    "subject": "Reports take forever to load",
+    "body": "Search returns results in 9s — used to be subsecond.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0856",
+    "subject": "Audit log export",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0857",
+    "subject": "Salesforce sync errors",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 14.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0858",
+    "subject": "Security: suspected breach",
+    "body": "~40% of our records disappeared overnight. Last good sync at 4:35 UTC.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0859",
+    "subject": "API rate limit unclear",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0860",
+    "subject": "Invoice question",
+    "body": "Cancelled in October but still got charged. Invoice #INV-15391.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0861",
+    "subject": "SOC2 report request",
+    "body": "Can you share the current subprocessor list?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0862",
+    "subject": "Pagination cursor invalid",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0863",
+    "subject": "How do I export data?",
+    "body": "Following your docs but step 1 doesn't match what I see.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0864",
+    "subject": "Thanks!",
+    "body": "Just wanted to say the team is excited. Keep up the great work!",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0865",
+    "subject": "Notion connection",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0866",
+    "subject": "Custom domain setup",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0867",
+    "subject": "URGENT: data missing",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0868",
+    "subject": "Invoice question",
+    "body": "Cancelled in November but still got charged. Invoice #INV-79579.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0869",
+    "subject": "Inviting teammates",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0870",
+    "subject": "OpenAPI spec out of date",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0871",
+    "subject": "How do I export data?",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0872",
+    "subject": "Invoice question",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0873",
+    "subject": "Notion connection",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 19.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0874",
+    "subject": "Can't log in",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0875",
+    "subject": "Forgot password link expired",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0876",
+    "subject": "Invoice question",
+    "body": "I see two charges of $313 on Nov 28. Please refund the duplicate.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0877",
+    "subject": "MFA code never arrives",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0878",
+    "subject": "Charged twice this month",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0879",
+    "subject": "Forgot password link expired",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0880",
+    "subject": "Charged twice this month",
+    "body": "Tried to update my card and it kept failing — error code BIL-246.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0881",
+    "subject": "Charged twice this month",
+    "body": "I see two charges of $609 on Nov 5. Please refund the duplicate.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0882",
+    "subject": "Can't log in",
+    "body": "MFA SMS never delivered. Tried 3 times, $40 users affected.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0883",
+    "subject": "Reports take forever to load",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0884",
+    "subject": "Critical: writes failing",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0885",
+    "subject": "Schema change broke our integration",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0886",
+    "subject": "Slack integration broken",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Owner__c.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0887",
+    "subject": "Notion connection",
+    "body": "Slack messages stopped posting at 5:45 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0888",
+    "subject": "Forgot password link expired",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0889",
+    "subject": "GDPR data request",
+    "body": "Need your latest SOC2 Type 2 report for our security review.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0890",
+    "subject": "Charged twice this month",
+    "body": "Tried to update my card and it kept failing — error code BIL-364.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0891",
+    "subject": "Custom domain setup",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0892",
+    "subject": "Custom domain setup",
+    "body": "Webhook secret rotation — what's the recommended process?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0893",
+    "subject": "Update payment method",
+    "body": "Tried to update my card and it kept failing — error code BIL-128.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0894",
+    "subject": "Audit log export",
+    "body": "Audit log export to S3 would be great for SOC2.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0895",
+    "subject": "Setting up webhooks",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0896",
+    "subject": "Custom domain setup",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0897",
+    "subject": "OpenAPI spec out of date",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0898",
+    "subject": "Hubspot fields missing",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Owner__c.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0899",
+    "subject": "Charged twice this month",
+    "body": "I see two charges of $425 on Nov 18. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0900",
+    "subject": "Page freezes",
+    "body": "Reports tab takes 8-15s to render. Was instant last week.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0901",
+    "subject": "Charged twice this month",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0902",
+    "subject": "Update payment method",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0903",
+    "subject": "Invoice question",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0904",
+    "subject": "OpenAPI spec out of date",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0905",
+    "subject": "Feature request: dark mode",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0906",
+    "subject": "BUG: wrong data in filter",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0907",
+    "subject": "Mobile app laggy",
+    "body": "Search returns results in 2s — used to be subsecond.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0908",
+    "subject": "Thanks!",
+    "body": "Looking forward to the v3 release!",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0909",
+    "subject": "BUG: button does nothing",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0910",
+    "subject": "Quick compliment",
+    "body": "Looking forward to the v3 release!",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0911",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0912",
+    "subject": "Hubspot fields missing",
+    "body": "Slack messages stopped posting at 12:00 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0913",
+    "subject": "Refund for cancelled plan",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0914",
+    "subject": "SSO not working",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0915",
+    "subject": "OpenAPI spec out of date",
+    "body": "Computing HMAC SHA256 of raw body — never matches your X-Signature.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0916",
+    "subject": "Salesforce sync errors",
+    "body": "Hubspot integration only pulls 5 fields, we need 12.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0917",
+    "subject": "MFA code never arrives",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0918",
+    "subject": "BUG: button does nothing",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0919",
+    "subject": "Inviting teammates",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0920",
+    "subject": "Read-only role",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0921",
+    "subject": "SOC2 report request",
+    "body": "Need your latest SOC2 Type 2 report for our security review.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0922",
+    "subject": "BUG: button does nothing",
+    "body": "Modal close button overlaps with the X icon at <592px width.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0923",
+    "subject": "Feature request: dark mode",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0924",
+    "subject": "Where is the API key?",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0925",
+    "subject": "Forgot password link expired",
+    "body": "After Google login I land on a 500 page.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0926",
+    "subject": "Visual glitch in modal",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0927",
+    "subject": "Audit log export",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0928",
+    "subject": "Custom fields on tickets",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0929",
+    "subject": "Slack integration broken",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0930",
+    "subject": "DPA signature",
+    "body": "Article 15 GDPR — please export all personal data tied to my account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0931",
+    "subject": "DPA signature",
+    "body": "Need your latest SOC2 Type 2 report for our security review.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0932",
+    "subject": "Hubspot fields missing",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 10.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0933",
+    "subject": "Dashboard slow",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0934",
+    "subject": "Feature request: dark mode",
+    "body": "We need bulk edit on the tickets list — clicking one by one is brutal at scale.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0935",
+    "subject": "Salesforce sync errors",
+    "body": "Salesforce sync logs show 'INVALID_FIELD' on Account.Owner__c.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0936",
+    "subject": "Feature request: dark mode",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0937",
+    "subject": "How do I export data?",
+    "body": "Inviting 12 teammates — is there a bulk option?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0938",
+    "subject": "Charged twice this month",
+    "body": "Cancelled in October but still got charged. Invoice #INV-51445.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0939",
+    "subject": "Slack integration broken",
+    "body": "Native Notion integration ETA?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0940",
+    "subject": "Search is sluggish",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0941",
+    "subject": "Update payment method",
+    "body": "Tried to update my card and it kept failing — error code BIL-402.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0942",
+    "subject": "Forgot password link expired",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0943",
+    "subject": "Setting up webhooks",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0944",
+    "subject": "Inviting teammates",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0945",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Clicking 'Resend invite' does nothing in Firefox. Console error attached.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0946",
+    "subject": "OpenAPI spec out of date",
+    "body": "Computing HMAC SHA256 of raw body — never matches your X-Signature.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0947",
+    "subject": "Search is sluggish",
+    "body": "Search returns results in 7s — used to be subsecond.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0948",
+    "subject": "BUG: typo in onboarding email",
+    "body": "Modal close button overlaps with the X icon at <435px width.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0949",
+    "subject": "Why was I billed?",
+    "body": "Tried to update my card and it kept failing — error code BIL-663.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0950",
+    "subject": "Custom fields on tickets",
+    "body": "Need a read-only role for compliance auditors.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0951",
+    "subject": "Forgot password link expired",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0952",
+    "subject": "Search is sluggish",
+    "body": "API p99 latency for /v1/search has tripled per our own metrics.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0953",
+    "subject": "Charged twice this month",
+    "body": "I see two charges of $641 on Nov 8. Please refund the duplicate.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0954",
+    "subject": "Critical: writes failing",
+    "body": "Saw a login from an IP I don't recognize. Need to lock account immediately.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0955",
+    "subject": "How do I export data?",
+    "body": "Can't find the CSV export button — is this a Pro-only feature?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0956",
+    "subject": "Can't log in",
+    "body": "MFA SMS never delivered. Tried 3 times, $41 users affected.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0957",
+    "subject": "OpenAPI spec out of date",
+    "body": "Docs say 100 req/min, but we're seeing 429s at 60 req/min.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0958",
+    "subject": "Custom domain setup",
+    "body": "Following your docs but step 3 doesn't match what I see.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0959",
+    "subject": "Charged twice this month",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0960",
+    "subject": "P0: dashboard showing wrong customer's data",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0961",
+    "subject": "Subprocessor list",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0962",
+    "subject": "API rate limit unclear",
+    "body": "Computing HMAC SHA256 of raw body — never matches your X-Signature.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0963",
+    "subject": "Inviting teammates",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0964",
+    "subject": "Update payment method",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0965",
+    "subject": "Schema change broke our integration",
+    "body": "OpenAPI spec missing the new /v2/exports endpoint.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0966",
+    "subject": "Charged twice this month",
+    "body": "Tried to update my card and it kept failing — error code BIL-810.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0967",
+    "subject": "Charged twice this month",
+    "body": "I see two charges of $61 on Nov 22. Please refund the duplicate.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0968",
+    "subject": "Pagination cursor invalid",
+    "body": "Computing HMAC SHA256 of raw body — never matches your X-Signature.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0969",
+    "subject": "MFA code never arrives",
+    "body": "Okta SSO redirects in a loop. Worked yesterday.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0970",
+    "subject": "MFA code never arrives",
+    "body": "Got 'account locked' email with no obvious cause. Need this back today.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0971",
+    "subject": "Security: suspected breach",
+    "body": "~40% of our records disappeared overnight. Last good sync at 15:22 UTC.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0972",
+    "subject": "BUG: wrong data in filter",
+    "body": "Onboarding email says 'Welcom' (sic). Embarrassing for new signups.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0973",
+    "subject": "SOC2 report request",
+    "body": "Can data be pinned to EU region only?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0974",
+    "subject": "Bulk edit support",
+    "body": "Can we add custom fields per workspace?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0975",
+    "subject": "Slack integration broken",
+    "body": "Slack messages stopped posting at 16:33 UTC. Channel webhook still active in our settings.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0976",
+    "subject": "Wrong currency shown",
+    "body": "Pricing page shows USD but my account is set to EUR.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0977",
+    "subject": "Salesforce sync errors",
+    "body": "Zap that pushes new tickets to our spreadsheet hasn't run since Nov 17.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0978",
+    "subject": "Dashboard slow",
+    "body": "Whole tab freezes when I scroll fast in the activity view.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0979",
+    "subject": "Critical: writes failing",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0980",
+    "subject": "Visual glitch in modal",
+    "body": "Modal close button overlaps with the X icon at <767px width.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0981",
+    "subject": "Where is the API key?",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0982",
+    "subject": "Where is the API key?",
+    "body": "Tried to add a custom domain but DNS verification keeps failing.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0983",
+    "subject": "MFA code never arrives",
+    "body": "MFA SMS never delivered. Tried 3 times, $49 users affected.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0984",
+    "subject": "Charged twice this month",
+    "body": "Can you explain the line item 'overage' on my latest invoice?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0985",
+    "subject": "Charged twice this month",
+    "body": "Tried to update my card and it kept failing — error code BIL-903.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0986",
+    "subject": "Reports take forever to load",
+    "body": "Mobile app is unusably slow on iPhone 14, latest iOS.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0987",
+    "subject": "Update payment method",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0988",
+    "subject": "Dashboard slow",
+    "body": "Search returns results in 9s — used to be subsecond.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0989",
+    "subject": "Where is the API key?",
+    "body": "Following your docs but step 3 doesn't match what I see.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0990",
+    "subject": "Update payment method",
+    "body": "Tried to update my card and it kept failing — error code BIL-240.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0991",
+    "subject": "OpenAPI spec out of date",
+    "body": "The 'status' field changed from string to enum and broke our parser.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0992",
+    "subject": "Security: suspected breach",
+    "body": "When I log in I'm seeing another customer's tickets. This is a data leak.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0993",
+    "subject": "Why was I billed?",
+    "body": "Need a W-9 / tax form for our finance team. Can you send one over?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0994",
+    "subject": "Update payment method",
+    "body": "Tried to update my card and it kept failing — error code BIL-289.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "S-0995",
+    "subject": "Loving the product",
+    "body": "Demo went well — we're moving forward with procurement.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0996",
+    "subject": "GDPR data request",
+    "body": "Need your latest SOC2 Type 2 report for our security review.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0997",
+    "subject": "Custom domain setup",
+    "body": "Following your docs but step 7 doesn't match what I see.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-0998",
+    "subject": "Subprocessor list",
+    "body": "Article 15 GDPR — please export all personal data tied to my account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "S-0999",
+    "subject": "MFA code never arrives",
+    "body": "Reset link says expired even though I just clicked it.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "S-1000",
+    "subject": "Update payment method",
+    "body": "Cancelled in November but still got charged. Invoice #INV-74156.",
+    "customer_tier": "free"
+  }
+]

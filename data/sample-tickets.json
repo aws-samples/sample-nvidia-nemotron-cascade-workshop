@@ -1,0 +1,122 @@
+[
+  {
+    "id": "T-001",
+    "subject": "Charged twice for November",
+    "body": "I just noticed my card was charged $499 twice on Nov 3. Please refund the duplicate ASAP — this is over our team's budget cap.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "T-002",
+    "subject": "SAML login redirect loop",
+    "body": "After SSO redirects from Okta we get bounced back to the login page. Started today around 9am PT. ~40 of our users are locked out.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "T-003",
+    "subject": "How do I export to CSV?",
+    "body": "Hi! I can't find the export button on the dashboard. Is this a Pro feature?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "T-004",
+    "subject": "API returning 502s every few minutes",
+    "body": "Our ingestion job is failing intermittently — looks like ~5% of requests are coming back as 502. Started ~30 minutes ago. Trace IDs attached.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "T-005",
+    "subject": "Can you add a Notion integration?",
+    "body": "Would love a native Notion sync so we don't have to copy/paste. We'd pay for it.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "T-006",
+    "subject": "URGENT: customer data missing",
+    "body": "Half our customer records disappeared from the workspace overnight. Last sync was successful at 11pm. We are getting calls from clients. Please escalate.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "T-007",
+    "subject": "Slow dashboard",
+    "body": "Dashboard takes ~12s to load on the Reports tab. Was instant last week. Chrome on Mac.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "T-008",
+    "subject": "Forgot password link expired",
+    "body": "I clicked the reset link from the email but it says expired. Sent it 3 minutes ago.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "T-009",
+    "subject": "Webhooks not delivering",
+    "body": "We have a workflow webhook to https://hooks.example.com/inbound and none have fired since 2:14pm. Retry queue empty too.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "T-010",
+    "subject": "Pricing question",
+    "body": "If we add 5 seats mid-cycle, do we pay prorated or wait until renewal?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "T-011",
+    "subject": "BUG: filter dropdown shows wrong options",
+    "body": "On the Tickets page, the assignee filter shows users from a different workspace. Reproducing on staging too. Screenshot attached.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "T-012",
+    "subject": "Account locked after 'suspicious activity'",
+    "body": "Got an email saying my account was locked. I haven't logged in from anywhere unusual. Need this resolved today, I have a demo at 4pm.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "T-013",
+    "subject": "Spam from your platform",
+    "body": "Someone using your service is sending phishing emails impersonating our company. The 'from' is on your domain. Please shut them down.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "T-014",
+    "subject": "Dark mode request",
+    "body": "Please add dark mode :)",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "T-015",
+    "subject": "Webhook signature verification failing",
+    "body": "We're computing HMAC SHA256 of the raw body with our signing secret and it never matches your X-Signature header. Worked fine last week. Did the algorithm change?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "T-016",
+    "subject": "Refund for cancelled subscription",
+    "body": "I cancelled in October and was still charged for November. Order #INV-44219.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "T-017",
+    "subject": "Page crashes when I scroll fast",
+    "body": "Whole tab freezes if I scroll the activity feed quickly. Chrome 130 / 32GB Mac.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "T-018",
+    "subject": "GDPR data export request",
+    "body": "Per Article 15 of GDPR I'm requesting a full export of personal data associated with my account. Please advise the format and timeline.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "T-019",
+    "subject": "Looking forward to the new release",
+    "body": "Just wanted to say the team is excited about v3. Keep up the great work!",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "T-020",
+    "subject": "Production outage: all writes failing",
+    "body": "Every POST to /v1/items is returning 503 since 14:02 UTC. We have customer-facing impact. Status page shows green. This is a Sev1 for us.",
+    "customer_tier": "enterprise"
+  }
+]
