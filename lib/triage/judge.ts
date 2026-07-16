@@ -10,14 +10,14 @@ import { TICKET_CATEGORIES, TICKET_PRIORITIES, type Ticket } from "./schema";
 import { userPromptForTicket } from "./prompts";
 
 /**
- * Ground-truth judge for the bake-off.
+ * Reference judge for the bake-off.
  *
- * Claude Opus 4.7 — the strongest model on Bedrock — labels every ticket
- * once. The bake-off measures how often each tested config (Sonnet 4.6,
- * Nano 30B, Nano→Super routed) agrees with Opus's judgment.
+ * Claude Opus 4.7 provides reference labels for the bake-off. The bake-off
+ * measures how often each tested config (Sonnet 4.6, Nano 30B, and the
+ * Nano→Claude cascade) agrees with Opus's judgment.
  */
 
-const JUDGE_SYSTEM_PROMPT = `You are an independent triage classifier providing ground-truth labels
+const JUDGE_SYSTEM_PROMPT = `You are an independent triage classifier providing reference labels
 for B2B SaaS support tickets. You will be used to grade other models — be
 careful, deliberate, and conservative.
 

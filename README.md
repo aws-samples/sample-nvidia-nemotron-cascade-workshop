@@ -52,7 +52,7 @@ flowchart TB
         PROMPTS["lib/triage/prompts.ts\nSystem + user prompts"]
     end
 
-    subgraph BEDROCK["Amazon Bedrock us-west-2"]
+    subgraph BEDROCK["Amazon Bedrock"]
         direction LR
         NANO["Nemotron Nano 30B\nfast first pass"]
         SONNET["Claude Sonnet 4.6\nescalation + baseline"]
@@ -225,7 +225,9 @@ The full implementation spec is in
 
 ## Region And Models
 
-`AWS_REGION=us-west-2`. Model IDs live in
+The sample defaults to `AWS_REGION=us-west-2`, but you can use any Bedrock
+Region where your account has access to the required models or inference
+profiles. Model IDs live in
 [lib/bedrock/models.ts](lib/bedrock/models.ts) and should be referenced through
 the `MODELS` constant.
 
@@ -243,15 +245,14 @@ cascade is Nano to Claude Sonnet.
 
 ### Future: a third cascade tier
 
-NVIDIA released **Nemotron 3 Ultra** (550B / 55B-active MoE) on June 4, 2026
-as a frontier reasoning tier above Super, pitched for long-running agentic
-workloads — sustained multi-turn planning, sub-agent delegation, and deep
-reasoning. The cascade pattern in this repo extends naturally to a third rung:
-Nano (volume) → Claude Sonnet or Super (escalation) → Ultra (frontier
-reasoning for the long tail of agent-orchestration tasks). Once Ultra lands
-on Amazon Bedrock, the addition is a single constant in
-[lib/bedrock/models.ts](lib/bedrock/models.ts) and one branch in the
-`shouldEscalate` function.
+NVIDIA released **Nemotron 3 Ultra** (550B / 55B-active MoE) in June 2026
+as a frontier reasoning tier above Super, designed for long-running agentic
+workloads including sustained multi-turn planning and sub-agent delegation.
+The cascade pattern in this repo extends naturally to a third rung for the
+small subset of requests that need deep reasoning. If or when an Ultra-class
+model is available through the same managed inference surface, this sample is
+structured to extend with a model constant plus an escalation branch, after
+validating availability, cost, latency, and quality.
 
 Reference:
 [NVIDIA developer blog](https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/).

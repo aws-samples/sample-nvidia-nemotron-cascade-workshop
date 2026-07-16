@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "cascade-classify": {
+      "command": "npx",
+      "args": ["tsx", "mcp/server.ts"],
+      "env": {
+        "AWS_REGION": "us-west-2"
+      }
+    }
+  }
+}

@@ -3,9 +3,9 @@
  * Phase 4 bake-off harness.
  *
  * Runs the synthetic 1k dataset through three configurations and prints
- * a side-by-side table of cost / latency / agreement-with-ground-truth.
+ * a side-by-side table of cost / latency / agreement with the reference judge.
  *
- *   npm run bakeoff -- --label          # generate ground-truth labels (Sonnet, low temp)
+ *   npm run bakeoff -- --label          # generate reference judge labels (Opus, low temp)
  *   npm run bakeoff -- --config=sonnet  # baseline
  *   npm run bakeoff -- --config=nano    # nano only
  *   npm run bakeoff -- --config=routed  # nano + super escalation
@@ -21,40 +21,20 @@ import { triageTicket } from "../lib/bedrock/client";
 import { MODELS, APPROX_COST_PER_1K_TOKENS, type ModelId } from "../lib/bedrock/models";
 import { judgeTicket, type JudgeLabel } from "../lib/triage/judge";
 import type { RoutingDecision, Ticket } from "../lib/triage/schema";
+import {
+  shouldEscalate,
+  TRIAGE_HIGH_DISAGREEMENT_CATEGORIES,
+} from "../lib/cascade/escalation";
 
 const DATASET_PATH = "data/synthetic-1k.json";
 const CACHE_DIR = ".bakeoff-cache";
-// Escalation logic. Three layers, ordered cheapest-first:
-//
-// 1. Confidence-based: Nano explicitly says it's unsure.
-// 2. Stakes-based: the answer matters too much to take Nano's word for it
-//    (P0/P1 outage, needs_human flag, or abuse category).
-// 3. Category-based (domain-tuned): Nano picked a category that historical
-//    disagreements with Opus showed it confuses with adjacent categories.
-//    For B2B support triage, the high-disagreement set is:
-//      - integration ↔ feature_request (e.g., "When will Notion sync land?")
-//      - bug_report ↔ billing/performance (e.g., "double-charged" vs "wrong
-//        amount in invoice")
-//    Production teams replace this with a learned router trained on their
-//    own historical disagreements; this hardcoded list is the workshop
-//    starting point, not the production answer.
-const HIGH_DISAGREEMENT_CATEGORIES: ReadonlySet<string> = new Set([
-  "integration",
-  "feature_request",
-  "bug_report",
-  "performance",
-]);
-
-function shouldEscalate(decision: RoutingDecision): boolean {
-  return (
-    decision.confidence < 0.7 ||
-    decision.priority === "P0" ||
-    decision.priority === "P1" ||
-    decision.needs_human === true ||
-    decision.category === "abuse" ||
-    HIGH_DISAGREEMENT_CATEGORIES.has(decision.category)
-  );
-}
+// Escalation logic is shared with the live cascade demo — see
+// lib/cascade/escalation.ts for the full three-layer rationale
+// (confidence, stakes, domain-tuned high-disagreement categories).
+const ESCALATION_OPTS = {
+  escalateOnAbuse: true,
+  highDisagreementCategories: TRIAGE_HIGH_DISAGREEMENT_CATEGORIES,
+};
 
 type ConfigName = "sonnet" | "nano" | "super" | "routed";
 
@@ -169,7 +149,7 @@ async function runConfig(
         // app/api/triage/cascade/route.ts) — Nemotron handles the volume,
         // Claude handles the long tail.
         const nanoResult = await callOnce(ticket, MODELS.NEMOTRON_NANO);
-        if (shouldEscalate(nanoResult.decision)) {
+        if (shouldEscalate(nanoResult.decision, ESCALATION_OPTS)) {
           const claudeResult = await callOnce(ticket, MODELS.CLAUDE_SONNET);
           r = {
             ...claudeResult,
@@ -272,10 +252,10 @@ async function main() {
       throw new Error("--label cannot be combined with --dry-run");
     }
     console.log(
-      "Generating ground-truth labels via Claude Opus 4.7 (temperature=0)…",
+      "Generating reference judge labels via Claude Opus 4.7 (temperature=0)…",
     );
     console.log(
-      "  (Opus is the strongest model on Bedrock — our independent judge.)",
+      "  (Opus serves as an independent judge for scoring the other configs.)",
     );
     const labels = new Map<string, JudgeLabel>();
     for (const [i, ticket] of tickets.entries()) {
@@ -283,20 +263,21 @@ async function main() {
       const label = await judgeTicket(ticket);
       labels.set(ticket.id, label);
     }
-    writeCache("ground-truth", Array.from(labels.entries()));
+    writeCache("judge-labels", Array.from(labels.entries()));
     console.log(`  ${tickets.length}/${tickets.length} ✓`);
-    console.log(`Wrote ground truth to ${cachePath("ground-truth")}`);
+    console.log(`Wrote judge labels to ${cachePath("judge-labels")}`);
     return;
   }
 
-  const truthRaw = readCache<[string, JudgeLabel][]>("ground-truth");
+  const truthRaw = readCache<[string, JudgeLabel][]>("judge-labels")
+    ?? readCache<[string, JudgeLabel][]>("ground-truth"); // legacy cache compat
   const groundTruth = truthRaw ? new Map(truthRaw) : null;
   if (!groundTruth) {
     console.warn(
-      "No ground truth labels yet — run `npm run bakeoff -- --label` first if you want agreement %",
+      "No judge labels yet — run `npm run bakeoff -- --label` first if you want agreement %",
     );
   } else {
-    console.log("Ground truth: Claude Opus 4.7 (independent judge)");
+    console.log("Reference judge: Claude Opus 4.7");
   }
 
   const configs: ConfigName[] = args.all

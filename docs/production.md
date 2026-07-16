@@ -1,10 +1,13 @@
 # Production Notes
 
 This sample uses the AWS SDK default credential chain. There are no model API
-keys in the application.
+keys in the application. The Region defaults to `us-west-2` via the
+`AWS_REGION` environment variable; choose any Region where your account has
+access to the required Bedrock models or inference profiles.
 
 ```ts
-new BedrockRuntimeClient({ region: "us-west-2" })
+// Region is read from AWS_REGION env (sample default: us-west-2)
+new BedrockRuntimeClient({ region: process.env.AWS_REGION ?? "us-west-2" })
 ```
 
 ## Local Development

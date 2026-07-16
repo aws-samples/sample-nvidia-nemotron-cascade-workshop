@@ -50,3 +50,8 @@ qa-output/
 # local PCSR/security scan attachments
 security-scans/
 .bakeoff-cache.pre-pivot-backup/
+
+# internal blog working docs (not sample content)
+docs/blog-draft.md
+docs/blog-outline.md
+docs/*.docx

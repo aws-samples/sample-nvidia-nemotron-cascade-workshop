@@ -1,7 +1,8 @@
 import { NextRequest } from "next/server";
 import { triageTicket } from "@/lib/bedrock/client";
 import { MODELS, APPROX_COST_PER_1K_TOKENS } from "@/lib/bedrock/models";
-import { TicketSchema, type RoutingDecision } from "@/lib/triage/schema";
+import { TicketSchema } from "@/lib/triage/schema";
+import { shouldEscalate } from "@/lib/cascade/escalation";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -10,15 +11,6 @@ const TOKENS_PER_CALL = 0.35; // approximate 0.35K tokens per call
 
 function estimateCost(modelId: keyof typeof APPROX_COST_PER_1K_TOKENS): number {
   return TOKENS_PER_CALL * APPROX_COST_PER_1K_TOKENS[modelId];
-}
-
-function shouldEscalate(decision: RoutingDecision): boolean {
-  return (
-    decision.confidence < 0.7 ||
-    decision.priority === "P0" ||
-    decision.priority === "P1" ||
-    decision.needs_human
-  );
 }
 
 export async function POST(request: NextRequest) {

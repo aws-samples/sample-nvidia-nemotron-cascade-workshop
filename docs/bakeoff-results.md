@@ -1,6 +1,6 @@
 # Bake-off per-ticket detail (30 tickets)
 
-Ground truth: **Claude Opus 4.7** (`us.anthropic.claude-opus-4-7`).
+Reference judge: **Claude Opus 4.7** (`us.anthropic.claude-opus-4-7`).
 
 Use this for hand-verifying which tickets the cascade catches and which it doesn't. Disagreements with the Opus answer key are flagged with ✗.
 

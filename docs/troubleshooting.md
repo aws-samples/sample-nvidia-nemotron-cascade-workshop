@@ -20,13 +20,15 @@ If that fails, refresh credentials using your normal AWS workflow.
 
 ### `AccessDeniedException` on a model
 
-The model is not enabled for the account. In the Bedrock console, switch to
-`us-west-2`, open Model access, and enable the model IDs listed in
-`lib/bedrock/models.ts`.
+The model is not enabled for the account. In the Bedrock console, navigate to
+your configured Region (sample default: `us-west-2`), open Model access, and
+enable the model IDs listed in `lib/bedrock/models.ts`.
 
 ### `ValidationException: model not supported in this region`
 
-Set the region:
+The configured Region does not support one of the required models. Set
+`AWS_REGION` to a Region where both Nemotron Nano and Claude Sonnet (or their
+inference profiles) are available. Example using the sample default:
 
 ```bash
 export AWS_REGION=us-west-2
