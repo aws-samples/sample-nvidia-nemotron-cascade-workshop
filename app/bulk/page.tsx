@@ -36,7 +36,7 @@ interface RowState {
 
 const MODEL_META: Record<ModelCol, { label: string; accent: string; accentDim: string }> = {
   sonnet: { label: "Sonnet 4.6", accent: "var(--sonnet-amber)", accentDim: "var(--sonnet-amber-dim)" },
-  nano: { label: "Nemotron Nano", accent: "var(--nano-green)", accentDim: "var(--nano-green-dim)" },
+  nano: { label: "Nemotron 3 Nano", accent: "var(--nano-green)", accentDim: "var(--nano-green-dim)" },
   routed: { label: "Routed", accent: "var(--routed-teal)", accentDim: "var(--routed-teal-dim)" },
 };
 

@@ -3,9 +3,9 @@
  * cascade-classify MCP server.
  *
  * Exposes one tool: `cascade_classify(text, labels[])` — cost-optimal text
- * classification on Amazon Bedrock. NVIDIA Nemotron Nano classifies every
- * request; Anthropic Claude Sonnet is called only when Nano's probability
- * margin over the label set shows genuine uncertainty.
+ * classification on Amazon Bedrock. NVIDIA Nemotron 3 Nano classifies every
+ * request; Anthropic Claude Sonnet is called when Nano's probability margin
+ * shows uncertainty or when an explicit caller guardrail requests escalation.
  *
  * Mount from any MCP client (Claude Code, Cursor, ...):
  *
@@ -32,9 +32,9 @@ server.registerTool(
     title: "Cascade classify",
     description:
       "Classify text into one of the provided labels at minimum cost. " +
-      "Runs NVIDIA Nemotron Nano (fast, cheap) on every request and " +
-      "escalates to Anthropic Claude Sonnet only when Nano's probability " +
-      "margin over the label set shows genuine uncertainty. Use for any " +
+      "Runs NVIDIA Nemotron 3 Nano (fast, cost-efficient) on every request and " +
+      "escalates to Anthropic Claude Sonnet when Nano's probability margin " +
+      "shows uncertainty or an explicit caller guardrail fires. Use for any " +
       "sort-into-fixed-categories step: intent detection, ticket/alert " +
       "routing, moderation triage, log severity, document tagging. " +
       "Returns the winning label, the full probability distribution, " +

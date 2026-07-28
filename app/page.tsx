@@ -219,7 +219,7 @@ export default function CascadeDemo() {
           Cascade Routing Demo
         </h1>
         <p className="mt-2 text-[var(--text-secondary)] text-base max-w-2xl">
-          Watch the two-stage triage system work in real time. Nemotron Nano handles the easy 80% — 
+          Watch the two-stage triage system work in real time. Nemotron 3 Nano handles the fast first pass —
           uncertain or critical tickets escalate to Claude Sonnet for verification.
         </p>
       </header>
@@ -314,7 +314,7 @@ export default function CascadeDemo() {
               How it works
             </h3>
             <div className="font-[family-name:var(--font-mono)] text-xs text-[var(--text-secondary)] space-y-1 leading-relaxed">
-              <p className="text-[var(--text-primary)]">Ticket → Nemotron Nano <span className="text-[var(--nano-green)]">(fast, cheap)</span></p>
+              <p className="text-[var(--text-primary)]">Ticket → Nemotron 3 Nano <span className="text-[var(--nano-green)]">(fast, cost-efficient)</span></p>
               <p className="pl-4">├─ confident? → Done ✓</p>
               <p className="pl-4">└─ uncertain/critical? →</p>
               <p className="pl-8">Claude Sonnet <span className="text-[var(--sonnet-amber)]">(thorough)</span> → Done ✓</p>
@@ -411,7 +411,7 @@ function NanoPanel({ stage, result, elapsed }: { stage: Stage; result: NanoResul
               isActive ? "bg-[var(--nano-green)] timer-pulse" : isDone ? "bg-[var(--nano-green)]" : "bg-[var(--text-muted)]/30"
             }`}
           />
-          <span className="text-sm font-semibold text-[var(--text-primary)]">Nemotron Nano</span>
+          <span className="text-sm font-semibold text-[var(--text-primary)]">Nemotron 3 Nano</span>
           <span className="text-[10px] uppercase tracking-[0.1em] px-2 py-0.5 rounded font-medium bg-[var(--nano-green-dim)] text-[var(--nano-green)]">
             NVIDIA
           </span>
@@ -445,7 +445,7 @@ function NanoPanel({ stage, result, elapsed }: { stage: Stage; result: NanoResul
               <div className="w-2 h-2 rounded-full timer-pulse bg-[var(--nano-green)]" style={{ animationDelay: "200ms" }} />
               <div className="w-2 h-2 rounded-full timer-pulse bg-[var(--nano-green)]" style={{ animationDelay: "400ms" }} />
             </div>
-            <span className="text-xs text-[var(--text-muted)]">Classifying with Nemotron Nano...</span>
+            <span className="text-xs text-[var(--text-muted)]">Classifying with Nemotron 3 Nano...</span>
           </div>
         )}
 
@@ -657,7 +657,7 @@ function SummaryBanner({
           <span className="text-sm font-semibold text-[var(--text-primary)]">
             {doneResult.escalated
               ? "Escalated: Nano → Claude Sonnet"
-              : "Resolved by Nemotron Nano"}
+              : "Resolved by Nemotron 3 Nano"}
           </span>
         </div>
         <div className="flex items-baseline gap-1.5">

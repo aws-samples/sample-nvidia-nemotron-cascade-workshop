@@ -7,7 +7,7 @@ Phase 2 turns the one-ticket cascade into a bulk streaming endpoint.
 Build `POST /api/triage/bulk` so the `/bulk` page can compare:
 
 - Sonnet-only baseline
-- Nemotron Nano-only first pass
+- Nemotron 3 Nano-only first pass
 - Nano to Claude cascade
 
 ## Request
@@ -29,7 +29,7 @@ Build `POST /api/triage/bulk` so the `/bulk` page can compare:
 
 Return `application/x-ndjson`.
 
-Nano-only ticket:
+Nemotron 3 Nano-only ticket:
 
 ```json
 {"ticket_id":"T-001","model":"nano","decision":{...},"escalated":false,"latencyMs":580,"cost":0.0003}
@@ -44,7 +44,7 @@ Escalated ticket:
 
 ## Escalation Policy
 
-Escalate from Nemotron Nano to Claude Sonnet when any condition is true:
+Escalate from Nemotron 3 Nano to Claude Sonnet when any condition is true:
 
 - `confidence < 0.7`
 - `priority` is `P0` or `P1`
@@ -61,7 +61,8 @@ Escalate from Nemotron Nano to Claude Sonnet when any condition is true:
 - Retry throttling and transient 5xx failures with exponential backoff and
   full jitter.
 - Close the stream on normal completion and on client disconnect.
-- Add tests for Nano-only, escalated, invalid input, and retry behavior.
+- Add tests for Nemotron 3 Nano-only, escalated, invalid input, and retry
+  behavior.
 
 ## Done Signal
 
@@ -74,4 +75,3 @@ curl -N -X POST http://localhost:3000/api/triage/bulk \
 ```
 
 Then `/bulk` should populate rows as results arrive.
-

@@ -2,9 +2,10 @@
 
 Sample code for **two-tier LLM inference** — also called **LLM cascading**
 or **confidence-based model routing** — on **Amazon Bedrock**. NVIDIA
-Nemotron Nano handles the easy, high-volume support-ticket classification
-path; harder or higher-stakes tickets escalate to Anthropic Claude Sonnet
-on the same Bedrock API surface.
+Nemotron 3 Nano 30B A3B handles the easy, high-volume support-ticket
+classification path; harder or higher-stakes tickets escalate to Anthropic
+Claude Sonnet on the same Bedrock API surface. After this first mention, the
+model is shortened to **Nemotron 3 Nano**.
 
 The app classifies support tickets, but ticket triage is only the example. The
 pattern applies to lead scoring, moderation, alert routing, document
@@ -23,10 +24,11 @@ The repo already includes:
 - A `/bulk` UI that lights up once `POST /api/triage/bulk` is implemented
 - Shared Bedrock Converse API client code, Zod schemas, prompts, tests, and
   synthetic ticket data
-- A bake-off harness comparing Sonnet-only, Nano-only, and cascade modes
+- A bake-off harness comparing Sonnet-only, Nemotron 3 Nano-only, and cascade
+  modes
 
 The bulk endpoint is intentionally left as an exercise. Implement it to see
-the same cascade scale — Nano first on every ticket, escalating to Claude
+the same cascade scale — Nemotron 3 Nano first on every ticket, escalating to Claude
 Sonnet when escalation rules fire, streaming NDJSON rows back to the `/bulk`
 table as each ticket finishes. Spec is in
 [docs/phase2-change.md](docs/phase2-change.md).
@@ -37,12 +39,12 @@ table as each ticket finishes. Spec is in
 flowchart TB
     subgraph CLIENT["Client"]
         DEMO["/ Routing Demo\none ticket cascade"]
-        BULK["/bulk Strategy Comparison\nSonnet vs Nano vs Cascade"]
+        BULK["/bulk Strategy Comparison\nSonnet vs Nemotron 3 Nano vs Cascade"]
     end
 
     subgraph API["Next.js API Routes"]
         SINGLE["POST /api/triage\nSonnet-only baseline"]
-        CASCADE["POST /api/triage/cascade\nSSE: Nano to Claude"]
+        CASCADE["POST /api/triage/cascade\nSSE: Nemotron 3 Nano to Claude"]
         BULKAPI["POST /api/triage/bulk\nimplement to light up /bulk"]
     end
 
@@ -54,7 +56,7 @@ flowchart TB
 
     subgraph BEDROCK["Amazon Bedrock"]
         direction LR
-        NANO["Nemotron Nano 30B\nfast first pass"]
+        NANO["Nemotron 3 Nano\nfast first pass"]
         SONNET["Claude Sonnet 4.6\nescalation + baseline"]
     end
 
@@ -74,7 +76,7 @@ flowchart TB
 | Step | What you do | Result |
 |---|---|---|
 | 1. Spin up | Install deps, configure AWS credentials, call `/api/triage` | Proves Bedrock access works |
-| 2. See the cascade | Use `/` to watch Nano resolve or escalate one ticket | Makes the routing pattern concrete |
+| 2. See the cascade | Use `/` to watch Nemotron 3 Nano resolve or escalate one ticket | Makes the routing pattern concrete |
 | 3. Build bulk triage | Implement `POST /api/triage/bulk` using your preferred AI coding assistant | Scales the same pattern to many tickets |
 | 4. Compare strategies | Run `/bulk` and `npm run bakeoff -- --dry-run --all` | Cost, latency, and agreement side by side |
 | 5. Productionize | Review retries, throttling, guardrails, evals, and rollout strategy | Turns sample code into a deployment pattern |
@@ -90,32 +92,42 @@ workload shape.
 Live results from `npm run bakeoff -- --all --limit=30` against 30 synthetic
 B2B support tickets:
 
-| Config | Total cost (30 tickets) | Avg latency | Agreement vs Opus | Escalation rate |
+| Config | Total cost (30 tickets) | Avg latency | Agreement vs separate judge model | Escalation rate |
 |---|---:|---:|---:|---:|
-| Sonnet 4.6 only | $0.0608 | 4,614ms | 93.3% (28/30) | n/a |
-| Nemotron Nano 30B only | $0.0041 | 654ms | 83.3% (25/30) | n/a |
-| Partnership cascade (Nano + Claude) | $0.0514 | 4,084ms | 93.3% (28/30) | 76.7% (23/30) |
+| Sonnet 4.6 only | $0.3230 | 4,476ms | 96.7% (29/30) | n/a |
+| Nemotron 3 Nano only | $0.0184 | 680ms | 83.3% (25/30) | n/a |
+| Partnership cascade (Nano + Claude) | $0.2774 | 4,326ms | 93.3% (28/30) | 80.0% (24/30) |
 
-The judge is Claude Opus 4.7. It labels each ticket once as a proxy answer key;
-the strategies are compared against those labels. Opus is not called by the
-live app.
+Claude Opus 4.7 serves as a separate judge model. It labels each ticket once
+as a proxy answer key; the strategies are compared against those labels. Opus
+is not called by the live app. Costs are computed from actual token usage
+returned by the Bedrock Converse API, using the pricing constants in
+`lib/bedrock/models.ts`; they are comparative sample costs, not billing quotes.
+
+These figures describe behavior on this 30-ticket workshop sample, not
+expected production performance. The high-disagreement category list was
+derived from disagreements in this same evaluation set, so teams should tune
+on a separate calibration set and report final quality on independent test
+data before production use.
 
 ### How to read these numbers
 
-This is a deployment-strategy comparison, not a model comparison. Nemotron Nano
-and Claude Sonnet are doing different jobs in the cascade — Nano handles the
-high-volume routing pass on every ticket; Claude handles the long tail that
-the routing logic flags as needing a stronger model. The numbers above show
-three legitimate deployment shapes you might choose:
+This is a deployment-strategy comparison, not a model comparison. Nemotron 3
+Nano and Claude Sonnet are doing different jobs in the cascade — Nano handles
+the high-volume routing pass on every ticket; Claude handles the long tail
+that the routing logic flags as needing a stronger model. The numbers above
+show three legitimate deployment shapes you might choose:
 
-- **Nano alone** is ~15× cheaper and ~7× faster than Sonnet alone, at 83%
+- **Nano alone** is ~18× cheaper and ~7× faster than Sonnet alone, at 83%
   agreement with the Opus answer key. Strong fit when latency or cost matters
   more than the last 10 points of category accuracy, or when downstream
   consumers can tolerate occasional re-classification.
-- **Partnership cascade** matches Sonnet-only agreement (93%) at lower cost
-  (~15% savings on this workload). Nano handles every ticket; Claude is
-  invoked only when Nano's output trips a domain-tuned escalation rule.
-  Higher savings come from better-tuned escalation against your own data.
+- **Partnership cascade** reaches 93.3% agreement at about 14% lower cost than
+  Sonnet-only in this run, while Sonnet-only reaches 96.7%. Nano handles every
+  ticket; Claude is invoked only when Nano's output trips a domain-tuned
+  escalation rule. The result is a measured cost-quality tradeoff, not an
+  equal-quality claim. Teams should tune and validate that tradeoff on their
+  own calibration and test data.
 - **Sonnet alone** is the simplest deployment when you don't yet have data
   to tune escalation against and budget isn't tight.
 
@@ -137,7 +149,7 @@ npm run bakeoff -- --all --limit=30
 ## Quickstart
 
 ```bash
-npm install
+npm ci
 cp .env.example .env.local
 npm run dev
 ```
@@ -194,7 +206,7 @@ Response: `application/x-ndjson`, one JSON object per line.
 Required behavior:
 
 - Validate every input ticket with `TicketSchema`.
-- Call Nemotron Nano first for every ticket.
+- Call Nemotron 3 Nano first for every ticket.
 - Escalate to Claude Sonnet when Nano's output trips an escalation rule.
   Match the logic in `scripts/bakeoff.ts:shouldEscalate` — confidence,
   stakes (P0/P1, needs_human, abuse), and a domain-tuned high-disagreement

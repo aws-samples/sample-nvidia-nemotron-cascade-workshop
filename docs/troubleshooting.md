@@ -27,7 +27,7 @@ enable the model IDs listed in `lib/bedrock/models.ts`.
 ### `ValidationException: model not supported in this region`
 
 The configured Region does not support one of the required models. Set
-`AWS_REGION` to a Region where both Nemotron Nano and Claude Sonnet (or their
+`AWS_REGION` to a Region where both Nemotron 3 Nano and Claude Sonnet (or their
 inference profiles) are available. Example using the sample default:
 
 ```bash
@@ -81,4 +81,3 @@ Generate labels first:
 ```bash
 npm run bakeoff -- --label --limit=30
 ```
-

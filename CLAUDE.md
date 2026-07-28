@@ -22,12 +22,12 @@ Whatever makes `aws sts get-caller-identity` work makes the app work. Region is
 ```text
 app/
   api/triage/route.ts                 single-ticket Sonnet baseline
-  api/triage/cascade/route.ts         one-ticket Nano to Claude cascade demo
+  api/triage/cascade/route.ts         one-ticket Nemotron 3 Nano to Claude cascade demo
   page.tsx                            interactive routing demo
   bulk/page.tsx                       streaming bulk comparison UI
 lib/
   bedrock/client.ts                   Bedrock Converse API wrapper
-  bedrock/models.ts                   pinned model IDs + approximate costs
+  bedrock/models.ts                   pinned model IDs + comparative pricing
   triage/schema.ts                    Zod schemas
   triage/prompts.ts                   system prompt + user prompt builder
 data/

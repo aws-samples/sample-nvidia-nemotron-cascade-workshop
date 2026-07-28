@@ -3,10 +3,10 @@
 One tool: `cascade_classify(text, labels[])` — cost-optimal text
 classification on Amazon Bedrock.
 
-NVIDIA Nemotron Nano classifies every request. Anthropic Claude Sonnet is
-called only when Nano's probability margin over the label set shows genuine
-uncertainty. You get the strong model's quality on the hard tail without
-paying for it on every request.
+NVIDIA Nemotron 3 Nano classifies every request. Anthropic Claude Sonnet is
+called when Nano's probability margin shows uncertainty or when the caller
+activates an explicit stakes or label guardrail. You get the strong model on
+the routed tail without paying for it on every request.
 
 ## Why margin, not confidence
 
