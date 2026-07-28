@@ -17,7 +17,7 @@
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import { triageTicket } from "../lib/bedrock/client";
+import { triageTicketWithUsage } from "../lib/bedrock/client";
 import { MODELS, APPROX_COST_PER_1K_TOKENS, type ModelId } from "../lib/bedrock/models";
 import { judgeTicket, type JudgeLabel } from "../lib/triage/judge";
 import type { RoutingDecision, Ticket } from "../lib/triage/schema";
@@ -92,7 +92,10 @@ function writeCache(name: string, data: unknown) {
   writeFileSync(cachePath(name), JSON.stringify(data, null, 2) + "\n");
 }
 
-/** Crude token estimate — good enough for cost display, not for billing. */
+/**
+ * Fallback token estimate for the rare case the Converse response omits
+ * usage. Real usage from the API is preferred (see callOnce).
+ */
 function estimateTokens(ticket: Ticket, decision: RoutingDecision): number {
   const inputChars = ticket.subject.length + ticket.body.length + 200;
   const outputChars = decision.reasoning.length + 100;
@@ -101,9 +104,11 @@ function estimateTokens(ticket: Ticket, decision: RoutingDecision): number {
 
 async function callOnce(ticket: Ticket, modelId: ModelId): Promise<PerTicketResult> {
   const start = Date.now();
-  const decision = await triageTicket(ticket, { modelId });
+  const { decision, usage } = await triageTicketWithUsage(ticket, { modelId });
   const latency = Date.now() - start;
-  const tokens = estimateTokens(ticket, decision);
+  // Prefer actual token usage from the Converse response; fall back to a
+  // character-based estimate only if the service didn't report usage.
+  const tokens = usage?.totalTokens ?? estimateTokens(ticket, decision);
   return {
     ticket_id: ticket.id,
     decision,
@@ -255,7 +260,7 @@ async function main() {
       "Generating reference judge labels via Claude Opus 4.7 (temperature=0)…",
     );
     console.log(
-      "  (Opus serves as an independent judge for scoring the other configs.)",
+      "  (Opus serves as a separate judge model for scoring the other configs.)",
     );
     const labels = new Map<string, JudgeLabel>();
     for (const [i, ticket] of tickets.entries()) {

@@ -68,17 +68,30 @@ export interface TriageOptions {
   temperature?: number;
 }
 
+export interface TokenUsage {
+  inputTokens: number;
+  outputTokens: number;
+  totalTokens: number;
+}
+
+export interface TriageResult {
+  decision: RoutingDecision;
+  /** Actual token usage from the Converse response; null if unavailable. */
+  usage: TokenUsage | null;
+}
+
 /**
- * Classify a single ticket via the Bedrock Converse API.
+ * Classify a single ticket via the Bedrock Converse API, returning the
+ * decision together with the actual token usage reported by the service.
  *
  * Phase 2 (the bulk processor) should follow this same shape — call
  * `getBedrockClient()`, send a `ConverseCommand` with the routing tool,
  * extract the toolUse block, and validate against `RoutingDecisionSchema`.
  */
-export async function triageTicket(
+export async function triageTicketWithUsage(
   ticket: Ticket,
   options: TriageOptions = {},
-): Promise<RoutingDecision> {
+): Promise<TriageResult> {
   const modelId = options.modelId ?? MODELS.CLAUDE_SONNET;
 
   const messages: Message[] = [
@@ -104,24 +117,43 @@ export async function triageTicket(
 
   const response = await getBedrockClient().send(new ConverseCommand(input));
   const blocks: ContentBlock[] = response.output?.message?.content ?? [];
+  const usage: TokenUsage | null = response.usage
+    ? {
+        inputTokens: response.usage.inputTokens ?? 0,
+        outputTokens: response.usage.outputTokens ?? 0,
+        totalTokens: response.usage.totalTokens ?? 0,
+      }
+    : null;
 
   // Anthropic + Nemotron Super honor toolChoice and emit a toolUse block.
   // Nemotron Nano often emits the routing JSON as a text block instead, even
   // with toolChoice forced. Accept either — Zod validates the shape.
   const toolUse = blocks.find((b) => "toolUse" in b)?.toolUse;
   if (toolUse?.input) {
-    return RoutingDecisionSchema.parse(toolUse.input);
+    return { decision: RoutingDecisionSchema.parse(toolUse.input), usage };
   }
 
   const text = blocks.find((b) => "text" in b)?.text;
   if (text) {
     const json = extractJson(text);
-    if (json) return RoutingDecisionSchema.parse(json);
+    if (json) return { decision: RoutingDecisionSchema.parse(json), usage };
   }
 
   throw new Error(
     `Bedrock response did not include a parseable routing decision (model=${modelId})`,
   );
+}
+
+/**
+ * Back-compat wrapper: decision only. Prefer `triageTicketWithUsage` when
+ * you need real token counts for cost accounting.
+ */
+export async function triageTicket(
+  ticket: Ticket,
+  options: TriageOptions = {},
+): Promise<RoutingDecision> {
+  const { decision } = await triageTicketWithUsage(ticket, options);
+  return decision;
 }
 
 function extractJson(text: string): unknown | null {

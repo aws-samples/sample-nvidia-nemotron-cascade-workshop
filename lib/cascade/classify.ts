@@ -133,7 +133,11 @@ async function classifyOnce(
   labels: string[],
   modelId: ModelId,
   maxTokens: number,
-): Promise<{ distribution: LabelProbability[]; latencyMs: number }> {
+): Promise<{
+  distribution: LabelProbability[];
+  latencyMs: number;
+  totalTokens: number | null;
+}> {
   const input: ConverseCommandInput = {
     modelId,
     system: [{ text: CLASSIFY_SYSTEM_PROMPT }],
@@ -157,6 +161,7 @@ async function classifyOnce(
   const start = performance.now();
   const response = await getBedrockClient().send(new ConverseCommand(input));
   const latencyMs = Math.round(performance.now() - start);
+  const totalTokens = response.usage?.totalTokens ?? null;
 
   const blocks: ContentBlock[] = response.output?.message?.content ?? [];
   const toolUse = blocks.find((b) => "toolUse" in b)?.toolUse;
@@ -199,7 +204,7 @@ async function classifyOnce(
     .map((d) => ({ label: d.label, probability: d.probability / mass }))
     .sort((a, b) => b.probability - a.probability);
 
-  return { distribution, latencyMs };
+  return { distribution, latencyMs, totalTokens };
 }
 
 function margin(distribution: LabelProbability[]): number {
@@ -223,15 +228,23 @@ export async function cascadeClassify(
   // An unparseable primary response is itself an uncertainty signal —
   // the cheap model couldn't even produce a well-formed distribution.
   // Treat it as margin 0 and escalate, rather than failing the call.
-  let primaryRun: { distribution: LabelProbability[]; latencyMs: number } | null =
-    null;
+  let primaryRun: {
+    distribution: LabelProbability[];
+    latencyMs: number;
+    totalTokens: number | null;
+  } | null = null;
   try {
     primaryRun = await classifyOnce(text, labels, primary, maxTokens);
   } catch {
     primaryRun = null;
   }
   const primaryMargin = primaryRun ? margin(primaryRun.distribution) : 0;
-  const primaryCost = TOKENS_PER_CALL_K * APPROX_COST_PER_1K_TOKENS[primary];
+  // Prefer actual token usage from the Converse response; fall back to the
+  // fixed estimate only if the service didn't report usage.
+  const primaryTokensK = primaryRun?.totalTokens
+    ? primaryRun.totalTokens / 1000
+    : TOKENS_PER_CALL_K;
+  const primaryCost = primaryTokensK * APPROX_COST_PER_1K_TOKENS[primary];
   const primaryLatency = primaryRun?.latencyMs ?? 0;
 
   // Domain-tuned label escalation: if Nano's top pick is a label the
@@ -269,8 +282,11 @@ export async function cascadeClassify(
   }
 
   const escalationRun = await classifyOnce(text, labels, escalation, maxTokens);
+  const escalationTokensK = escalationRun.totalTokens
+    ? escalationRun.totalTokens / 1000
+    : TOKENS_PER_CALL_K;
   const escalationCost =
-    TOKENS_PER_CALL_K * APPROX_COST_PER_1K_TOKENS[escalation];
+    escalationTokensK * APPROX_COST_PER_1K_TOKENS[escalation];
 
   return {
     label: escalationRun.distribution[0].label,

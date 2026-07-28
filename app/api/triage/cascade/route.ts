@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server";
-import { triageTicket } from "@/lib/bedrock/client";
+import { triageTicketWithUsage, type TokenUsage } from "@/lib/bedrock/client";
 import { MODELS, APPROX_COST_PER_1K_TOKENS } from "@/lib/bedrock/models";
 import { TicketSchema } from "@/lib/triage/schema";
 import { shouldEscalate } from "@/lib/cascade/escalation";
@@ -7,10 +7,17 @@ import { shouldEscalate } from "@/lib/cascade/escalation";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const TOKENS_PER_CALL = 0.35; // approximate 0.35K tokens per call
+const FALLBACK_TOKENS_PER_CALL_K = 0.35; // used only if the API omits usage
 
-function estimateCost(modelId: keyof typeof APPROX_COST_PER_1K_TOKENS): number {
-  return TOKENS_PER_CALL * APPROX_COST_PER_1K_TOKENS[modelId];
+/** Cost from actual Converse token usage, with a fallback estimate. */
+function costFromUsage(
+  usage: TokenUsage | null,
+  modelId: keyof typeof APPROX_COST_PER_1K_TOKENS,
+): number {
+  const tokensK = usage
+    ? usage.totalTokens / 1000
+    : FALLBACK_TOKENS_PER_CALL_K;
+  return tokensK * APPROX_COST_PER_1K_TOKENS[modelId];
 }
 
 export async function POST(request: NextRequest) {
@@ -36,11 +43,12 @@ export async function POST(request: NextRequest) {
         // Step 1: Nano classification
         sendEvent("nano-start", {});
         const nanoStart = performance.now();
-        const nanoDecision = await triageTicket(ticket, {
-          modelId: MODELS.NEMOTRON_NANO,
-        });
+        const { decision: nanoDecision, usage: nanoUsage } =
+          await triageTicketWithUsage(ticket, {
+            modelId: MODELS.NEMOTRON_NANO,
+          });
         const nanoLatencyMs = Math.round(performance.now() - nanoStart);
-        const nanoCost = estimateCost(MODELS.NEMOTRON_NANO);
+        const nanoCost = costFromUsage(nanoUsage, MODELS.NEMOTRON_NANO);
         const escalating = shouldEscalate(nanoDecision);
 
         sendEvent("nano-result", {
@@ -54,11 +62,12 @@ export async function POST(request: NextRequest) {
           // Step 2: Escalate to Claude Sonnet
           sendEvent("claude-start", {});
           const claudeStart = performance.now();
-          const claudeDecision = await triageTicket(ticket, {
-            modelId: MODELS.CLAUDE_SONNET,
-          });
+          const { decision: claudeDecision, usage: claudeUsage } =
+            await triageTicketWithUsage(ticket, {
+              modelId: MODELS.CLAUDE_SONNET,
+            });
           const claudeLatencyMs = Math.round(performance.now() - claudeStart);
-          const claudeCost = estimateCost(MODELS.CLAUDE_SONNET);
+          const claudeCost = costFromUsage(claudeUsage, MODELS.CLAUDE_SONNET);
 
           sendEvent("claude-result", {
             decision: claudeDecision,

@@ -51,7 +51,7 @@ type Stage =
 
 const SAMPLE_TICKETS = [
   {
-    label: "Billing dispute (confident Nano)",
+    label: "Billing dispute (escalates: high stakes)",
     subject: "Charged twice for November",
     body: "I was charged $49.99 twice on Nov 3rd and Nov 4th for my Pro plan. I only have one account. Please refund the duplicate charge. My card ending 4242.",
     customer_tier: "pro" as const,
