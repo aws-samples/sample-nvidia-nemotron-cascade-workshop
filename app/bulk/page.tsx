@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 
 interface Ticket {
   id: string;
@@ -41,6 +41,7 @@ const MODEL_META: Record<ModelCol, { label: string; accent: string; accentDim: s
 };
 
 export default function BulkPage() {
+  const [availableTickets, setAvailableTickets] = useState<Ticket[]>([]);
   const [tickets, setTickets] = useState<Ticket[]>([]);
   const [rows, setRows] = useState<RowState[]>([]);
   const [running, setRunning] = useState(false);
@@ -55,12 +56,15 @@ export default function BulkPage() {
     routed: { totalCost: 0, totalLatency: 0, count: 0 },
   });
 
-  const loadTickets = async () => {
-    const res = await fetch("/api/tickets");
-    const data: Ticket[] = await res.json();
-    const limited = data.slice(0, 30);
-    setTickets(limited);
-    setRows(limited.map((t) => ({ ticket: t, sonnet: null, nano: null, routed: null, status: "waiting" })));
+  useEffect(() => {
+    fetch("/api/tickets")
+      .then((response) => response.json())
+      .then((data: Ticket[]) => setAvailableTickets(data.slice(0, 30)));
+  }, []);
+
+  const loadTickets = () => {
+    setTickets(availableTickets);
+    setRows(availableTickets.map((t) => ({ ticket: t, sonnet: null, nano: null, routed: null, status: "waiting" })));
     setLoaded(true);
     setError404(false);
     setStats({
@@ -187,13 +191,15 @@ export default function BulkPage() {
       <div className="flex flex-wrap items-center gap-3 mb-6">
         <button
           onClick={loadTickets}
-          disabled={running}
+          disabled={running || availableTickets.length === 0}
           className="px-5 py-2.5 rounded-lg text-sm font-semibold transition-all
             border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--text-primary)]
             hover:bg-[var(--bg-elevated)] active:scale-[0.98]
             disabled:opacity-40 disabled:cursor-not-allowed"
         >
-          Load 30 sample tickets
+          {availableTickets.length > 0
+            ? `Load ${availableTickets.length} sample tickets`
+            : "Loading sample tickets..."}
         </button>
         <button
           onClick={runBulk}
