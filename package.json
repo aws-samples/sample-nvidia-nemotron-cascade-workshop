@@ -13,10 +13,13 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest run",
+    "test:bakeoff": "vitest run tests/bakeoff.test.ts",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "bakeoff": "tsx scripts/bakeoff.ts",
-    "generate-tickets": "tsx scripts/generate-tickets.ts"
+    "generate-agent-review": "tsx scripts/generate-agent-review-packet.ts",
+    "generate-tickets": "tsx scripts/generate-tickets.ts",
+    "validate-agent-review": "tsx scripts/validate-agent-review-results.ts"
   },
   "dependencies": {
     "@aws-sdk/client-bedrock-runtime": "^3.700.0",

@@ -4,7 +4,10 @@ You are helping an attendee extend this Next.js app with a new bulk-triage
 endpoint backed by NVIDIA Nemotron and Anthropic Claude models on Amazon
 Bedrock.
 
-This file is the code-facing workshop brief. Read it before editing.
+This file is a compatibility copy of the code-facing workshop brief for tools
+that discover `CLAUDE.md`. The attendee workflow does not require Claude or any
+other specific coding assistant; the canonical manual path is
+`docs/phase2-change.md`.
 
 ## Auth Model
 
@@ -32,7 +35,8 @@ lib/
   triage/prompts.ts                   system prompt + user prompt builder
 data/
   sample-tickets.json                 hand-written synthetic dev set
-  synthetic-1k.json                   generated synthetic bake-off data
+  production-shaped-1k.json           default synthetic 85/10/5 workload
+  synthetic-1k.json                   legacy boundary-stress workload
 scripts/
   generate-tickets.ts                 deterministic dataset generator
   bakeoff.ts                          strategy comparison harness
@@ -62,6 +66,8 @@ Required behavior:
 - Call `MODELS.NEMOTRON_NANO` first for each ticket.
 - Escalate to `MODELS.CLAUDE_SONNET` when Nano returns `confidence < 0.7`,
   priority `P0` or `P1`, or `needs_human: true`.
+- Treat `customer_tier` as classifier context only; never use it as an
+  escalation rule by itself.
 - Stream the Nano result first; if escalated, stream the Claude result second.
 - Bound concurrency. Start with 8 parallel tickets.
 - Retry `ThrottlingException`, `ServiceUnavailableException`, and transient
@@ -110,9 +116,16 @@ Before calling the task done, check:
 
 ## Useful Commands
 
+The 10-ticket endpoint verification can make up to 20 paid Bedrock calls. A
+live verification is paid; confirm the dated input/output pricing snapshot,
+current Bedrock pricing, and your spend limit first. The 30-ticket bake-off
+makes 30 Nano and 30 Sonnet calls. Run it live once before attempting cache
+replay.
+
 ```bash
 npm run dev
 npm run typecheck
 npm test
-npm run bakeoff -- --dry-run --all
+npm run bakeoff -- --dataset=production --split=workshop --limit=30 --all
+npm run bakeoff -- --dataset=production --split=workshop --limit=30 --dry-run --all
 ```

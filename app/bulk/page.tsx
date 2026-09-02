@@ -1,44 +1,120 @@
 "use client";
 
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+
+const WORKSHOP_MAX_COST_PER_TICKET_USD = 0.012;
 
 interface Ticket {
   id: string;
   subject: string;
   body: string;
-  customer_tier: string;
+  customer_tier?: "free" | "pro" | "enterprise";
 }
 
-interface BulkResult {
+interface RoutingDecision {
   ticket_id: string;
-  model: "sonnet" | "nano" | "super" | "routed";
-  decision: {
-    ticket_id: string;
-    category: string;
-    priority: string;
-    confidence: number;
-    reasoning: string;
-    needs_human: boolean;
-  };
+  category: string;
+  priority: string;
+  confidence: number;
+  reasoning: string;
+  needs_human: boolean;
+}
+
+interface BulkResultBase {
+  ticket_id: string;
+  decision: RoutingDecision;
   latencyMs: number;
   cost: number;
 }
 
-type ModelCol = "sonnet" | "nano" | "routed";
+interface NanoBulkResult extends BulkResultBase {
+  model: "nano";
+  escalated: boolean;
+}
+
+interface ClaudeBulkResult extends BulkResultBase {
+  model: "claude";
+}
+
+type BulkResult = NanoBulkResult | ClaudeBulkResult;
+type RowStatus = "waiting" | "escalating" | "done" | "error";
 
 interface RowState {
   ticket: Ticket;
-  sonnet: BulkResult | null;
-  nano: BulkResult | null;
-  routed: BulkResult | null;
-  status: "waiting" | "done" | "error";
+  nano: NanoBulkResult | null;
+  claude: ClaudeBulkResult | null;
+  status: RowStatus;
 }
 
-const MODEL_META: Record<ModelCol, { label: string; accent: string; accentDim: string }> = {
-  sonnet: { label: "Sonnet 4.6", accent: "var(--sonnet-amber)", accentDim: "var(--sonnet-amber-dim)" },
-  nano: { label: "Nemotron 3 Nano", accent: "var(--nano-green)", accentDim: "var(--nano-green-dim)" },
-  routed: { label: "Routed", accent: "var(--routed-teal)", accentDim: "var(--routed-teal-dim)" },
-};
+const DISPLAY_META = {
+  nano: {
+    label: "Nano First Pass",
+    accent: "var(--nano-green)",
+    accentDim: "var(--nano-green-dim)",
+  },
+  final: {
+    label: "Final Decision",
+    accent: "var(--sonnet-amber)",
+    accentDim: "var(--sonnet-amber-dim)",
+  },
+  routing: {
+    label: "Routing",
+    accent: "var(--routed-teal)",
+    accentDim: "var(--routed-teal-dim)",
+  },
+} as const;
+
+const createRows = (tickets: Ticket[]): RowState[] =>
+  tickets.map((ticket) => ({
+    ticket,
+    nano: null,
+    claude: null,
+    status: "waiting",
+  }));
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null;
+}
+
+function isBulkResult(value: unknown): value is BulkResult {
+  if (!isRecord(value) || !isRecord(value.decision)) return false;
+
+  const decision = value.decision;
+  const sharedFieldsAreValid =
+    typeof value.ticket_id === "string" &&
+    (value.model === "nano" || value.model === "claude") &&
+    typeof value.latencyMs === "number" &&
+    typeof value.cost === "number" &&
+    decision.ticket_id === value.ticket_id &&
+    typeof decision.category === "string" &&
+    typeof decision.priority === "string" &&
+    typeof decision.confidence === "number" &&
+    typeof decision.reasoning === "string" &&
+    typeof decision.needs_human === "boolean";
+
+  if (!sharedFieldsAreValid) return false;
+  return value.model === "claude" || typeof value.escalated === "boolean";
+}
+
+function getEscalationReasons(result: NanoBulkResult): string[] {
+  const reasons: string[] = [];
+
+  if (result.decision.confidence < 0.7) {
+    reasons.push(`Low confidence (${result.decision.confidence.toFixed(2)} < 0.70)`);
+  }
+  if (result.decision.priority === "P0" || result.decision.priority === "P1") {
+    reasons.push(`High priority (${result.decision.priority})`);
+  }
+  if (result.decision.needs_human) {
+    reasons.push("Human review requested");
+  }
+
+  return reasons;
+}
+
+function hasValidEscalationFlag(result: NanoBulkResult): boolean {
+  return result.escalated === (getEscalationReasons(result).length > 0);
+}
 
 export default function BulkPage() {
   const [availableTickets, setAvailableTickets] = useState<Ticket[]>([]);
@@ -46,15 +122,8 @@ export default function BulkPage() {
   const [rows, setRows] = useState<RowState[]>([]);
   const [running, setRunning] = useState(false);
   const [loaded, setLoaded] = useState(false);
-  const [error404, setError404] = useState(false);
-  const abortRef = useRef<AbortController | null>(null);
-
-  // Aggregate stats
-  const [stats, setStats] = useState<Record<ModelCol, { totalCost: number; totalLatency: number; count: number }>>({
-    sonnet: { totalCost: 0, totalLatency: 0, count: 0 },
-    nano: { totalCost: 0, totalLatency: 0, count: 0 },
-    routed: { totalCost: 0, totalLatency: 0, count: 0 },
-  });
+  const [costAcknowledged, setCostAcknowledged] = useState(false);
+  const [endpointError, setEndpointError] = useState<string | null>(null);
 
   useEffect(() => {
     fetch("/api/tickets")
@@ -62,55 +131,115 @@ export default function BulkPage() {
       .then((data: Ticket[]) => setAvailableTickets(data.slice(0, 30)));
   }, []);
 
+  const summary = useMemo(() => {
+    const nanoResults = rows.flatMap((row) => (row.nano ? [row.nano] : []));
+    const claudeResults = rows.flatMap((row) => (row.claude ? [row.claude] : []));
+    const escalatedCount = nanoResults.filter((result) => result.escalated).length;
+    const completedRows = rows.filter((row) => row.status === "done");
+    const nanoLatency = nanoResults.reduce((total, result) => total + result.latencyMs, 0);
+    const claudeLatency = claudeResults.reduce((total, result) => total + result.latencyMs, 0);
+
+    return {
+      nanoCount: nanoResults.length,
+      nanoCost: nanoResults.reduce((total, result) => total + result.cost, 0),
+      nanoAvgLatency: nanoResults.length ? Math.round(nanoLatency / nanoResults.length) : 0,
+      claudeCount: claudeResults.length,
+      claudeCost: claudeResults.reduce((total, result) => total + result.cost, 0),
+      claudeAvgLatency: claudeResults.length ? Math.round(claudeLatency / claudeResults.length) : 0,
+      escalatedCount,
+      escalationRate: nanoResults.length ? Math.round((escalatedCount / nanoResults.length) * 100) : 0,
+      completedCount: completedRows.length,
+      totalCost:
+        nanoResults.reduce((total, result) => total + result.cost, 0) +
+        claudeResults.reduce((total, result) => total + result.cost, 0),
+      avgModelTime: completedRows.length
+        ? Math.round(
+            completedRows.reduce(
+              (total, row) => total + (row.nano?.latencyMs ?? 0) + (row.claude?.latencyMs ?? 0),
+              0,
+            ) / completedRows.length,
+          )
+        : 0,
+    };
+  }, [rows]);
+
   const loadTickets = () => {
     setTickets(availableTickets);
-    setRows(availableTickets.map((t) => ({ ticket: t, sonnet: null, nano: null, routed: null, status: "waiting" })));
+    setRows(createRows(availableTickets));
     setLoaded(true);
-    setError404(false);
-    setStats({
-      sonnet: { totalCost: 0, totalLatency: 0, count: 0 },
-      nano: { totalCost: 0, totalLatency: 0, count: 0 },
-      routed: { totalCost: 0, totalLatency: 0, count: 0 },
-    });
+    setCostAcknowledged(false);
+    setEndpointError(null);
   };
 
   const runBulk = useCallback(async () => {
     if (!tickets.length) return;
-    setRunning(true);
-    setError404(false);
-    setStats({
-      sonnet: { totalCost: 0, totalLatency: 0, count: 0 },
-      nano: { totalCost: 0, totalLatency: 0, count: 0 },
-      routed: { totalCost: 0, totalLatency: 0, count: 0 },
-    });
-    // Reset rows
-    setRows(tickets.map((t) => ({ ticket: t, sonnet: null, nano: null, routed: null, status: "waiting" })));
 
-    const controller = new AbortController();
-    abortRef.current = controller;
+    setRunning(true);
+    setEndpointError(null);
+    setRows(createRows(tickets));
+
+    const applyResult = (result: BulkResult) => {
+      setRows((previousRows) =>
+        previousRows.map((row) => {
+          if (row.ticket.id !== result.ticket_id) return row;
+
+          if (result.model === "nano") {
+            if (!hasValidEscalationFlag(result)) {
+              return { ...row, nano: result, status: "error" };
+            }
+            return {
+              ...row,
+              nano: result,
+              status: result.escalated
+                ? row.claude
+                  ? "done"
+                  : "escalating"
+                : row.claude
+                  ? "error"
+                  : "done",
+            };
+          }
+
+          return {
+            ...row,
+            claude: result,
+            status: row.nano?.escalated ? "done" : "error",
+          };
+        }),
+      );
+    };
+
+    const consumeLine = (line: string) => {
+      if (!line.trim()) return;
+      try {
+        const parsed: unknown = JSON.parse(line);
+        if (isBulkResult(parsed)) applyResult(parsed);
+      } catch {
+        // A malformed record is ignored; any unresolved row is marked failed when the stream closes.
+      }
+    };
 
     try {
-      const res = await fetch("/api/triage/bulk", {
+      const response = await fetch("/api/triage/bulk", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ tickets }),
-        signal: controller.signal,
       });
 
-      if (res.status === 404) {
-        setError404(true);
-        setRunning(false);
+      if (!response.ok) {
+        setEndpointError(
+          response.status === 404
+            ? "/api/triage/bulk not found"
+            : `Bulk triage request failed (${response.status})`,
+        );
         return;
       }
 
-      if (!res.ok) {
-        setError404(true);
-        setRunning(false);
+      const reader = response.body?.getReader();
+      if (!reader) {
+        setEndpointError("Bulk triage response did not include a readable stream");
         return;
       }
-
-      const reader = res.body?.getReader();
-      if (!reader) { setRunning(false); return; }
 
       const decoder = new TextDecoder();
       let buffer = "";
@@ -121,53 +250,30 @@ export default function BulkPage() {
 
         buffer += decoder.decode(value, { stream: true });
         const lines = buffer.split("\n");
-        buffer = lines.pop() || "";
-
-        for (const line of lines) {
-          if (!line.trim()) continue;
-          try {
-            const result: BulkResult = JSON.parse(line);
-            const col: ModelCol = result.model === "super" ? "routed" : result.model as ModelCol;
-
-            setRows((prev) =>
-              prev.map((row) => {
-                if (row.ticket.id !== result.ticket_id) return row;
-                const updated = { ...row, [col]: result };
-                // Check if all columns filled
-                const filledCount = (updated.sonnet ? 1 : 0) + (updated.nano ? 1 : 0) + (updated.routed ? 1 : 0);
-                if (filledCount === 3) updated.status = "done";
-                return updated;
-              })
-            );
-
-            setStats((prev) => ({
-              ...prev,
-              [col]: {
-                totalCost: prev[col].totalCost + result.cost,
-                totalLatency: prev[col].totalLatency + result.latencyMs,
-                count: prev[col].count + 1,
-              },
-            }));
-          } catch {
-            // Skip malformed lines
-          }
-        }
+        buffer = lines.pop() ?? "";
+        lines.forEach(consumeLine);
       }
-    } catch (err: unknown) {
-      if (err instanceof Error && err.name === "AbortError") return;
-      setError404(true);
+
+      buffer += decoder.decode();
+      consumeLine(buffer);
+    } catch {
+      setEndpointError("Unable to read the bulk triage stream");
     } finally {
       setRunning(false);
-      // Mark remaining as done
-      setRows((prev) => prev.map((r) => (r.status === "waiting" ? { ...r, status: "done" } : r)));
+      setRows((previousRows) =>
+        previousRows.map((row) =>
+          row.status === "waiting" || row.status === "escalating"
+            ? { ...row, status: "error" }
+            : row,
+        ),
+      );
     }
   }, [tickets]);
 
-  const avgLatency = (col: ModelCol) => stats[col].count > 0 ? Math.round(stats[col].totalLatency / stats[col].count) : 0;
+  const hasResults = summary.nanoCount > 0 || summary.claudeCount > 0;
 
   return (
     <div className="min-h-screen p-6 md:p-10 max-w-[1600px] mx-auto">
-      {/* Header */}
       <header className="mb-8">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-2 h-2 rounded-full bg-[var(--nano-green)]" />
@@ -178,16 +284,12 @@ export default function BulkPage() {
         <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-[var(--text-primary)]">
           Bulk Triage
         </h1>
-        <p className="mt-2 text-[var(--text-secondary)] text-base max-w-2xl">
-          Stream-classify tickets across three model configs. Build{" "}
-          <code className="px-1.5 py-0.5 rounded bg-[var(--bg-elevated)] font-[family-name:var(--font-mono)] text-xs text-[var(--nano-green)]">
-            /api/triage/bulk
-          </code>{" "}
-          in Phase 2 to light this up.
+        <p className="mt-2 text-[var(--text-secondary)] text-base max-w-3xl">
+          Stream Nano first-pass decisions and watch low-confidence or high-stakes tickets route to
+          Sonnet for the final decision.
         </p>
       </header>
 
-      {/* Controls */}
       <div className="flex flex-wrap items-center gap-3 mb-6">
         <button
           onClick={loadTickets}
@@ -203,7 +305,7 @@ export default function BulkPage() {
         </button>
         <button
           onClick={runBulk}
-          disabled={!loaded || running}
+          disabled={!loaded || running || !costAcknowledged}
           className="px-5 py-2.5 rounded-lg text-sm font-semibold transition-all
             bg-[var(--nano-green)] text-[oklch(15%_0.01_145)]
             hover:brightness-110 active:scale-[0.98]
@@ -211,111 +313,98 @@ export default function BulkPage() {
         >
           {running ? "Running..." : "Run Bulk Triage"}
         </button>
-        {loaded && (
-          <span className="text-xs text-[var(--text-muted)]">
-            {tickets.length} tickets loaded
-          </span>
-        )}
+        {loaded && <span className="text-xs text-[var(--text-muted)]">{tickets.length} tickets loaded</span>}
       </div>
 
-      {/* 404 Empty State */}
-      {error404 && (
+      {loaded && (
+        <label className="mb-6 flex max-w-3xl items-start gap-3 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-surface)] p-4 text-sm text-[var(--text-secondary)]">
+          <input
+            type="checkbox"
+            checked={costAcknowledged}
+            onChange={(event) => setCostAcknowledged(event.target.checked)}
+            disabled={running}
+            className="mt-0.5 h-4 w-4 accent-[var(--nano-green)]"
+          />
+          <span>
+            I understand this run invokes paid Amazon Bedrock APIs. For {tickets.length} tickets,
+            it makes {tickets.length} Nano calls and up to {tickets.length} additional Sonnet calls,
+            depending on escalation. Based on the sample pricing snapshot, budget up to about ${
+              (tickets.length * WORKSHOP_MAX_COST_PER_TICKET_USD).toFixed(2)
+            } and 1–5 minutes; actual pricing, tokens, quotas, and latency vary.
+          </span>
+        </label>
+      )}
+
+      {endpointError && (
         <div className="animate-snap-in rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-surface)] p-8 mb-6 text-center">
           <div className="text-4xl mb-3">🚧</div>
-          <p className="text-lg font-semibold text-[var(--text-primary)] mb-2">
-            /api/triage/bulk not found
-          </p>
+          <p className="text-lg font-semibold text-[var(--text-primary)] mb-2">{endpointError}</p>
           <p className="text-sm text-[var(--text-secondary)] max-w-md mx-auto">
-            Build it in Phase 2 and this table will light up. The endpoint should accept{" "}
-            <code className="px-1 py-0.5 rounded bg-[var(--bg-deep)] font-[family-name:var(--font-mono)] text-xs">
-              POST {"{"} tickets: Ticket[] {"}"}
-            </code>{" "}
-            and return NDJSON.
+            The endpoint must accept <code className="px-1 py-0.5 rounded bg-[var(--bg-deep)] font-[family-name:var(--font-mono)] text-xs">POST {"{"} tickets: Ticket[] {"}"}</code> and return one Nano or Claude event per NDJSON line.
           </p>
         </div>
       )}
 
-      {/* Table */}
-      {loaded && !error404 && (
+      {loaded && !endpointError && (
         <div className="rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-surface)] overflow-hidden">
           <div className="overflow-x-auto max-h-[60vh] overflow-y-auto">
             <table className="w-full text-sm">
               <thead className="sticky top-0 z-10 bg-[var(--bg-elevated)]">
                 <tr className="border-b border-[var(--border-subtle)]">
-                  <th className="text-left px-4 py-3 text-[10px] uppercase tracking-[0.12em] text-[var(--text-muted)] font-medium w-12">
-                    #
-                  </th>
-                  <th className="text-left px-4 py-3 text-[10px] uppercase tracking-[0.12em] text-[var(--text-muted)] font-medium min-w-[200px]">
-                    Subject
-                  </th>
-                  {(["sonnet", "nano", "routed"] as ModelCol[]).map((col) => (
-                    <th key={col} className="text-left px-4 py-3 min-w-[180px]">
+                  <th className="text-left px-4 py-3 text-[10px] uppercase tracking-[0.12em] text-[var(--text-muted)] font-medium w-12">#</th>
+                  <th className="text-left px-4 py-3 text-[10px] uppercase tracking-[0.12em] text-[var(--text-muted)] font-medium min-w-[200px]">Subject</th>
+                  {Object.values(DISPLAY_META).map((meta) => (
+                    <th key={meta.label} className="text-left px-4 py-3 min-w-[210px]">
                       <div className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full" style={{ background: MODEL_META[col].accent }} />
-                        <span className="text-[10px] uppercase tracking-[0.12em] text-[var(--text-muted)] font-medium">
-                          {MODEL_META[col].label}
-                        </span>
+                        <div className="w-1.5 h-1.5 rounded-full" style={{ background: meta.accent }} />
+                        <span className="text-[10px] uppercase tracking-[0.12em] text-[var(--text-muted)] font-medium">{meta.label}</span>
                       </div>
                     </th>
                   ))}
-                  <th className="text-left px-4 py-3 text-[10px] uppercase tracking-[0.12em] text-[var(--text-muted)] font-medium w-20">
-                    Status
-                  </th>
+                  <th className="text-left px-4 py-3 text-[10px] uppercase tracking-[0.12em] text-[var(--text-muted)] font-medium w-20">Status</th>
                 </tr>
               </thead>
               <tbody>
-                {rows.map((row, idx) => (
-                  <TableRow key={row.ticket.id} row={row} index={idx} />
-                ))}
+                {rows.map((row, index) => <TableRow key={row.ticket.id} row={row} index={index} />)}
               </tbody>
             </table>
           </div>
         </div>
       )}
 
-      {/* Empty table placeholder */}
-      {!loaded && !error404 && (
+      {!loaded && !endpointError && (
         <div className="rounded-xl border border-dashed border-[var(--border-subtle)] bg-[var(--bg-surface)] p-12 text-center">
-          <p className="text-sm text-[var(--text-muted)]">
-            Load sample tickets to populate the table
-          </p>
+          <p className="text-sm text-[var(--text-muted)]">Load sample tickets to populate the table</p>
         </div>
       )}
 
-      {/* Footer Stats */}
-      {loaded && (stats.sonnet.count > 0 || stats.nano.count > 0 || stats.routed.count > 0) && (
+      {loaded && hasResults && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-          {(["sonnet", "nano", "routed"] as ModelCol[]).map((col) => (
-            <div
-              key={col}
-              className="animate-snap-in rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-surface)] p-5"
-            >
-              <div className="flex items-center gap-2 mb-3">
-                <div className="w-2 h-2 rounded-full" style={{ background: MODEL_META[col].accent }} />
-                <span className="text-xs font-semibold text-[var(--text-primary)]">{MODEL_META[col].label}</span>
-              </div>
-              <div className="grid grid-cols-3 gap-3">
-                <div>
-                  <span className="text-[10px] uppercase tracking-[0.08em] text-[var(--text-muted)] block">Cost</span>
-                  <span className="font-[family-name:var(--font-mono)] text-sm font-medium text-[var(--text-primary)]">
-                    ${stats[col].totalCost.toFixed(4)}
-                  </span>
-                </div>
-                <div>
-                  <span className="text-[10px] uppercase tracking-[0.08em] text-[var(--text-muted)] block">Avg Latency</span>
-                  <span className="font-[family-name:var(--font-mono)] text-sm font-medium text-[var(--text-primary)]">
-                    {avgLatency(col).toLocaleString()}ms
-                  </span>
-                </div>
-                <div>
-                  <span className="text-[10px] uppercase tracking-[0.08em] text-[var(--text-muted)] block">Processed</span>
-                  <span className="font-[family-name:var(--font-mono)] text-sm font-medium text-[var(--text-primary)]">
-                    {stats[col].count}/{tickets.length}
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
+          <SummaryCard
+            meta={DISPLAY_META.nano}
+            values={[
+              ["Estimated cost", `$${summary.nanoCost.toFixed(4)}`],
+              ["Avg latency", `${summary.nanoAvgLatency.toLocaleString()}ms`],
+              ["First passes", `${summary.nanoCount}/${tickets.length}`],
+            ]}
+          />
+          <SummaryCard
+            meta={DISPLAY_META.final}
+            values={[
+              ["Estimated cost", `$${summary.claudeCost.toFixed(4)}`],
+              ["Avg latency", `${summary.claudeAvgLatency.toLocaleString()}ms`],
+              ["Sonnet calls", `${summary.claudeCount}/${summary.escalatedCount}`],
+            ]}
+          />
+          <SummaryCard
+            meta={DISPLAY_META.routing}
+            values={[
+              ["Total estimated cost", `$${summary.totalCost.toFixed(4)}`],
+              ["Escalated", `${summary.escalatedCount} (${summary.escalationRate}%)`],
+              ["Resolved", `${summary.completedCount}/${tickets.length}`],
+            ]}
+            footer={`Avg model time ${summary.avgModelTime.toLocaleString()}ms per resolved ticket`}
+          />
         </div>
       )}
     </div>
@@ -328,54 +417,139 @@ function TableRow({ row, index }: { row: RowState; index: number }) {
       className="border-b border-[var(--border-subtle)] last:border-b-0 animate-snap-in"
       style={{ animationDelay: `${index * 30}ms` }}
     >
-      <td className="px-4 py-3 font-[family-name:var(--font-mono)] text-xs text-[var(--text-muted)]">
-        {row.ticket.id.replace("T-", "")}
-      </td>
-      <td className="px-4 py-3 text-[var(--text-secondary)] truncate max-w-[250px]" title={row.ticket.subject}>
-        {row.ticket.subject}
-      </td>
-      {(["sonnet", "nano", "routed"] as ModelCol[]).map((col) => (
-        <td key={col} className="px-4 py-3">
-          <ModelCell result={row[col]} col={col} />
-        </td>
-      ))}
-      <td className="px-4 py-3">
-        <StatusBadge status={row.status} />
-      </td>
+      <td className="px-4 py-3 font-[family-name:var(--font-mono)] text-xs text-[var(--text-muted)]">{row.ticket.id.replace("T-", "")}</td>
+      <td className="px-4 py-3 text-[var(--text-secondary)] truncate max-w-[250px]" title={row.ticket.subject}>{row.ticket.subject}</td>
+      <td className="px-4 py-3"><DecisionCell result={row.nano} modelLabel="Nano" accent="nano" /></td>
+      <td className="px-4 py-3"><FinalDecisionCell row={row} /></td>
+      <td className="px-4 py-3"><RoutingCell row={row} /></td>
+      <td className="px-4 py-3"><StatusBadge status={row.status} /></td>
     </tr>
   );
 }
 
-function ModelCell({ result, col }: { result: BulkResult | null; col: ModelCol }) {
-  if (!result) {
-    return (
-      <div className="border border-dashed border-[var(--border-subtle)] rounded-lg h-10 flex items-center justify-center">
-        <span className="text-[10px] text-[var(--text-muted)]">—</span>
-      </div>
-    );
-  }
+function DecisionCell({
+  result,
+  modelLabel,
+  accent,
+}: {
+  result: BulkResult | null;
+  modelLabel: string;
+  accent: "nano" | "final";
+}) {
+  if (!result) return <EmptyCell />;
 
-  const meta = MODEL_META[col];
+  const meta = DISPLAY_META[accent];
   return (
-    <div className="animate-snap-in flex items-center gap-2">
-      <span
-        className="text-[11px] font-medium px-2 py-0.5 rounded"
-        style={{ background: meta.accentDim, color: meta.accent }}
-      >
-        {result.decision.category}
-      </span>
-      <span className="text-[10px] font-medium text-[var(--text-muted)] uppercase">
-        {result.decision.priority}
-      </span>
-      <span className="font-[family-name:var(--font-mono)] text-[10px] text-[var(--text-muted)]">
-        {result.latencyMs}ms
-      </span>
+    <div className="animate-snap-in">
+      <div className="flex items-center gap-2">
+        <span className="text-[11px] font-medium px-2 py-0.5 rounded" style={{ background: meta.accentDim, color: meta.accent }}>{result.decision.category}</span>
+        <span className="text-[10px] font-medium text-[var(--text-muted)] uppercase">{result.decision.priority}</span>
+      </div>
+      <div className="mt-1 flex items-center gap-2 font-[family-name:var(--font-mono)] text-[10px] text-[var(--text-muted)]">
+        <span>{modelLabel}</span>
+        <span>{Math.round(result.decision.confidence * 100)}%</span>
+        <span>{result.latencyMs}ms</span>
+      </div>
     </div>
   );
 }
 
-function StatusBadge({ status }: { status: "waiting" | "done" | "error" }) {
+function FinalDecisionCell({ row }: { row: RowState }) {
+  if (!row.nano) {
+    if (row.claude) return <ContractMismatch message="Sonnet arrived before Nano" />;
+    return <EmptyCell />;
+  }
+
+  if (!hasValidEscalationFlag(row.nano)) {
+    return <ContractMismatch message="Nano escalation flag violates the core routing policy" />;
+  }
+
+  if (!row.nano.escalated) {
+    if (row.claude) return <ContractMismatch message="Unexpected Sonnet event" />;
+    return <DecisionCell result={row.nano} modelLabel="Nano final" accent="nano" />;
+  }
+
+  if (!row.claude) {
+    return (
+      <div className="border border-dashed border-[var(--sonnet-amber-dim)] rounded-lg min-h-10 px-3 py-2 flex items-center">
+        <span className="text-[10px] text-[var(--sonnet-amber)]">Awaiting Sonnet final decision…</span>
+      </div>
+    );
+  }
+
+  return <DecisionCell result={row.claude} modelLabel="Sonnet final" accent="final" />;
+}
+
+function RoutingCell({ row }: { row: RowState }) {
+  if (!row.nano) return <EmptyCell />;
+
+  const reasons = getEscalationReasons(row.nano);
+  if (!hasValidEscalationFlag(row.nano)) {
+    return <ContractMismatch message="Escalation flag does not match the core routing policy" />;
+  }
+  if (!row.nano.escalated) {
+    return (
+      <span className="inline-flex text-[11px] font-medium px-2 py-1 rounded bg-[var(--nano-green-dim)] text-[var(--nano-green)]">
+        Nano only
+      </span>
+    );
+  }
+
+  return (
+    <div className="animate-snap-in">
+      <span className="inline-flex text-[11px] font-medium px-2 py-1 rounded bg-[var(--routed-teal-dim)] text-[var(--routed-teal)]">
+        Nano → Sonnet
+      </span>
+      <div className="mt-1 text-[10px] leading-4 text-[var(--text-muted)]">
+        {reasons.length > 0 ? reasons.join(" · ") : "Escalated; no matching core reason in event"}
+      </div>
+    </div>
+  );
+}
+
+function EmptyCell() {
+  return (
+    <div className="border border-dashed border-[var(--border-subtle)] rounded-lg h-10 flex items-center justify-center">
+      <span className="text-[10px] text-[var(--text-muted)]">—</span>
+    </div>
+  );
+}
+
+function ContractMismatch({ message }: { message: string }) {
+  return <span className="text-[10px] text-red-400">{message}</span>;
+}
+
+function StatusBadge({ status }: { status: RowStatus }) {
   if (status === "waiting") return <span className="text-xs text-[var(--text-muted)]">⏳</span>;
+  if (status === "escalating") return <span className="text-xs text-[var(--sonnet-amber)]" title="Waiting for Sonnet">↗</span>;
   if (status === "done") return <span className="text-xs text-[var(--nano-green)]">✓</span>;
-  return <span className="text-xs text-red-400">✗</span>;
+  return <span className="text-xs text-red-400" title="Stream ended before a valid final result">✗</span>;
+}
+
+function SummaryCard({
+  meta,
+  values,
+  footer,
+}: {
+  meta: { label: string; accent: string };
+  values: [string, string][];
+  footer?: string;
+}) {
+  return (
+    <div className="animate-snap-in rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-surface)] p-5">
+      <div className="flex items-center gap-2 mb-3">
+        <div className="w-2 h-2 rounded-full" style={{ background: meta.accent }} />
+        <span className="text-xs font-semibold text-[var(--text-primary)]">{meta.label}</span>
+      </div>
+      <div className="grid grid-cols-3 gap-3">
+        {values.map(([label, value]) => (
+          <div key={label}>
+            <span className="text-[10px] uppercase tracking-[0.08em] text-[var(--text-muted)] block">{label}</span>
+            <span className="font-[family-name:var(--font-mono)] text-sm font-medium text-[var(--text-primary)]">{value}</span>
+          </div>
+        ))}
+      </div>
+      {footer && <p className="mt-3 text-[10px] text-[var(--text-muted)]">{footer}</p>}
+    </div>
+  );
 }

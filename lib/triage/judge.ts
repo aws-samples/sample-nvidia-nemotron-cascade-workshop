@@ -6,23 +6,28 @@ import {
 import { z } from "zod";
 import { MODELS } from "@/lib/bedrock/models";
 import { ROUTING_TOOL } from "@/lib/bedrock/client";
-import { TICKET_CATEGORIES, TICKET_PRIORITIES, type Ticket } from "./schema";
+import {
+  TRIAGE_CLASSIFICATION_GUIDANCE,
+  TICKET_CATEGORIES,
+  TICKET_PRIORITIES,
+  type Ticket,
+} from "./schema";
 import { userPromptForTicket } from "./prompts";
 
 /**
  * Reference judge for the bake-off.
  *
- * Claude Opus 4.7 provides reference labels for the bake-off. The bake-off
- * measures how often each tested config (Sonnet 4.6, Nano 30B, and the
- * Nano→Claude cascade) agrees with Opus's judgment.
+ * Claude Opus 4.7 can provide optional reference/adjudication labels. These
+ * labels are not treated as unquestioned ground truth.
  */
 
-const JUDGE_SYSTEM_PROMPT = `You are an independent triage classifier providing reference labels
+export const JUDGE_PROMPT_VERSION = "triage-judge-prompt-v2";
+
+export const JUDGE_SYSTEM_PROMPT = `You are an independent triage classifier providing optional reference labels
 for B2B SaaS support tickets. You will be used to grade other models — be
 careful, deliberate, and conservative.
 
-Categories: ${TICKET_CATEGORIES.join(", ")}
-Priorities: ${TICKET_PRIORITIES.join(", ")} (P0=critical/outage, P1=urgent, P2=normal, P3=low)
+${TRIAGE_CLASSIFICATION_GUIDANCE}
 
 If the ticket mentions data loss, security incident, or revenue-impacting
 outage, treat it as P0 and set needs_human=true.
@@ -73,6 +78,6 @@ export async function judgeTicket(ticket: Ticket): Promise<JudgeLabel> {
     );
   }
   const raw = toolUse.input as Record<string, unknown>;
-  if (typeof raw.ticket_id !== "string") raw.ticket_id = ticket.id;
+  raw.ticket_id = ticket.id;
   return JudgeLabelSchema.parse(raw);
 }

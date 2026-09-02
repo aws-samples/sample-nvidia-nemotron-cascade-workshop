@@ -106,7 +106,7 @@ export async function triageTicketWithUsage(
     system: [{ text: TRIAGE_SYSTEM_PROMPT }],
     messages,
     inferenceConfig: {
-      maxTokens: options.maxTokens ?? 512,
+      maxTokens: options.maxTokens ?? 1024,
       temperature: options.temperature ?? 0,
     },
     toolConfig: {

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const TABS = [
   { href: "/", label: "Demo" },
   { href: "/bulk", label: "Bulk" },
+  { href: "/review", label: "Review" },
 ];
 
 export default function Nav() {

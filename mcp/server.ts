@@ -2,7 +2,7 @@
 /**
  * cascade-classify MCP server.
  *
- * Exposes one tool: `cascade_classify(text, labels[])` — cost-optimal text
+ * Exposes one tool: `cascade_classify(text, labels[])` — cost-aware text
  * classification on Amazon Bedrock. NVIDIA Nemotron 3 Nano classifies every
  * request; Anthropic Claude Sonnet is called when Nano's probability margin
  * shows uncertainty or when an explicit caller guardrail requests escalation.
@@ -92,7 +92,10 @@ server.registerTool(
               model_used: result.modelUsed,
               primary_margin: Number(result.primaryMargin.toFixed(3)),
               latency_ms: result.latencyMs,
-              approx_cost_usd: Number(result.approxCostUsd.toFixed(6)),
+              approx_cost_usd:
+                result.approxCostUsd === null
+                  ? null
+                  : Number(result.approxCostUsd.toFixed(6)),
             },
             null,
             2,

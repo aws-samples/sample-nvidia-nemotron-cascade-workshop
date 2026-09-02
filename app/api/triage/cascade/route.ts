@@ -1,23 +1,17 @@
 import { NextRequest } from "next/server";
 import { triageTicketWithUsage, type TokenUsage } from "@/lib/bedrock/client";
-import { MODELS, APPROX_COST_PER_1K_TOKENS } from "@/lib/bedrock/models";
+import { MODELS, estimateModelCostUsd, type ModelId } from "@/lib/bedrock/models";
 import { TicketSchema } from "@/lib/triage/schema";
 import { shouldEscalate } from "@/lib/cascade/escalation";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const FALLBACK_TOKENS_PER_CALL_K = 0.35; // used only if the API omits usage
-
-/** Cost from actual Converse token usage, with a fallback estimate. */
 function costFromUsage(
   usage: TokenUsage | null,
-  modelId: keyof typeof APPROX_COST_PER_1K_TOKENS,
-): number {
-  const tokensK = usage
-    ? usage.totalTokens / 1000
-    : FALLBACK_TOKENS_PER_CALL_K;
-  return tokensK * APPROX_COST_PER_1K_TOKENS[modelId];
+  modelId: ModelId,
+): number | null {
+  return usage ? estimateModelCostUsd(modelId, usage) : null;
 }
 
 export async function POST(request: NextRequest) {
@@ -80,7 +74,10 @@ export async function POST(request: NextRequest) {
             modelUsed: "claude-sonnet",
             escalated: true,
             totalLatencyMs: nanoLatencyMs + claudeLatencyMs,
-            totalCost: nanoCost + claudeCost,
+            totalCost:
+              nanoCost === null || claudeCost === null
+                ? null
+                : nanoCost + claudeCost,
           });
         } else {
           // Nano was confident — done

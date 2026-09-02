@@ -1,83 +1,248 @@
 # Troubleshooting
 
-## AWS / Bedrock
+Use repository-owned synthetic tickets while diagnosing the workshop. Do not
+paste customer ticket data into commands, screenshots, logs, or issue reports.
+
+## AWS Credentials And Bedrock
 
 ### `request could not be signed with token`
 
-Check for an empty bearer-token env var:
+An empty or stale bearer-token variable can override the normal credential
+chain:
 
 ```bash
 unset AWS_BEARER_TOKEN_BEDROCK
-```
-
-Then verify credentials:
-
-```bash
 aws sts get-caller-identity
 ```
 
-If that fails, refresh credentials using your normal AWS workflow.
+If identity lookup fails, refresh the selected profile or temporary
+credentials before restarting `npm run dev`.
 
-### `AccessDeniedException` on a model
+### `AccessDeniedException` On A Model Or Inference Profile
 
-The model is not enabled for the account. In the Bedrock console, navigate to
-your configured Region (sample default: `us-west-2`), open Model access, and
-enable the model IDs listed in `lib/bedrock/models.ts`.
+Check all four items:
+
+1. `AWS_REGION` is the Region used by the app.
+2. The model or inference profile in `lib/bedrock/models.ts` is available to
+   the account in that Region.
+3. The runtime principal has `bedrock:InvokeModel` on the exact profile and
+   required foundation-model resources.
+4. If a Guardrail is configured, the principal can use that Guardrail and the
+   ID/version pair exists in the same Region.
+
+Do not fix this by granting `bedrock:*`. Use the least-privilege template and
+official links in [production.md](production.md).
 
 ### `ValidationException: model not supported in this region`
 
-The configured Region does not support one of the required models. Set
-`AWS_REGION` to a Region where both Nemotron 3 Nano and Claude Sonnet (or their
-inference profiles) are available. Example using the sample default:
+Set a Region where both headline models or their inference profiles are
+available, then restart the dev server:
 
 ```bash
 export AWS_REGION=us-west-2
+npm run dev
 ```
+
+Confirm availability and model IDs rather than assuming the sample default is
+valid for every account.
 
 ### `ThrottlingException` During Bulk Triage
 
-The endpoint is probably sending too many parallel Bedrock calls.
+- Start with 10 tickets, not the 1,000-ticket dataset.
+- Keep the workshop concurrency bounded near eight.
+- Retry only transient failures with exponential backoff, full jitter, and a
+  finite cap.
+- Avoid stacking large SDK and application retry budgets.
+- Check model-specific quotas and request an increase before a workshop.
 
-Fixes:
-
-- Limit concurrency to roughly 8 parallel tickets.
-- Retry throttling with exponential backoff and full jitter.
-- Test with 10-20 tickets before using the full synthetic dataset.
-
-## Next.js
-
-### Missing AWS SDK Package
+Safe smoke-test input:
 
 ```bash
-npm install
+jq -c '.[0:10]' data/sample-tickets.json
 ```
 
-### Port 3000 In Use
+## Bulk Route And NDJSON
+
+### `/api/triage/bulk` Returns `404`
+
+The App Router path must be exactly:
+
+```text
+app/api/triage/bulk/route.ts
+```
+
+After creating it, restart the dev server if Next.js did not detect the new
+directory.
+
+### The Request Returns `400`
+
+The request body must be an object with a `tickets` array. Each item must match
+`TicketSchema`; `customer_tier` is optional, but when present it must be one of
+the allowed schema values.
+
+Inspect the generated body without sending it:
+
+```bash
+printf '{"tickets":%s}\n' "$(jq -c '.[0:2]' data/sample-tickets.json)" | jq
+```
+
+### No Lines Appear Until The Request Finishes
+
+- Use `curl -N` to disable curl buffering.
+- Enqueue `JSON.stringify(record) + "\n"` immediately after each model result.
+- Return `Content-Type: application/x-ndjson`, `Cache-Control: no-cache,
+  no-transform`, and `X-Accel-Buffering: no`.
+- Check whether a local or deployed proxy buffers streaming responses.
+- Do not collect all results before constructing the response.
+
+### `JSON.parse` Fails In The Browser
+
+Network chunks do not align with NDJSON records. One chunk can contain part of
+a line or several lines. Keep a text remainder between reads, split only on
+newline characters, and parse only complete non-empty lines. Do not parse each
+raw `reader.read()` value as a complete JSON document.
+
+### Results Are Out Of Ticket Order
+
+That is expected with bounded parallelism. The invariant is per ticket: the
+Nano line comes before the Claude line. The `/bulk` client keys records by
+`ticket_id` and `model`; it should not depend on input order.
+
+### A Nano Result Has No Claude Result
+
+Claude runs only when Nano returns `confidence < 0.7`, priority `P0`/`P1`, or
+`needs_human: true`. `customer_tier` alone must not trigger escalation. Inspect
+the Nano decision before treating a one-line result as a failure.
+
+### The Stream Never Closes
+
+Ensure every worker resolves or rejects, retries have a finite cap, the abort
+signal stops new work, and `controller.close()` runs exactly once after all
+workers settle. Avoid enqueueing after abort or closure.
+
+### Validate Every NDJSON Line
+
+```bash
+curl -N -sS -X POST http://localhost:3000/api/triage/bulk \
+  -H 'Content-Type: application/json' \
+  -d "{\"tickets\":$(jq -c '.[0:10]' data/sample-tickets.json)}" \
+  | while IFS= read -r line; do printf '%s\n' "$line" | jq -e . >/dev/null; done
+```
+
+No output and exit status `0` means every received line parsed successfully.
+
+## Bake-Off
+
+### Dry-Run Says `No cache for ...`
+
+Dry-run is a replay, not a substitute for the first live run. Run Nano and
+Sonnet once; the script then composes the routed strategy offline from those
+exact cached outputs:
+
+```bash
+npm run bakeoff -- --dataset=production --split=workshop --limit=30 --all
+
+npm run bakeoff -- --dataset=production --split=workshop --limit=30 --dry-run --all
+```
+
+Do not reverse this order on a fresh checkout.
+
+### Opus Reference Agreement Is `n/a`
+
+Production source-intent metrics do not require an Opus call. `n/a` for the
+optional Opus-reference columns means matching reference labels do not exist
+in the provenance-v3 cache. Generate them only when a second-model reference
+is useful:
+
+```bash
+npm run bakeoff -- --dataset=production --split=workshop --limit=30 --label
+```
+
+Judge labeling invokes a paid Bedrock model. It is a reference or adjudication
+signal, not unquestioned ground truth.
+
+### An Unexpected `super` Row Appears
+
+The workshop headline is Sonnet-only, Nano-only, and the `routed`
+Nano-to-Claude cascade. `--all` runs exactly those three. Nemotron Super is an
+optional experimental benchmark and appears only when you add
+`--experimental-super` or explicitly request `--config=super
+--experimental-super`.
+
+Use `--dataset=production` for the production-shaped profile and
+`--dataset=stress` for the boundary-stress profile. Their caches are isolated.
+`--split=workshop` selects 30 tickets, `--split=calibration` selects the fixed
+50-ticket tuning set, and `--split=test` selects the locked 150-ticket test
+set. All 1,000 require `--split=all --full-dataset`.
+
+### The Live Run Is Slow Or Expensive
+
+- Confirm the output says `Evaluation split: workshop` and 30 tickets.
+- Confirm the command includes `--limit=30`; do not rely on an implicit sample
+  size in workshop instructions.
+- Prefer `--all`: it calls Nano and Sonnet once each and composes routed
+  results offline rather than paying for a third set of model samples.
+- Stop before retrying repeatedly; partial live runs still incur model usage.
+- Check quotas and throttling before increasing concurrency.
+- The first live run is paid. Confirm the dated input/output pricing snapshot
+  in `lib/bedrock/models.ts`, review current Bedrock pricing, and set a spend
+  limit. Optional Opus labeling is additional.
+- After one successful live run, use `--dry-run` for demonstrations.
+
+### A Live Run Fails Partway Through
+
+The harness does not cache incomplete runs. Fix the underlying error and rerun
+the failed model configuration. This prevents strategies from being compared
+on different ticket subsets, although successful model calls before the error
+still incur Bedrock usage.
+
+### Human-Review Gate Blocks `--split=test` Or `--claim-summary`
+
+This is intentional. Independently review all 150 entries in
+`data/production-shaped-1k.test-review-worksheet.json`, then add the final
+labels and review metadata to the `reviews` array in
+`data/production-shaped-1k.human-review-overrides.json`. Each entry must be
+marked `human_reviewed` or `adjudicated` and include the reviewer and timestamp.
+
+Do not edit the generated source-intent file to bypass the gate. Regeneration
+replaces generated inputs and labels but preserves the reviewer-owned override
+file. Use `--claim-summary` for any number intended for a blog, presentation,
+or external claim; development-only workshop output remains clearly labeled.
+
+## Next.js And Local Tooling
+
+### Missing Package Or Module
+
+Install the lockfile-pinned dependencies:
+
+```bash
+npm ci
+```
+
+### Port 3000 Is In Use
 
 ```bash
 PORT=3001 npm run dev
 ```
 
-## Bake-Off
+Update the curl URL to `http://localhost:3001` for that session.
 
-### `npm run bakeoff -- --all` Is Slow
+### `jq: command not found`
 
-Use:
+Install `jq` with the package manager for the instructor machine, or construct
+the small request body manually. `jq` is a workshop convenience, not an
+application runtime dependency.
 
-```bash
-npm run bakeoff -- --dry-run --all
-```
+### Typecheck Or Tests Fail After An Agent Edit
 
-Or reduce scope:
-
-```bash
-npm run bakeoff -- --all --limit=30
-```
-
-### Agreement Is `n/a`
-
-Generate labels first:
+Review the diff first. Confirm the change is limited to the requested route
+and tests, uses the existing helpers and model constants, and did not edit UI
+or bake-off behavior. Then run:
 
 ```bash
-npm run bakeoff -- --label --limit=30
+npm test
+npm run typecheck
 ```
+
+Do not hide unrelated failures or relax schemas merely to make generated code
+pass.

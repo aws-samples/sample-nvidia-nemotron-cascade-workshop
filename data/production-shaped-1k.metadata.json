@@ -1,0 +1,215 @@
+{
+  "dataset_version": "production-shaped-v4",
+  "seed": 20260811,
+  "total_tickets": 1000,
+  "cohort_counts": {
+    "routine": 850,
+    "ambiguous": 100,
+    "high_risk": 50
+  },
+  "split_counts": {
+    "calibration": 50,
+    "test": 150,
+    "reserve": 800
+  },
+  "workshop_default_count": 30,
+  "review_status": "unreviewed",
+  "source_intent_note": "Synthetic source intent is an evaluation reference, not human-adjudicated ground truth.",
+  "needs_human_rubric_version": "needs-human-rubric-v1",
+  "review_worksheet_path": "data/production-shaped-1k.test-review-worksheet.json",
+  "human_review_override_path": "data/production-shaped-1k.human-review-overrides.json",
+  "family_assignments": [
+    {
+      "scenario_family": "calibration_invoice_copy",
+      "split": "calibration",
+      "cohort": "routine",
+      "intended_category": "billing",
+      "intended_priority": "P3",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "calibration_auth_enrollment",
+      "split": "calibration",
+      "cohort": "routine",
+      "intended_category": "auth",
+      "intended_priority": "P2",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "calibration_webhook_setup",
+      "split": "calibration",
+      "cohort": "routine",
+      "intended_category": "integration",
+      "intended_priority": "P3",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "calibration_feature_admin",
+      "split": "calibration",
+      "cohort": "routine",
+      "intended_category": "feature_request",
+      "intended_priority": "P3",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "calibration_renewal_entitlement",
+      "split": "calibration",
+      "cohort": "ambiguous",
+      "intended_category": "billing",
+      "intended_priority": "P2",
+      "intended_needs_human": true
+    },
+    {
+      "scenario_family": "calibration_intermittent_connector",
+      "split": "calibration",
+      "cohort": "ambiguous",
+      "intended_category": "integration",
+      "intended_priority": "P2",
+      "intended_needs_human": true
+    },
+    {
+      "scenario_family": "calibration_cross_tenant_exposure",
+      "split": "calibration",
+      "cohort": "high_risk",
+      "intended_category": "abuse",
+      "intended_priority": "P0",
+      "intended_needs_human": true
+    },
+    {
+      "scenario_family": "test_payment_method",
+      "split": "test",
+      "cohort": "routine",
+      "intended_category": "billing",
+      "intended_priority": "P3",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "test_password_reset",
+      "split": "test",
+      "cohort": "routine",
+      "intended_category": "auth",
+      "intended_priority": "P3",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "test_export_guidance",
+      "split": "test",
+      "cohort": "routine",
+      "intended_category": "integration",
+      "intended_priority": "P3",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "test_connector_mapping",
+      "split": "test",
+      "cohort": "routine",
+      "intended_category": "integration",
+      "intended_priority": "P3",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "test_bulk_edit_feature",
+      "split": "test",
+      "cohort": "routine",
+      "intended_category": "feature_request",
+      "intended_priority": "P3",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "test_report_performance",
+      "split": "test",
+      "cohort": "routine",
+      "intended_category": "performance",
+      "intended_priority": "P2",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "test_api_contract_ambiguity",
+      "split": "test",
+      "cohort": "ambiguous",
+      "intended_category": "integration",
+      "intended_priority": "P2",
+      "intended_needs_human": true
+    },
+    {
+      "scenario_family": "test_intermittent_product_behavior",
+      "split": "test",
+      "cohort": "ambiguous",
+      "intended_category": "bug_report",
+      "intended_priority": "P2",
+      "intended_needs_human": true
+    },
+    {
+      "scenario_family": "test_production_outage",
+      "split": "test",
+      "cohort": "high_risk",
+      "intended_category": "bug_report",
+      "intended_priority": "P0",
+      "intended_needs_human": true
+    },
+    {
+      "scenario_family": "test_single_workspace_write_failure",
+      "split": "test",
+      "cohort": "high_risk",
+      "intended_category": "bug_report",
+      "intended_priority": "P1",
+      "intended_needs_human": true
+    },
+    {
+      "scenario_family": "test_account_takeover",
+      "split": "test",
+      "cohort": "high_risk",
+      "intended_category": "abuse",
+      "intended_priority": "P0",
+      "intended_needs_human": true
+    },
+    {
+      "scenario_family": "reserve_subscription_admin",
+      "split": "reserve",
+      "cohort": "routine",
+      "intended_category": "billing",
+      "intended_priority": "P3",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "reserve_workspace_access",
+      "split": "reserve",
+      "cohort": "routine",
+      "intended_category": "auth",
+      "intended_priority": "P2",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "reserve_integration_guidance",
+      "split": "reserve",
+      "cohort": "routine",
+      "intended_category": "integration",
+      "intended_priority": "P3",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "reserve_product_request",
+      "split": "reserve",
+      "cohort": "routine",
+      "intended_category": "feature_request",
+      "intended_priority": "P3",
+      "intended_needs_human": false
+    },
+    {
+      "scenario_family": "reserve_unclear_degradation",
+      "split": "reserve",
+      "cohort": "ambiguous",
+      "intended_category": "performance",
+      "intended_priority": "P2",
+      "intended_needs_human": true
+    },
+    {
+      "scenario_family": "reserve_data_loss_incident",
+      "split": "reserve",
+      "cohort": "high_risk",
+      "intended_category": "bug_report",
+      "intended_priority": "P0",
+      "intended_needs_human": true
+    }
+  ]
+}

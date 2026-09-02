@@ -1,0 +1,6002 @@
+[
+  {
+    "id": "P-0001",
+    "subject": "MFA setup help",
+    "body": "Where do I enroll a new authenticator app for my account?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0002",
+    "subject": "Plan change did not work",
+    "body": "We changed plans and the included export feature is still unavailable. Please verify the subscription state.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0003",
+    "subject": "Find API key",
+    "body": "Where can an admin create an API key for our integration?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0004",
+    "subject": "Find API key",
+    "body": "Where can an admin create an API key for our integration?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0005",
+    "subject": "Invite a teammate",
+    "body": "How do I invite another user to our workspace?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0006",
+    "subject": "Find API key",
+    "body": "Where can an admin create an API key for our integration?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0007",
+    "subject": "Billing contact change",
+    "body": "Please update the billing contact before our October invoice.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0008",
+    "subject": "Invoice copy",
+    "body": "Please send invoice INV-52838 to our accounting team.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0009",
+    "subject": "Custom field request",
+    "body": "Can admins define an additional custom field on tickets?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0010",
+    "subject": "Invite a teammate",
+    "body": "How do I invite another user to our workspace?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0011",
+    "subject": "Find API key",
+    "body": "Where can an admin create an API key for our integration?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0012",
+    "subject": "Webhook setup question",
+    "body": "Which settings page is used to add a webhook endpoint?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0013",
+    "subject": "Billing contact change",
+    "body": "Please update the billing contact before our September invoice.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0014",
+    "subject": "Wrong customer's records displayed",
+    "body": "Our dashboard is showing records that belong to a different company.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0015",
+    "subject": "Invoice copy",
+    "body": "Please send invoice INV-19154 to our accounting team.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0016",
+    "subject": "MFA setup help",
+    "body": "Where do I enroll a new authenticator app for my account?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0017",
+    "subject": "MFA setup help",
+    "body": "Where do I enroll a new authenticator app for my account?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0018",
+    "subject": "Invite a teammate",
+    "body": "How do I invite another user to our workspace?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0019",
+    "subject": "Dark mode request",
+    "body": "Please add dark mode to the dashboard.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0020",
+    "subject": "Plan change did not work",
+    "body": "We changed plans and the included export feature is still unavailable. Please verify the subscription state.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0021",
+    "subject": "Custom field request",
+    "body": "Can admins define an additional custom field on tickets?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0022",
+    "subject": "Custom field request",
+    "body": "Can admins define an additional custom field on tickets?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0023",
+    "subject": "Dark mode request",
+    "body": "Please add dark mode to the dashboard.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0024",
+    "subject": "Custom field request",
+    "body": "Can admins define an additional custom field on tickets?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0025",
+    "subject": "Find API key",
+    "body": "Where can an admin create an API key for our integration?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0026",
+    "subject": "Dark mode request",
+    "body": "Please add dark mode to the dashboard.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0027",
+    "subject": "MFA setup help",
+    "body": "Where do I enroll a new authenticator app for my account?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0028",
+    "subject": "Connector records look stale",
+    "body": "Some Slack-linked records remain stale after sync and we cannot identify when the behavior began.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0029",
+    "subject": "Wrong customer's records displayed",
+    "body": "Our dashboard is showing records that belong to a different company.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0030",
+    "subject": "Find API key",
+    "body": "Where can an admin create an API key for our integration?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0031",
+    "subject": "Find API key",
+    "body": "Where can an admin create an API key for our integration?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0032",
+    "subject": "Find API key",
+    "body": "Where can an admin create an API key for our integration?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0033",
+    "subject": "Find API key",
+    "body": "Where can an admin create an API key for our integration?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0034",
+    "subject": "Custom field request",
+    "body": "Can admins define an additional custom field on tickets?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0035",
+    "subject": "Find API key",
+    "body": "Where can an admin create an API key for our integration?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0036",
+    "subject": "Dark mode request",
+    "body": "Please add dark mode to the dashboard.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0037",
+    "subject": "Invoice copy",
+    "body": "Please send invoice INV-56654 to our accounting team.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0038",
+    "subject": "Plan change did not work",
+    "body": "We changed plans and the included export feature is still unavailable. Please verify the subscription state.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0039",
+    "subject": "Invite a teammate",
+    "body": "How do I invite another user to our workspace?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0040",
+    "subject": "Webhook setup question",
+    "body": "Which settings page is used to add a webhook endpoint?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0041",
+    "subject": "Webhook setup question",
+    "body": "Which settings page is used to add a webhook endpoint?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0042",
+    "subject": "Dark mode request",
+    "body": "Please add dark mode to the dashboard.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0043",
+    "subject": "Custom field request",
+    "body": "Can admins define an additional custom field on tickets?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0044",
+    "subject": "Invoice copy",
+    "body": "Please send invoice INV-65245 to our accounting team.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0045",
+    "subject": "Invite a teammate",
+    "body": "How do I invite another user to our workspace?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0046",
+    "subject": "Integration stops intermittently",
+    "body": "Our Salesforce sync occasionally stops without an error, but a manual retry usually completes.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0047",
+    "subject": "Wrong customer's records displayed",
+    "body": "Our dashboard is showing records that belong to a different company.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0048",
+    "subject": "Find API key",
+    "body": "Where can an admin create an API key for our integration?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0049",
+    "subject": "Invoice copy",
+    "body": "Please send invoice INV-45304 to our accounting team.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0050",
+    "subject": "Invoice copy",
+    "body": "Please send invoice INV-75775 to our accounting team.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0051",
+    "subject": "Password reset",
+    "body": "Where can I request a new password reset link after the previous link expired?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0052",
+    "subject": "Customer reports odd behavior",
+    "body": "A customer reports that ticket status sometimes changes back, but they did not include reliable reproduction steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0053",
+    "subject": "Reconnect Slack",
+    "body": "How do I reconnect our Slack workspace after an admin changed?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0054",
+    "subject": "Read-only role request",
+    "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0055",
+    "subject": "Search is sluggish",
+    "body": "Ticket search is noticeably slower today, although results still load.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0056",
+    "subject": "Read-only role request",
+    "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0057",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 11 seconds to open but eventually completes.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0058",
+    "subject": "Bulk edit request",
+    "body": "We would like to edit several tickets at once instead of opening each ticket.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0059",
+    "subject": "Export tickets",
+    "body": "Where is the CSV export in the current dashboard?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0060",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 6 seconds to open but eventually completes.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0061",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0062",
+    "subject": "Possible account takeover",
+    "body": "We see an unrecognized administrator login and unexpected permission changes on the account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0063",
+    "subject": "Bulk edit request",
+    "body": "We would like to edit several tickets at once instead of opening each ticket.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0064",
+    "subject": "Read-only role request",
+    "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0065",
+    "subject": "Search is sluggish",
+    "body": "Ticket search is noticeably slower today, although results still load.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0066",
+    "subject": "Update payment method",
+    "body": "Where can I replace the card used for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0067",
+    "subject": "Card expires soon",
+    "body": "Our subscription card expires this month; where should an admin update it?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0068",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Source field?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0069",
+    "subject": "Export tickets",
+    "body": "Where is the CSV export in the current dashboard?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0070",
+    "subject": "Card expires soon",
+    "body": "Our subscription card expires this month; where should an admin update it?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0071",
+    "subject": "Card expires soon",
+    "body": "Our subscription card expires this month; where should an admin update it?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0072",
+    "subject": "Expired reset link",
+    "body": "Which self-service page lets me generate a fresh password reset link?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0073",
+    "subject": "Card expires soon",
+    "body": "Our subscription card expires this month; where should an admin update it?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0074",
+    "subject": "Update payment method",
+    "body": "Where can I replace the card used for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0075",
+    "subject": "Dashboard changed unexpectedly",
+    "body": "The dashboard occasionally hides a saved filter and we are unsure whether the new behavior is intended.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0076",
+    "subject": "Update payment method",
+    "body": "Where can I replace the card used for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0077",
+    "subject": "Export tickets",
+    "body": "Where is the CSV export in the current dashboard?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0078",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0079",
+    "subject": "Read-only role request",
+    "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0080",
+    "subject": "Writes failing in production",
+    "body": "Every write is failing for one production workspace with no available workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0081",
+    "subject": "Card expires soon",
+    "body": "Our subscription card expires this month; where should an admin update it?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0082",
+    "subject": "Search is sluggish",
+    "body": "Ticket search is noticeably slower today, although results still load.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0083",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Stage field?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0084",
+    "subject": "Unexpected webhook response",
+    "body": "Webhook retries changed and we cannot determine whether this is a product issue or an undocumented contract.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0085",
+    "subject": "Search is sluggish",
+    "body": "Ticket search is noticeably slower today, although results still load.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0086",
+    "subject": "Read-only role request",
+    "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0087",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Source field?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0088",
+    "subject": "Card expires soon",
+    "body": "Our subscription card expires this month; where should an admin update it?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0089",
+    "subject": "Expired reset link",
+    "body": "Which self-service page lets me generate a fresh password reset link?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0090",
+    "subject": "Reconnect Slack",
+    "body": "How do I reconnect our Slack workspace after an admin changed?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0091",
+    "subject": "Update payment method",
+    "body": "Where can I replace the card used for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0092",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Stage field?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0093",
+    "subject": "Export tickets",
+    "body": "Where is the CSV export in the current dashboard?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0094",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 11 seconds to open but eventually completes.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0095",
+    "subject": "Search is sluggish",
+    "body": "Ticket search is noticeably slower today, although results still load.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0096",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Source field?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0097",
+    "subject": "API behavior changed",
+    "body": "Our API workflow behaves differently today, but the documentation is also unclear about the expected response.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0098",
+    "subject": "Unexpected webhook response",
+    "body": "Webhook retries changed and we cannot determine whether this is a product issue or an undocumented contract.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0099",
+    "subject": "Dashboard changed unexpectedly",
+    "body": "The dashboard occasionally hides a saved filter and we are unsure whether the new behavior is intended.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0100",
+    "subject": "Possible account takeover",
+    "body": "We see an unrecognized administrator login and unexpected permission changes on the account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0101",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0102",
+    "subject": "Export tickets",
+    "body": "Where is the CSV export in the current dashboard?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0103",
+    "subject": "Password reset",
+    "body": "Where can I request a new password reset link after the previous link expired?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0104",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0105",
+    "subject": "Password reset",
+    "body": "Where can I request a new password reset link after the previous link expired?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0106",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Source field?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0107",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 8 seconds to open but eventually completes.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0108",
+    "subject": "Read-only role request",
+    "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0109",
+    "subject": "Customer reports odd behavior",
+    "body": "A customer reports that ticket status sometimes changes back, but they did not include reliable reproduction steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0110",
+    "subject": "Search is sluggish",
+    "body": "Ticket search is noticeably slower today, although results still load.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0111",
+    "subject": "Password reset",
+    "body": "Where can I request a new password reset link after the previous link expired?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0112",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0113",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0114",
+    "subject": "Expired reset link",
+    "body": "Which self-service page lets me generate a fresh password reset link?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0115",
+    "subject": "Bulk edit request",
+    "body": "We would like to edit several tickets at once instead of opening each ticket.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0116",
+    "subject": "Expired reset link",
+    "body": "Which self-service page lets me generate a fresh password reset link?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0117",
+    "subject": "Bulk edit request",
+    "body": "We would like to edit several tickets at once instead of opening each ticket.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0118",
+    "subject": "Password reset",
+    "body": "Where can I request a new password reset link after the previous link expired?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0119",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0120",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0121",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Stage field?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0122",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 11 seconds to open but eventually completes.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0123",
+    "subject": "Suspicious administrator activity",
+    "body": "An unknown admin disabled MFA and created an API key. Please secure the account immediately.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0124",
+    "subject": "Expired reset link",
+    "body": "Which self-service page lets me generate a fresh password reset link?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0125",
+    "subject": "Bulk edit request",
+    "body": "We would like to edit several tickets at once instead of opening each ticket.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0126",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Stage field?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0127",
+    "subject": "Card expires soon",
+    "body": "Our subscription card expires this month; where should an admin update it?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0128",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 10 seconds to open but eventually completes.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0129",
+    "subject": "Read-only role request",
+    "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0130",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 3 seconds to open but eventually completes.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0131",
+    "subject": "Expired reset link",
+    "body": "Which self-service page lets me generate a fresh password reset link?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0132",
+    "subject": "Card expires soon",
+    "body": "Our subscription card expires this month; where should an admin update it?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0133",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Plan field?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0134",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0135",
+    "subject": "Card expires soon",
+    "body": "Our subscription card expires this month; where should an admin update it?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0136",
+    "subject": "Update payment method",
+    "body": "Where can I replace the card used for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0137",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 12 seconds to open but eventually completes.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0138",
+    "subject": "Customer reports odd behavior",
+    "body": "A customer reports that ticket status sometimes changes back, but they did not include reliable reproduction steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0139",
+    "subject": "Reconnect Slack",
+    "body": "How do I reconnect our Slack workspace after an admin changed?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0140",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 5 seconds to open but eventually completes.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0141",
+    "subject": "Production unavailable",
+    "body": "All production requests have returned 503 since 4:43 UTC and customers cannot work.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0142",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Stage field?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0143",
+    "subject": "Export tickets",
+    "body": "Where is the CSV export in the current dashboard?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0144",
+    "subject": "Update payment method",
+    "body": "Where can I replace the card used for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0145",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0146",
+    "subject": "Read-only role request",
+    "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0147",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Stage field?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0148",
+    "subject": "Search is sluggish",
+    "body": "Ticket search is noticeably slower today, although results still load.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0149",
+    "subject": "Reconnect Slack",
+    "body": "How do I reconnect our Slack workspace after an admin changed?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0150",
+    "subject": "Password reset",
+    "body": "Where can I request a new password reset link after the previous link expired?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0151",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0152",
+    "subject": "Dashboard changed unexpectedly",
+    "body": "The dashboard occasionally hides a saved filter and we are unsure whether the new behavior is intended.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0153",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0154",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 8 seconds to open but eventually completes.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0155",
+    "subject": "Dashboard changed unexpectedly",
+    "body": "The dashboard occasionally hides a saved filter and we are unsure whether the new behavior is intended.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0156",
+    "subject": "Card expires soon",
+    "body": "Our subscription card expires this month; where should an admin update it?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0157",
+    "subject": "Reconnect Slack",
+    "body": "How do I reconnect our Slack workspace after an admin changed?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0158",
+    "subject": "Customer reports odd behavior",
+    "body": "A customer reports that ticket status sometimes changes back, but they did not include reliable reproduction steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0159",
+    "subject": "Reconnect Slack",
+    "body": "How do I reconnect our Slack workspace after an admin changed?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0160",
+    "subject": "Expired reset link",
+    "body": "Which self-service page lets me generate a fresh password reset link?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0161",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 4 seconds to open but eventually completes.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0162",
+    "subject": "Update payment method",
+    "body": "Where can I replace the card used for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0163",
+    "subject": "Bulk edit request",
+    "body": "We would like to edit several tickets at once instead of opening each ticket.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0164",
+    "subject": "Customer reports odd behavior",
+    "body": "A customer reports that ticket status sometimes changes back, but they did not include reliable reproduction steps.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0165",
+    "subject": "Update payment method",
+    "body": "Where can I replace the card used for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0166",
+    "subject": "Writes failing in production",
+    "body": "Every write is failing for one production workspace with no available workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0167",
+    "subject": "Search is sluggish",
+    "body": "Ticket search is noticeably slower today, although results still load.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0168",
+    "subject": "API behavior changed",
+    "body": "Our API workflow behaves differently today, but the documentation is also unclear about the expected response.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0169",
+    "subject": "Password reset",
+    "body": "Where can I request a new password reset link after the previous link expired?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0170",
+    "subject": "Expired reset link",
+    "body": "Which self-service page lets me generate a fresh password reset link?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0171",
+    "subject": "Password reset",
+    "body": "Where can I request a new password reset link after the previous link expired?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0172",
+    "subject": "Export tickets",
+    "body": "Where is the CSV export in the current dashboard?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0173",
+    "subject": "API pagination guide",
+    "body": "Which documentation explains how to paginate through the tickets API?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0174",
+    "subject": "Bulk edit request",
+    "body": "We would like to edit several tickets at once instead of opening each ticket.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0175",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 2 seconds to open but eventually completes.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0176",
+    "subject": "Password reset",
+    "body": "Where can I request a new password reset link after the previous link expired?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0177",
+    "subject": "Reconnect Slack",
+    "body": "How do I reconnect our Slack workspace after an admin changed?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0178",
+    "subject": "API behavior changed",
+    "body": "Our API workflow behaves differently today, but the documentation is also unclear about the expected response.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0179",
+    "subject": "Reports load slowly",
+    "body": "The weekly report takes about 8 seconds to open but eventually completes.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0180",
+    "subject": "Expired reset link",
+    "body": "Which self-service page lets me generate a fresh password reset link?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0181",
+    "subject": "Export tickets",
+    "body": "Where is the CSV export in the current dashboard?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0182",
+    "subject": "Search is sluggish",
+    "body": "Ticket search is noticeably slower today, although results still load.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0183",
+    "subject": "Bulk edit request",
+    "body": "We would like to edit several tickets at once instead of opening each ticket.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0184",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Plan field?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0185",
+    "subject": "Bulk edit request",
+    "body": "We would like to edit several tickets at once instead of opening each ticket.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0186",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Stage field?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0187",
+    "subject": "Export tickets",
+    "body": "Where is the CSV export in the current dashboard?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0188",
+    "subject": "Search is sluggish",
+    "body": "Ticket search is noticeably slower today, although results still load.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0189",
+    "subject": "Card expires soon",
+    "body": "Our subscription card expires this month; where should an admin update it?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0190",
+    "subject": "Update payment method",
+    "body": "Where can I replace the card used for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0191",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Plan field?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0192",
+    "subject": "Dashboard changed unexpectedly",
+    "body": "The dashboard occasionally hides a saved filter and we are unsure whether the new behavior is intended.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0193",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Owner field?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0194",
+    "subject": "Bulk edit request",
+    "body": "We would like to edit several tickets at once instead of opening each ticket.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0195",
+    "subject": "Reconnect Slack",
+    "body": "How do I reconnect our Slack workspace after an admin changed?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0196",
+    "subject": "Expired reset link",
+    "body": "Which self-service page lets me generate a fresh password reset link?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0197",
+    "subject": "Read-only role request",
+    "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0198",
+    "subject": "Password reset",
+    "body": "Where can I request a new password reset link after the previous link expired?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0199",
+    "subject": "Salesforce field mapping",
+    "body": "Where can I map the Salesforce Owner field?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0200",
+    "subject": "Possible account takeover",
+    "body": "We see an unrecognized administrator login and unexpected permission changes on the account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0201",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0202",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0203",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0204",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0205",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0206",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0207",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0208",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0209",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0210",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0211",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0212",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0213",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0214",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0215",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0216",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0217",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0218",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0219",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0220",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0221",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0222",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0223",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0224",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0225",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0226",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0227",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0228",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0229",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0230",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0231",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0232",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0233",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0234",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0235",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0236",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0237",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0238",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0239",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0240",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0241",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0242",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0243",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0244",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0245",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0246",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0247",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0248",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0249",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0250",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0251",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0252",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0253",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0254",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0255",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0256",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0257",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0258",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0259",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0260",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0261",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0262",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0263",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0264",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0265",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0266",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0267",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0268",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0269",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0270",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0271",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0272",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0273",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0274",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0275",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0276",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0277",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0278",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0279",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0280",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0281",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0282",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0283",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0284",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0285",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0286",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0287",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0288",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0289",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0290",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0291",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0292",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0293",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0294",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0295",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0296",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0297",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0298",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0299",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0300",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0301",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0302",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0303",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0304",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0305",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0306",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0307",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0308",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0309",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0310",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0311",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0312",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0313",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0314",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0315",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0316",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0317",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0318",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0319",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0320",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0321",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0322",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0323",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0324",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0325",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0326",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0327",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0328",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0329",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0330",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0331",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0332",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0333",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0334",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0335",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0336",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0337",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0338",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0339",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0340",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0341",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0342",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0343",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0344",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0345",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0346",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0347",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0348",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0349",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0350",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0351",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0352",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0353",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0354",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0355",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0356",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0357",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0358",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0359",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0360",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0361",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0362",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0363",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0364",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0365",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0366",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0367",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0368",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0369",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0370",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0371",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0372",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0373",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0374",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0375",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0376",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0377",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0378",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0379",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0380",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0381",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0382",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0383",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0384",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0385",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0386",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0387",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0388",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0389",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0390",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0391",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0392",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0393",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0394",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0395",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0396",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0397",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0398",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0399",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0400",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0401",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0402",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0403",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0404",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0405",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0406",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0407",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0408",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0409",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0410",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0411",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0412",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0413",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0414",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0415",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0416",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0417",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0418",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0419",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0420",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0421",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0422",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0423",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0424",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0425",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0426",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0427",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0428",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0429",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0430",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0431",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0432",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0433",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0434",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0435",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0436",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0437",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0438",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0439",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0440",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0441",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0442",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0443",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0444",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0445",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0446",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0447",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0448",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0449",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0450",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0451",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0452",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0453",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0454",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0455",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0456",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0457",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0458",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0459",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0460",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0461",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0462",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0463",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0464",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0465",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0466",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0467",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0468",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0469",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0470",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0471",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0472",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0473",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0474",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0475",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0476",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0477",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0478",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0479",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0480",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0481",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0482",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0483",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0484",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0485",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0486",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0487",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0488",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0489",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0490",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0491",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0492",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0493",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0494",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0495",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0496",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0497",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0498",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0499",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0500",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0501",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0502",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0503",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0504",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0505",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0506",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0507",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0508",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0509",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0510",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0511",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0512",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0513",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0514",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0515",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0516",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0517",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0518",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0519",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0520",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0521",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0522",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0523",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0524",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0525",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0526",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0527",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0528",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0529",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0530",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0531",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0532",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0533",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0534",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0535",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0536",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0537",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0538",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0539",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0540",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0541",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0542",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0543",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0544",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0545",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0546",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0547",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0548",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0549",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0550",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0551",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0552",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0553",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0554",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0555",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0556",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0557",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0558",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0559",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0560",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0561",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0562",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0563",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0564",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0565",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0566",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0567",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0568",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0569",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0570",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0571",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0572",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0573",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0574",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0575",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0576",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0577",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0578",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0579",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0580",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0581",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0582",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0583",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0584",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0585",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0586",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0587",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0588",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0589",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0590",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0591",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0592",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0593",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0594",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0595",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0596",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0597",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0598",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0599",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0600",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0601",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0602",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0603",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0604",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0605",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0606",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0607",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0608",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0609",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0610",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0611",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0612",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0613",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0614",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0615",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0616",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0617",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0618",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0619",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0620",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0621",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0622",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0623",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0624",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0625",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0626",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0627",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0628",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0629",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0630",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0631",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0632",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0633",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0634",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0635",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0636",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0637",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0638",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0639",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0640",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0641",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0642",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0643",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0644",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0645",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0646",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0647",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0648",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0649",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0650",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0651",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0652",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0653",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0654",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0655",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0656",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0657",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0658",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0659",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0660",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0661",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0662",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0663",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0664",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0665",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0666",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0667",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0668",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0669",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0670",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0671",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0672",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0673",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0674",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0675",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0676",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0677",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0678",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0679",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0680",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0681",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0682",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0683",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0684",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0685",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0686",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0687",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0688",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0689",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0690",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0691",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0692",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0693",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0694",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0695",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0696",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0697",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0698",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0699",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0700",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0701",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0702",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0703",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0704",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0705",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0706",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0707",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0708",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0709",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0710",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0711",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0712",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0713",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0714",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0715",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0716",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0717",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0718",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0719",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0720",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0721",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0722",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0723",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0724",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0725",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0726",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0727",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0728",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0729",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0730",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0731",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0732",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0733",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0734",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0735",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0736",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0737",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0738",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0739",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0740",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0741",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0742",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0743",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0744",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0745",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0746",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0747",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0748",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0749",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0750",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0751",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0752",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0753",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0754",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0755",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0756",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0757",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0758",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0759",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0760",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0761",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0762",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0763",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0764",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0765",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0766",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0767",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0768",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0769",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0770",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0771",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0772",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0773",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0774",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0775",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0776",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0777",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0778",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0779",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0780",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0781",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0782",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0783",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0784",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0785",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0786",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0787",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0788",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0789",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0790",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0791",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0792",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0793",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0794",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0795",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0796",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0797",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0798",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0799",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0800",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0801",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0802",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0803",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0804",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0805",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0806",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0807",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0808",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0809",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0810",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0811",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0812",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0813",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0814",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0815",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0816",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0817",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0818",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0819",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0820",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0821",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0822",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0823",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0824",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0825",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0826",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0827",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0828",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0829",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0830",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0831",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0832",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0833",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0834",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0835",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0836",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0837",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0838",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0839",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0840",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0841",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0842",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0843",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0844",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0845",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0846",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0847",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0848",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0849",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0850",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0851",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0852",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0853",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0854",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0855",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0856",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0857",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0858",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0859",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0860",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0861",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0862",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0863",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0864",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0865",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0866",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0867",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0868",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0869",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0870",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0871",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0872",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0873",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0874",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0875",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0876",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0877",
+    "subject": "Critical data loss",
+    "body": "Recently saved customer records are gone across multiple projects.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0878",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0879",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0880",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0881",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0882",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0883",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0884",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0885",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0886",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0887",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0888",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0889",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0890",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0891",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0892",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0893",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0894",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0895",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0896",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0897",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0898",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0899",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0900",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0901",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0902",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0903",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0904",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0905",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0906",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0907",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0908",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0909",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0910",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0911",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0912",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0913",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0914",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0915",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0916",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0917",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0918",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0919",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0920",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0921",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0922",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0923",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0924",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0925",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0926",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0927",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0928",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0929",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0930",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0931",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0932",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0933",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0934",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0935",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0936",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0937",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the September invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0938",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0939",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0940",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0941",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0942",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0943",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0944",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0945",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0946",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0947",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0948",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0949",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0950",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0951",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0952",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0953",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0954",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0955",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0956",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0957",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0958",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0959",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0960",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0961",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0962",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the November invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0963",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0964",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0965",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0966",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0967",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0968",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0969",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0970",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0971",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0972",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0973",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0974",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0975",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0976",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0977",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0978",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0979",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0980",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0981",
+    "subject": "Production records missing",
+    "body": "A large set of production records disappeared overnight and no backup is visible in the workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0982",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0983",
+    "subject": "Zapier connection guide",
+    "body": "Please point me to the guide for connecting a Zapier account.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0984",
+    "subject": "Audit export request",
+    "body": "Please add scheduled audit-log export to object storage.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0985",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0986",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0987",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0988",
+    "subject": "Tax form request",
+    "body": "Please send the tax form our accounting team needs for vendor setup.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0989",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0990",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0991",
+    "subject": "Intermittent delay",
+    "body": "A few users report delays with no timestamp or repeatable steps.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0992",
+    "subject": "Subscription invoice question",
+    "body": "Can you explain the October invoice line item for our subscription?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0993",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0994",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0995",
+    "subject": "Something became slower",
+    "body": "The dashboard sometimes pauses during a customer demo, but refreshing provides a temporary workaround.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0996",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "free"
+  },
+  {
+    "id": "P-0997",
+    "subject": "Saved view request",
+    "body": "We would like admins to publish a saved ticket view to the whole workspace.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-0998",
+    "subject": "Webhook secret rotation",
+    "body": "What is the documented process for rotating a webhook secret?",
+    "customer_tier": "pro"
+  },
+  {
+    "id": "P-0999",
+    "subject": "Authenticator replacement",
+    "body": "I replaced my phone and need instructions to enroll a new authenticator.",
+    "customer_tier": "enterprise"
+  },
+  {
+    "id": "P-1000",
+    "subject": "Workspace access help",
+    "body": "A new teammate needs a fresh invitation to our workspace.",
+    "customer_tier": "pro"
+  }
+]

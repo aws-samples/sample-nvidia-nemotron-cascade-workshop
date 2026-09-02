@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT-0",
-  "description": "MCP server exposing cascade_classify — cost-optimal text classification on Amazon Bedrock (NVIDIA Nemotron Nano first, Anthropic Claude Sonnet on escalation).",
+  "description": "MCP server exposing cascade_classify — cost-aware text classification on Amazon Bedrock (NVIDIA Nemotron Nano first, Anthropic Claude Sonnet on escalation).",
   "type": "module",
   "bin": {
     "cascade-classify-mcp": "./server.ts"

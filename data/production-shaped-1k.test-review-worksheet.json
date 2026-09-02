@@ -1,0 +1,2568 @@
+{
+  "schema_version": "human-review-worksheet-v1",
+  "dataset_version": "production-shaped-v4",
+  "dataset_sha256": "ba8c0c15e9421591aefab001bed36f54d0334afd86414cbd15eb978b2a112ca7",
+  "source_intent_sha256": "cc724ccdf1631eba5cb8d5bfcb1f01dcbadb26bad96f5d8cfdae2d14059833bf",
+  "locked_test_ticket_ids_sha256": "1d08ab7f787fc8b4606e01fcae35c11d3c2b6bac3d9ddfc9421c84d568c68e3d",
+  "needs_human_rubric_version": "needs-human-rubric-v1",
+  "needs_human_rubric": "Rubric version: needs-human-rubric-v1\nSet needs_human=true when any of these conditions applies:\n1. Priority is P0 or P1. Every P0/P1 decision requires a human.\n2. Material ambiguity could change the category, priority, responsible team, entitlement, or safe next action.\n3. The requester asks support to execute, reverse, approve, or authorize a consequential account, billing, permission, credential, or production-data action.\n4. The requester asks for an exception to policy, contract, compliance, privacy, retention, or security controls.\n5. The ticket reports suspected compromise, abuse, data exposure, or data loss.\nSet needs_human=false for clear P2/P3 routine requests that can be answered safely without judgment or a consequential action, including how-to questions, documentation links, status questions, invoice-download guidance, admin self-service instructions, and ordinary feature feedback.\nA routine request does not become needs_human=true merely because it mentions an account, API key, export, invoice, MFA, or administrator. Distinguish instructions from asking support to perform or approve the action.",
+  "instructions": [
+    "Review every item independently without consulting the generated source-intent labels during the initial pass.",
+    "Record final reviews in data/production-shaped-1k.human-review-overrides.json; do not edit the generated source-intent file.",
+    "Each override must include ticket_id, category, priority, needs_human, review_status, reviewer, and reviewed_at.",
+    "Use review_status=human_reviewed for one completed review or adjudicated after disagreement resolution.",
+    "A locked test live run or --claim-summary remains blocked until all 150 selected labels have overrides."
+  ],
+  "items": [
+    {
+      "ticket": {
+        "id": "P-0051",
+        "subject": "Password reset",
+        "body": "Where can I request a new password reset link after the previous link expired?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0052",
+        "subject": "Customer reports odd behavior",
+        "body": "A customer reports that ticket status sometimes changes back, but they did not include reliable reproduction steps.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0053",
+        "subject": "Reconnect Slack",
+        "body": "How do I reconnect our Slack workspace after an admin changed?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0054",
+        "subject": "Read-only role request",
+        "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0055",
+        "subject": "Search is sluggish",
+        "body": "Ticket search is noticeably slower today, although results still load.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0056",
+        "subject": "Read-only role request",
+        "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0057",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 11 seconds to open but eventually completes.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0058",
+        "subject": "Bulk edit request",
+        "body": "We would like to edit several tickets at once instead of opening each ticket.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0059",
+        "subject": "Export tickets",
+        "body": "Where is the CSV export in the current dashboard?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0060",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 6 seconds to open but eventually completes.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0061",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0062",
+        "subject": "Possible account takeover",
+        "body": "We see an unrecognized administrator login and unexpected permission changes on the account.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0063",
+        "subject": "Bulk edit request",
+        "body": "We would like to edit several tickets at once instead of opening each ticket.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0064",
+        "subject": "Read-only role request",
+        "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0065",
+        "subject": "Search is sluggish",
+        "body": "Ticket search is noticeably slower today, although results still load.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0066",
+        "subject": "Update payment method",
+        "body": "Where can I replace the card used for our subscription?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0067",
+        "subject": "Card expires soon",
+        "body": "Our subscription card expires this month; where should an admin update it?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0068",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Source field?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0069",
+        "subject": "Export tickets",
+        "body": "Where is the CSV export in the current dashboard?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0070",
+        "subject": "Card expires soon",
+        "body": "Our subscription card expires this month; where should an admin update it?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0071",
+        "subject": "Card expires soon",
+        "body": "Our subscription card expires this month; where should an admin update it?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0072",
+        "subject": "Expired reset link",
+        "body": "Which self-service page lets me generate a fresh password reset link?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0073",
+        "subject": "Card expires soon",
+        "body": "Our subscription card expires this month; where should an admin update it?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0074",
+        "subject": "Update payment method",
+        "body": "Where can I replace the card used for our subscription?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0075",
+        "subject": "Dashboard changed unexpectedly",
+        "body": "The dashboard occasionally hides a saved filter and we are unsure whether the new behavior is intended.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0076",
+        "subject": "Update payment method",
+        "body": "Where can I replace the card used for our subscription?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0077",
+        "subject": "Export tickets",
+        "body": "Where is the CSV export in the current dashboard?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0078",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0079",
+        "subject": "Read-only role request",
+        "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0080",
+        "subject": "Writes failing in production",
+        "body": "Every write is failing for one production workspace with no available workaround.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0081",
+        "subject": "Card expires soon",
+        "body": "Our subscription card expires this month; where should an admin update it?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0082",
+        "subject": "Search is sluggish",
+        "body": "Ticket search is noticeably slower today, although results still load.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0083",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Stage field?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0084",
+        "subject": "Unexpected webhook response",
+        "body": "Webhook retries changed and we cannot determine whether this is a product issue or an undocumented contract.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0085",
+        "subject": "Search is sluggish",
+        "body": "Ticket search is noticeably slower today, although results still load.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0086",
+        "subject": "Read-only role request",
+        "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0087",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Source field?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0088",
+        "subject": "Card expires soon",
+        "body": "Our subscription card expires this month; where should an admin update it?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0089",
+        "subject": "Expired reset link",
+        "body": "Which self-service page lets me generate a fresh password reset link?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0090",
+        "subject": "Reconnect Slack",
+        "body": "How do I reconnect our Slack workspace after an admin changed?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0091",
+        "subject": "Update payment method",
+        "body": "Where can I replace the card used for our subscription?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0092",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Stage field?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0093",
+        "subject": "Export tickets",
+        "body": "Where is the CSV export in the current dashboard?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0094",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 11 seconds to open but eventually completes.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0095",
+        "subject": "Search is sluggish",
+        "body": "Ticket search is noticeably slower today, although results still load.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0096",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Source field?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0097",
+        "subject": "API behavior changed",
+        "body": "Our API workflow behaves differently today, but the documentation is also unclear about the expected response.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0098",
+        "subject": "Unexpected webhook response",
+        "body": "Webhook retries changed and we cannot determine whether this is a product issue or an undocumented contract.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0099",
+        "subject": "Dashboard changed unexpectedly",
+        "body": "The dashboard occasionally hides a saved filter and we are unsure whether the new behavior is intended.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0100",
+        "subject": "Possible account takeover",
+        "body": "We see an unrecognized administrator login and unexpected permission changes on the account.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0101",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0102",
+        "subject": "Export tickets",
+        "body": "Where is the CSV export in the current dashboard?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0103",
+        "subject": "Password reset",
+        "body": "Where can I request a new password reset link after the previous link expired?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0104",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0105",
+        "subject": "Password reset",
+        "body": "Where can I request a new password reset link after the previous link expired?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0106",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Source field?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0107",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 8 seconds to open but eventually completes.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0108",
+        "subject": "Read-only role request",
+        "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0109",
+        "subject": "Customer reports odd behavior",
+        "body": "A customer reports that ticket status sometimes changes back, but they did not include reliable reproduction steps.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0110",
+        "subject": "Search is sluggish",
+        "body": "Ticket search is noticeably slower today, although results still load.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0111",
+        "subject": "Password reset",
+        "body": "Where can I request a new password reset link after the previous link expired?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0112",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0113",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0114",
+        "subject": "Expired reset link",
+        "body": "Which self-service page lets me generate a fresh password reset link?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0115",
+        "subject": "Bulk edit request",
+        "body": "We would like to edit several tickets at once instead of opening each ticket.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0116",
+        "subject": "Expired reset link",
+        "body": "Which self-service page lets me generate a fresh password reset link?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0117",
+        "subject": "Bulk edit request",
+        "body": "We would like to edit several tickets at once instead of opening each ticket.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0118",
+        "subject": "Password reset",
+        "body": "Where can I request a new password reset link after the previous link expired?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0119",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0120",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0121",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Stage field?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0122",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 11 seconds to open but eventually completes.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0123",
+        "subject": "Suspicious administrator activity",
+        "body": "An unknown admin disabled MFA and created an API key. Please secure the account immediately.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0124",
+        "subject": "Expired reset link",
+        "body": "Which self-service page lets me generate a fresh password reset link?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0125",
+        "subject": "Bulk edit request",
+        "body": "We would like to edit several tickets at once instead of opening each ticket.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0126",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Stage field?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0127",
+        "subject": "Card expires soon",
+        "body": "Our subscription card expires this month; where should an admin update it?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0128",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 10 seconds to open but eventually completes.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0129",
+        "subject": "Read-only role request",
+        "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0130",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 3 seconds to open but eventually completes.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0131",
+        "subject": "Expired reset link",
+        "body": "Which self-service page lets me generate a fresh password reset link?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0132",
+        "subject": "Card expires soon",
+        "body": "Our subscription card expires this month; where should an admin update it?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0133",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Plan field?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0134",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0135",
+        "subject": "Card expires soon",
+        "body": "Our subscription card expires this month; where should an admin update it?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0136",
+        "subject": "Update payment method",
+        "body": "Where can I replace the card used for our subscription?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0137",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 12 seconds to open but eventually completes.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0138",
+        "subject": "Customer reports odd behavior",
+        "body": "A customer reports that ticket status sometimes changes back, but they did not include reliable reproduction steps.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0139",
+        "subject": "Reconnect Slack",
+        "body": "How do I reconnect our Slack workspace after an admin changed?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0140",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 5 seconds to open but eventually completes.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0141",
+        "subject": "Production unavailable",
+        "body": "All production requests have returned 503 since 4:43 UTC and customers cannot work.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0142",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Stage field?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0143",
+        "subject": "Export tickets",
+        "body": "Where is the CSV export in the current dashboard?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0144",
+        "subject": "Update payment method",
+        "body": "Where can I replace the card used for our subscription?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0145",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0146",
+        "subject": "Read-only role request",
+        "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0147",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Stage field?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0148",
+        "subject": "Search is sluggish",
+        "body": "Ticket search is noticeably slower today, although results still load.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0149",
+        "subject": "Reconnect Slack",
+        "body": "How do I reconnect our Slack workspace after an admin changed?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0150",
+        "subject": "Password reset",
+        "body": "Where can I request a new password reset link after the previous link expired?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0151",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0152",
+        "subject": "Dashboard changed unexpectedly",
+        "body": "The dashboard occasionally hides a saved filter and we are unsure whether the new behavior is intended.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0153",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0154",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 8 seconds to open but eventually completes.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0155",
+        "subject": "Dashboard changed unexpectedly",
+        "body": "The dashboard occasionally hides a saved filter and we are unsure whether the new behavior is intended.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0156",
+        "subject": "Card expires soon",
+        "body": "Our subscription card expires this month; where should an admin update it?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0157",
+        "subject": "Reconnect Slack",
+        "body": "How do I reconnect our Slack workspace after an admin changed?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0158",
+        "subject": "Customer reports odd behavior",
+        "body": "A customer reports that ticket status sometimes changes back, but they did not include reliable reproduction steps.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0159",
+        "subject": "Reconnect Slack",
+        "body": "How do I reconnect our Slack workspace after an admin changed?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0160",
+        "subject": "Expired reset link",
+        "body": "Which self-service page lets me generate a fresh password reset link?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0161",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 4 seconds to open but eventually completes.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0162",
+        "subject": "Update payment method",
+        "body": "Where can I replace the card used for our subscription?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0163",
+        "subject": "Bulk edit request",
+        "body": "We would like to edit several tickets at once instead of opening each ticket.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0164",
+        "subject": "Customer reports odd behavior",
+        "body": "A customer reports that ticket status sometimes changes back, but they did not include reliable reproduction steps.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0165",
+        "subject": "Update payment method",
+        "body": "Where can I replace the card used for our subscription?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0166",
+        "subject": "Writes failing in production",
+        "body": "Every write is failing for one production workspace with no available workaround.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0167",
+        "subject": "Search is sluggish",
+        "body": "Ticket search is noticeably slower today, although results still load.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0168",
+        "subject": "API behavior changed",
+        "body": "Our API workflow behaves differently today, but the documentation is also unclear about the expected response.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0169",
+        "subject": "Password reset",
+        "body": "Where can I request a new password reset link after the previous link expired?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0170",
+        "subject": "Expired reset link",
+        "body": "Which self-service page lets me generate a fresh password reset link?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0171",
+        "subject": "Password reset",
+        "body": "Where can I request a new password reset link after the previous link expired?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0172",
+        "subject": "Export tickets",
+        "body": "Where is the CSV export in the current dashboard?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0173",
+        "subject": "API pagination guide",
+        "body": "Which documentation explains how to paginate through the tickets API?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0174",
+        "subject": "Bulk edit request",
+        "body": "We would like to edit several tickets at once instead of opening each ticket.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0175",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 2 seconds to open but eventually completes.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0176",
+        "subject": "Password reset",
+        "body": "Where can I request a new password reset link after the previous link expired?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0177",
+        "subject": "Reconnect Slack",
+        "body": "How do I reconnect our Slack workspace after an admin changed?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0178",
+        "subject": "API behavior changed",
+        "body": "Our API workflow behaves differently today, but the documentation is also unclear about the expected response.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0179",
+        "subject": "Reports load slowly",
+        "body": "The weekly report takes about 8 seconds to open but eventually completes.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0180",
+        "subject": "Expired reset link",
+        "body": "Which self-service page lets me generate a fresh password reset link?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0181",
+        "subject": "Export tickets",
+        "body": "Where is the CSV export in the current dashboard?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0182",
+        "subject": "Search is sluggish",
+        "body": "Ticket search is noticeably slower today, although results still load.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0183",
+        "subject": "Bulk edit request",
+        "body": "We would like to edit several tickets at once instead of opening each ticket.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0184",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Plan field?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0185",
+        "subject": "Bulk edit request",
+        "body": "We would like to edit several tickets at once instead of opening each ticket.",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0186",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Stage field?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0187",
+        "subject": "Export tickets",
+        "body": "Where is the CSV export in the current dashboard?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0188",
+        "subject": "Search is sluggish",
+        "body": "Ticket search is noticeably slower today, although results still load.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0189",
+        "subject": "Card expires soon",
+        "body": "Our subscription card expires this month; where should an admin update it?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0190",
+        "subject": "Update payment method",
+        "body": "Where can I replace the card used for our subscription?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0191",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Plan field?",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0192",
+        "subject": "Dashboard changed unexpectedly",
+        "body": "The dashboard occasionally hides a saved filter and we are unsure whether the new behavior is intended.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0193",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Owner field?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0194",
+        "subject": "Bulk edit request",
+        "body": "We would like to edit several tickets at once instead of opening each ticket.",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0195",
+        "subject": "Reconnect Slack",
+        "body": "How do I reconnect our Slack workspace after an admin changed?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0196",
+        "subject": "Expired reset link",
+        "body": "Which self-service page lets me generate a fresh password reset link?",
+        "customer_tier": "enterprise"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0197",
+        "subject": "Read-only role request",
+        "body": "The product does not currently offer a read-only role for compliance reviewers. Please add this capability.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0198",
+        "subject": "Password reset",
+        "body": "Where can I request a new password reset link after the previous link expired?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0199",
+        "subject": "Salesforce field mapping",
+        "body": "Where can I map the Salesforce Owner field?",
+        "customer_tier": "pro"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0200",
+        "subject": "Possible account takeover",
+        "body": "We see an unrecognized administrator login and unexpected permission changes on the account.",
+        "customer_tier": "free"
+      },
+      "review_template": {
+        "category": null,
+        "priority": null,
+        "needs_human": null,
+        "review_status": null,
+        "reviewer": null,
+        "reviewed_at": null,
+        "notes": null
+      }
+    }
+  ]
+}

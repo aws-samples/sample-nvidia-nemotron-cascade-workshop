@@ -1,6 +1,6 @@
 # cascade-classify MCP server
 
-One tool: `cascade_classify(text, labels[])` — cost-optimal text
+One tool: `cascade_classify(text, labels[])` — cost-aware text
 classification on Amazon Bedrock.
 
 NVIDIA Nemotron 3 Nano classifies every request. Anthropic Claude Sonnet is
@@ -10,17 +10,20 @@ the routed tail without paying for it on every request.
 
 ## Why margin, not confidence
 
-A single self-reported confidence score is uncalibrated — our bake-off
-caught the small model reporting 0.92+ confidence on answers it got wrong.
+A single self-reported confidence score is uncalibrated — an intentionally
+boundary-heavy 30-item stress demonstration caught the small model reporting
+0.92+ confidence on answers that disagreed with a separate model reference.
+That small run is routing-behavior evidence, not a production accuracy claim.
 Instead, the model is asked (via forced tool-calling) to distribute
 probability across **all** candidate labels. When it is torn between two
 labels the top1−top2 margin is small, no matter what confidence it claims.
 That distribution only exists over a fixed candidate set, which is why this
 tool is scoped to classification rather than open-ended generation.
 
-## Mount it
+## Mount It
 
-Claude Code (`.mcp.json` in your project, or `~/.claude.json`):
+Configure the server in any MCP client that supports a local stdio command.
+Use that client's documented configuration location; the server definition is:
 
 ```json
 {
@@ -39,6 +42,11 @@ Credentials: AWS SDK default chain — whatever makes
 needs Bedrock model access for `nvidia.nemotron-nano-3-30b` and
 `us.anthropic.claude-sonnet-4-6` (see repo README).
 
+Every classification invokes a paid Nano call and an escalated request invokes
+an additional paid Sonnet call. Review current Bedrock pricing, model access,
+Region, and quotas before use. The repository's 30-ticket workshop estimates
+do not predict this generic tool's token shape or cost.
+
 ## Tool arguments
 
 | Argument | Type | Default | Notes |
@@ -55,22 +63,24 @@ The probability margin is structurally honest — when the model is torn
 between two labels, the margin is small no matter how "confident" it claims
 to be. But margin has a known blind spot: **distribution saturation**. When
 the small model assigns ~100% probability to a single label, the margin is
-maximal even if the label is wrong. Our bake-off caught this — Nano reported
-0.92+ confidence on answers it got wrong.
+maximal even if the label is wrong. This is a generic limitation of
+confidence-like routing signals, not a production error-rate claim.
 
 Mitigations available today:
 - `escalate_labels`: domain-knowledge guardrail for labels you know are
-  risky (the single biggest accuracy win in our testing)
+  risky; define this from independent calibration evidence or domain policy
 - `force_escalate`: caller-side override for known-high-stakes inputs
 
-Not yet implemented: automatic saturation detection (escalate when top1 >
-threshold, e.g. 0.98). This is a tracked TODO — we need empirical data on
-the false-positive rate before adding it.
+Automatic saturation detection is not implemented because it requires
+independent calibration and false-positive analysis.
 
 For catastrophic-miss domains (medical, legal), use this tool **in
 conjunction with** human-in-the-loop review, not as a replacement for it.
 
-## Result shape
+For production concerns including metrics, quotas, invocation logging,
+Guardrails, and private connectivity, see `../docs/production.md`.
+
+## Illustrative result shape
 
 ```json
 {
@@ -83,6 +93,10 @@ conjunction with** human-in-the-loop review, not as a replacement for it.
   "approx_cost_usd": 0.00028
 }
 ```
+
+The numeric values above are illustrative. Actual latency, token usage, and
+cost depend on the selected models, Region, response length, and current
+pricing snapshot.
 
 ## When to reach for this
 
@@ -97,7 +111,7 @@ human-in-the-loop.
 
 ## Relationship to the workshop app
 
-The ticket-triage app in this repo is the flagship demonstration of the
-same cascade pattern with a domain-specific schema. This server is the
-generic, label-set-parameterized version. Both share
-`lib/cascade/` for escalation logic.
+The ticket-triage app in this repo demonstrates the same two-tier pattern with
+a domain-specific schema. This server is the generic,
+label-set-parameterized version. They share the Bedrock client and model
+constants, but use different routing signals and must be evaluated separately.

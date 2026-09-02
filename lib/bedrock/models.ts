@@ -11,11 +11,11 @@ export const MODELS = {
   // on-demand throughput for this family ("us." prefix routes to a
   // multi-region pool).
   CLAUDE_SONNET: "us.anthropic.claude-sonnet-4-6",
-  // Nemotron Nano 30B (Nano 3) — NVIDIA's small/cheap/fast tier. Native
-  // tool calling, MoE throughput. The "easy 80%" workhorse.
+  // Nemotron Nano 30B (Nano 3) — NVIDIA's small/cheap/fast first-pass tier.
+  // Its retained-volume share must be measured on the target workload.
   NEMOTRON_NANO: "nvidia.nemotron-nano-3-30b",
-  // Nemotron Super 120B — NVIDIA's reasoning tier. The escalation target
-  // when Nano returns low confidence.
+  // Nemotron Super 120B — optional experimental comparison model. The
+  // canonical workshop escalation target is Claude Sonnet, not Super.
   NEMOTRON_SUPER: "nvidia.nemotron-super-3-120b",
   // Opus 4.7 — judge for bake-off reference labels. Strong judge model on
   // Bedrock; we use it to grade Sonnet 4.6 and the Nemotron tiers.
@@ -23,25 +23,48 @@ export const MODELS = {
   // but using a stronger same-family model to grade a weaker one is a
   // defensible eval pattern. Documented in the README.
   OPUS_JUDGE: "us.anthropic.claude-opus-4-7",
-  // Future: Nemotron 3 Ultra (550B / 55B-active MoE) — NVIDIA's frontier
-  // reasoning tier, released June 2026. Slots in above Super as a third
-  // cascade rung for agent-orchestration workloads (sustained multi-turn
-  // planning, sub-agent delegation, deep reasoning). Pending Amazon Bedrock
-  // availability — add as MODELS.NEMOTRON_ULTRA once a supported model ID
-  // is available in the selected Region.
-  // Reference: https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/
 } as const;
 
 export type ModelId = (typeof MODELS)[keyof typeof MODELS];
 
-/**
- * Approximate per-1k-token pricing in USD (input + output averaged).
- * Used only for the Phase 4 bake-off display — not authoritative.
- * Update before workshop with current Bedrock pricing.
- */
-export const APPROX_COST_PER_1K_TOKENS: Record<ModelId, number> = {
-  [MODELS.CLAUDE_SONNET]: 0.009,
-  [MODELS.NEMOTRON_NANO]: 0.0008,
-  [MODELS.NEMOTRON_SUPER]: 0.005,
-  [MODELS.OPUS_JUDGE]: 0.045,
+export interface ModelTokenPricing {
+  inputUsdPerMillionTokens: number;
+  outputUsdPerMillionTokens: number;
+}
+
+export const PRICING_SNAPSHOT = {
+  version: "bedrock-on-demand-2026-08-31",
+  source: "https://aws.amazon.com/bedrock/pricing/",
+  region: "us-west-2",
+  serviceTier: "standard on-demand",
+} as const;
+
+export const MODEL_TOKEN_PRICING: Record<ModelId, ModelTokenPricing> = {
+  [MODELS.CLAUDE_SONNET]: {
+    inputUsdPerMillionTokens: 3,
+    outputUsdPerMillionTokens: 15,
+  },
+  [MODELS.NEMOTRON_NANO]: {
+    inputUsdPerMillionTokens: 0.06,
+    outputUsdPerMillionTokens: 0.24,
+  },
+  [MODELS.NEMOTRON_SUPER]: {
+    inputUsdPerMillionTokens: 0.15,
+    outputUsdPerMillionTokens: 0.65,
+  },
+  [MODELS.OPUS_JUDGE]: {
+    inputUsdPerMillionTokens: 5,
+    outputUsdPerMillionTokens: 25,
+  },
 };
+
+export function estimateModelCostUsd(
+  modelId: ModelId,
+  usage: { inputTokens: number; outputTokens: number },
+): number {
+  const pricing = MODEL_TOKEN_PRICING[modelId];
+  return (
+    (usage.inputTokens / 1_000_000) * pricing.inputUsdPerMillionTokens +
+    (usage.outputTokens / 1_000_000) * pricing.outputUsdPerMillionTokens
+  );
+}

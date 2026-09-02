@@ -1,0 +1,1362 @@
+{
+  "schema_version": "human-review-overrides-v1",
+  "dataset_version": "production-shaped-v4",
+  "dataset_sha256": "ba8c0c15e9421591aefab001bed36f54d0334afd86414cbd15eb978b2a112ca7",
+  "source_intent_sha256": "cc724ccdf1631eba5cb8d5bfcb1f01dcbadb26bad96f5d8cfdae2d14059833bf",
+  "locked_test_ticket_ids_sha256": "1d08ab7f787fc8b4606e01fcae35c11d3c2b6bac3d9ddfc9421c84d568c68e3d",
+  "reviews": [
+    {
+      "ticket_id": "P-0051",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "adjudicated",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-20T22:24:36-07:00",
+      "notes": "Corrected after adjudication: routine self-service password-reset guidance with no compromise, product failure, or urgent impact."
+    },
+    {
+      "ticket_id": "P-0052",
+      "category": "bug_report",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0053",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0054",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0055",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0056",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0057",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0058",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0059",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0060",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0061",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0062",
+      "category": "abuse",
+      "priority": "P0",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0063",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0064",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0065",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0066",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0067",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0068",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0069",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0070",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0071",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0072",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0073",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0074",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0075",
+      "category": "bug_report",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0076",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0077",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0078",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0079",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0080",
+      "category": "bug_report",
+      "priority": "P1",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0081",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0082",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0083",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0084",
+      "category": "integration",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0085",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0086",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0087",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0088",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0089",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0090",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0091",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0092",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0093",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0094",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0095",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0096",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0097",
+      "category": "integration",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0098",
+      "category": "integration",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0099",
+      "category": "bug_report",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0100",
+      "category": "abuse",
+      "priority": "P0",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0101",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0102",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0103",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0104",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0105",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0106",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0107",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0108",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0109",
+      "category": "bug_report",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0110",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0111",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0112",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0113",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0114",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0115",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0116",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0117",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0118",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0119",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0120",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0121",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0122",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0123",
+      "category": "abuse",
+      "priority": "P0",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0124",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0125",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0126",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0127",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0128",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0129",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0130",
+      "category": "performance",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "adjudicated",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z",
+      "notes": "Human adjudication confirmed the reviewed P3 decision over the synthetic source-intent P2 label for this low-latency report case."
+    },
+    {
+      "ticket_id": "P-0131",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0132",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0133",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0134",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0135",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0136",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0137",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0138",
+      "category": "bug_report",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0139",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0140",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0141",
+      "category": "bug_report",
+      "priority": "P0",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0142",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0143",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0144",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0145",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0146",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0147",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0148",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0149",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0150",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0151",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0152",
+      "category": "bug_report",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0153",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0154",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0155",
+      "category": "bug_report",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0156",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0157",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0158",
+      "category": "bug_report",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0159",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0160",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0161",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0162",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0163",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0164",
+      "category": "bug_report",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0165",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0166",
+      "category": "bug_report",
+      "priority": "P1",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0167",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0168",
+      "category": "integration",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0169",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0170",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0171",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0172",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0173",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0174",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0175",
+      "category": "performance",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "adjudicated",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z",
+      "notes": "Human adjudication confirmed the reviewed P3 decision over the synthetic source-intent P2 label for this low-latency report case."
+    },
+    {
+      "ticket_id": "P-0176",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0177",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0178",
+      "category": "integration",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0179",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0180",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0181",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0182",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0183",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0184",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0185",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0186",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0187",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0188",
+      "category": "performance",
+      "priority": "P2",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0189",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0190",
+      "category": "billing",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0191",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0192",
+      "category": "bug_report",
+      "priority": "P2",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0193",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0194",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0195",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0196",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0197",
+      "category": "feature_request",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0198",
+      "category": "auth",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0199",
+      "category": "integration",
+      "priority": "P3",
+      "needs_human": false,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    },
+    {
+      "ticket_id": "P-0200",
+      "category": "abuse",
+      "priority": "P0",
+      "needs_human": true,
+      "review_status": "human_reviewed",
+      "reviewer": "rileyrl",
+      "reviewed_at": "2026-08-21T06:10:12.366Z"
+    }
+  ]
+}

@@ -1,13 +1,15 @@
-import { TICKET_CATEGORIES, TICKET_PRIORITIES } from "./schema";
+import { TRIAGE_CLASSIFICATION_GUIDANCE } from "./schema";
+
+export const TRIAGE_PROMPT_VERSION = "triage-prompt-v3";
 
 export const TRIAGE_SYSTEM_PROMPT = `You are a triage classifier for a B2B SaaS support inbox.
 
-Output a single routing decision per ticket. Be conservative: if a ticket
-mentions data loss, security, or revenue-impacting outage, treat it as P0
-and set needs_human=true.
+Output a single routing decision per ticket. Apply the category, priority, and
+needs_human rules independently, then enforce the rubric invariant that every
+P0/P1 decision has needs_human=true. Do not send routine P2/P3 how-to or
+self-service requests to a human merely because they mention sensitive nouns.
 
-Categories: ${TICKET_CATEGORIES.join(", ")}
-Priorities: ${TICKET_PRIORITIES.join(", ")}
+${TRIAGE_CLASSIFICATION_GUIDANCE}
 
 Always return valid JSON matching the routing tool schema. No prose.
 Keep "reasoning" under 200 words.`;

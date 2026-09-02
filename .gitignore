@@ -55,3 +55,14 @@ security-scans/
 docs/blog-draft.md
 docs/blog-outline.md
 docs/*.docx
+
+# internal review and publication working files (not public sample content)
+docs/curtis-review-handoff.md
+docs/publication-checklist.md
+docs/agent-review-adjudication.md
+docs/agent-review-instructions.md
+data/production-shaped-150.agent-review-results.json
+data/production-shaped-150.human-audit-queue.json
+data/production-shaped-50.agent-review-packet.json
+data/production-shaped-50.agent-review-results.json
+internal/

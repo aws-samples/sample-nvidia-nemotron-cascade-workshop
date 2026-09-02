@@ -8,7 +8,7 @@ import { z } from "zod";
 import { getBedrockClient } from "../bedrock/client";
 import {
   MODELS,
-  APPROX_COST_PER_1K_TOKENS,
+  estimateModelCostUsd,
   type ModelId,
 } from "../bedrock/models";
 
@@ -38,8 +38,6 @@ import {
  * same pattern with a domain-specific schema; this module is the generic,
  * label-set-parameterized version that the MCP server exposes.
  */
-
-const TOKENS_PER_CALL_K = 0.35; // approximate thousands of tokens per call
 
 export interface CascadeClassifyOptions {
   /** Escalate when top1 - top2 probability is below this. Default 0.25. */
@@ -78,7 +76,7 @@ export interface CascadeClassifyResult {
   escalated: boolean;
   modelUsed: ModelId;
   latencyMs: number;
-  approxCostUsd: number;
+  approxCostUsd: number | null;
 }
 
 const DistributionSchema = z.object({
@@ -136,7 +134,7 @@ async function classifyOnce(
 ): Promise<{
   distribution: LabelProbability[];
   latencyMs: number;
-  totalTokens: number | null;
+  usage: { inputTokens: number; outputTokens: number } | null;
 }> {
   const input: ConverseCommandInput = {
     modelId,
@@ -161,7 +159,12 @@ async function classifyOnce(
   const start = performance.now();
   const response = await getBedrockClient().send(new ConverseCommand(input));
   const latencyMs = Math.round(performance.now() - start);
-  const totalTokens = response.usage?.totalTokens ?? null;
+  const usage = response.usage
+    ? {
+        inputTokens: response.usage.inputTokens ?? 0,
+        outputTokens: response.usage.outputTokens ?? 0,
+      }
+    : null;
 
   const blocks: ContentBlock[] = response.output?.message?.content ?? [];
   const toolUse = blocks.find((b) => "toolUse" in b)?.toolUse;
@@ -204,7 +207,7 @@ async function classifyOnce(
     .map((d) => ({ label: d.label, probability: d.probability / mass }))
     .sort((a, b) => b.probability - a.probability);
 
-  return { distribution, latencyMs, totalTokens };
+  return { distribution, latencyMs, usage };
 }
 
 function margin(distribution: LabelProbability[]): number {
@@ -231,7 +234,7 @@ export async function cascadeClassify(
   let primaryRun: {
     distribution: LabelProbability[];
     latencyMs: number;
-    totalTokens: number | null;
+    usage: { inputTokens: number; outputTokens: number } | null;
   } | null = null;
   try {
     primaryRun = await classifyOnce(text, labels, primary, maxTokens);
@@ -239,12 +242,9 @@ export async function cascadeClassify(
     primaryRun = null;
   }
   const primaryMargin = primaryRun ? margin(primaryRun.distribution) : 0;
-  // Prefer actual token usage from the Converse response; fall back to the
-  // fixed estimate only if the service didn't report usage.
-  const primaryTokensK = primaryRun?.totalTokens
-    ? primaryRun.totalTokens / 1000
-    : TOKENS_PER_CALL_K;
-  const primaryCost = primaryTokensK * APPROX_COST_PER_1K_TOKENS[primary];
+  const primaryCost = primaryRun?.usage
+    ? estimateModelCostUsd(primary, primaryRun.usage)
+    : null;
   const primaryLatency = primaryRun?.latencyMs ?? 0;
 
   // Domain-tuned label escalation: if Nano's top pick is a label the
@@ -260,7 +260,8 @@ export async function cascadeClassify(
   // saturates its distribution (top1 ≈ 1.0), margin is maximal even if
   // the answer is wrong. Catastrophic-miss domains need guardrails beyond
   // margin (force_escalate, escalate_labels, or human-in-the-loop).
-  // TODO(saturation): consider auto-escalation when top1 > threshold
+  // High-confidence distribution saturation is not a canonical escalation
+  // rule; evaluate it independently before adding it to a domain policy.
   // (e.g., 0.98) as a heuristic for distribution saturation — pending
   // empirical data on false-positive rate.
   const escalate =
@@ -282,11 +283,9 @@ export async function cascadeClassify(
   }
 
   const escalationRun = await classifyOnce(text, labels, escalation, maxTokens);
-  const escalationTokensK = escalationRun.totalTokens
-    ? escalationRun.totalTokens / 1000
-    : TOKENS_PER_CALL_K;
-  const escalationCost =
-    escalationTokensK * APPROX_COST_PER_1K_TOKENS[escalation];
+  const escalationCost = escalationRun.usage
+    ? estimateModelCostUsd(escalation, escalationRun.usage)
+    : null;
 
   return {
     label: escalationRun.distribution[0].label,
@@ -295,6 +294,9 @@ export async function cascadeClassify(
     escalated: true,
     modelUsed: escalation,
     latencyMs: primaryLatency + escalationRun.latencyMs,
-    approxCostUsd: primaryCost + escalationCost,
+    approxCostUsd:
+      primaryCost === null || escalationCost === null
+        ? null
+        : primaryCost + escalationCost,
   };
 }
