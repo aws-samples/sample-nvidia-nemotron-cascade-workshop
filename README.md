@@ -12,7 +12,7 @@ The question is where each model is useful, and how to measure the resulting
 tradeoff on a defined workload.
 
 ```bash
-git clone --branch push-mcp --single-branch https://github.com/aws-samples/sample-nvidia-nemotron-cascade-workshop.git
+git clone https://github.com/aws-samples/sample-nvidia-nemotron-cascade-workshop.git
 cd sample-nvidia-nemotron-cascade-workshop
 npm ci
 # Recompute the published comparison: no credentials or model calls.

@@ -41,9 +41,9 @@ Customer tier supplies context and never triggers escalation by itself.
 
 ## Run from source
 
-Clone the `push-mcp` branch using the command in the
-[repository README](../README.md). The repository's default branch may not yet
-contain this extension. `.nvmrc` selects Node.js 24 for users of nvm.
+Clone the repository using the command in the
+[repository README](../README.md). The default `main` branch includes this
+extension. `.nvmrc` selects Node.js 24 for users of nvm.
 
 To inspect and audit the recorded results without credentials or model calls:
 

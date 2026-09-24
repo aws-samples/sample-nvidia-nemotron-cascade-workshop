@@ -5,6 +5,12 @@ uncommitted public source. The final candidate passed the checks below after
 initial failures were corrected. This is local execution evidence, not a
 production certification or a new model-accuracy evaluation.
 
+**Default-branch release (2026-09-24):** `main` includes the verified Jev
+extension and its evidence. The promotion preserves the runtime, dependencies,
+tests and recorded results from `c70136f`; only clone instructions and release
+documentation changed. A standard clone now obtains the example. `push-mcp`
+remains available as the earlier publication branch.
+
 **Publication follow-up:** the implementation was published as
 [commit 2311904](https://github.com/aws-samples/sample-nvidia-nemotron-cascade-workshop/commit/2311904)
 on the [push-mcp branch](https://github.com/aws-samples/sample-nvidia-nemotron-cascade-workshop/tree/push-mcp).
@@ -13,8 +19,9 @@ A clean checkout of that commit passed installation, the offline audit, all
 from GitHub matched the tested commit and passed `npm ci`, the public audit,
 and both MCP configurations (repository-root and absolute-path/outside-root).
 These additional checks used no provider credentials or new model calls.
-`.nvmrc` now selects Node.js 24, and the README includes the branch-specific
-clone command. The detailed export verification below remains a dated record.
+`.nvmrc` selects Node.js 24. That first publication used a branch-specific clone
+command; the README now uses the default branch. The detailed export
+verification below remains a dated record.
 
 During the initial export verification, the public repository's `push-mcp` branch still pointed
 to `68cdc943cda441718e80bae02c8b03961198728f` and did **not** contain the Jev
