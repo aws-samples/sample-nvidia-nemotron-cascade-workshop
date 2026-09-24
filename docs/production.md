@@ -1,5 +1,10 @@
 # Production Starting Point
 
+This guide covers the original Bedrock-based two-tier app. The Jev extension
+also sends tickets to Vercel AI Gateway/TypeSafe. Its identity, egress,
+data-handling and quota requirements must be assessed separately; the Bedrock
+IAM and private-networking examples below do not cover that provider path.
+
 This document is an actionable starting point for adapting the workshop
 pattern. It is **not a turnkey architecture, compliance claim, or production
 routing policy**. The sample defaults to `us-west-2`, uses short synthetic

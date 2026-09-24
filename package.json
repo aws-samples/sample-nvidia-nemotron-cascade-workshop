@@ -3,27 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT-0",
-  "description": "Partner-agnostic workshop starter for two-tier LLM inference with NVIDIA Nemotron and Anthropic Claude on Amazon Bedrock.",
+  "description": "Runnable classification cascade examples: Jev on Vercel AI Gateway, Nemotron and Claude on Amazon Bedrock, with MCP tools and reproducible evaluation.",
   "engines": {
-    "node": ">=20"
+    "node": "^22.13.0 || >=24.0.0"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "test": "vitest run",
     "test:bakeoff": "vitest run tests/bakeoff.test.ts",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "bakeoff": "tsx scripts/bakeoff.ts",
+    "compare:three-tier": "tsx scripts/compare-three-tier.ts",
+    "compare:three-tier:collect": "node --import tsx --import ./scripts/gateway-rate-limit.mjs scripts/compare-three-tier.ts --collect-jev && node scripts/summarize-three-tier.mjs",
+    "compare:three-tier:report": "node scripts/summarize-three-tier.mjs",
+    "audit:three-tier": "tsx scripts/audit-three-tier.ts",
+    "triage:three-tier": "tsx scripts/triage-three-tier.ts",
+    "mcp": "tsx mcp/server.ts",
     "generate-agent-review": "tsx scripts/generate-agent-review-packet.ts",
     "generate-tickets": "tsx scripts/generate-tickets.ts",
     "validate-agent-review": "tsx scripts/validate-agent-review-results.ts"
   },
   "dependencies": {
     "@aws-sdk/client-bedrock-runtime": "^3.700.0",
-    "next": "^16.2.7",
+    "next": "^16.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "zod": "^3.23.8"
@@ -41,10 +46,10 @@
     "tailwindcss": "^3.4.15",
     "tsx": "^4.22.0",
     "typescript": "^5.6.3",
-    "vitest": "^4.1.8"
+    "vitest": "^4.1.11"
   },
   "overrides": {
     "postcss": "8.5.23",
-    "sharp": "0.35.3"
+    "sharp": "0.35.4"
   }
 }

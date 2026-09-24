@@ -1,5 +1,10 @@
 # CLAUDE.md - TicketTriage Workshop Project
 
+> This file describes the original two-tier bulk-endpoint exercise. For the
+> current Jev → Nano → Sonnet MCP/source example, follow `AGENTS.md` and
+> `docs/three-tier-example.md`. Do not apply the Nano-first workshop rule to
+> `triage_three_tier`, or create a new repo/published package for the example.
+
 You are helping an attendee extend this Next.js app with a new bulk-triage
 endpoint backed by NVIDIA Nemotron and Anthropic Claude models on Amazon
 Bedrock.

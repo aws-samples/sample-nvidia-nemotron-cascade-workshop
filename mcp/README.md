@@ -1,7 +1,17 @@
 # cascade-classify MCP server
 
-One tool: `cascade_classify(text, labels[])` — cost-aware text
-classification on Amazon Bedrock.
+Two tools are available from the same server:
+
+- `triage_three_tier(ticket)` — Jev → Nano → Sonnet ticket classification.
+  See the [runnable example and comparison](../docs/three-tier-example.md).
+- `cascade_classify(text, labels[])` — the existing generic classifier described below.
+
+The new tool adds Jev ahead of the existing ticket-domain Nano/Sonnet cascade.
+It returns category, priority, final-model `needs_human`, preserved
+`review_required`, and every stage decision. Jev uses Vercel AI Gateway; Nano
+and Sonnet use Bedrock. Read the [measured tradeoff](../docs/three-tier-results.md)
+or run `npm run audit:three-tier` to recompute the public evidence without
+credentials. The rest of this page documents the original generic tool.
 
 NVIDIA Nemotron 3 Nano classifies every request. Anthropic Claude Sonnet is
 called when Nano's probability margin shows uncertainty or when the caller
@@ -15,27 +25,36 @@ boundary-heavy 30-item stress demonstration caught the small model reporting
 0.92+ confidence on answers that disagreed with a separate model reference.
 That small run is routing-behavior evidence, not a production accuracy claim.
 Instead, the model is asked (via forced tool-calling) to distribute
-probability across **all** candidate labels. When it is torn between two
-labels the top1−top2 margin is small, no matter what confidence it claims.
+probability across **all** candidate labels. The top1−top2 gap provides another
+routing feature. This generated distribution is also uncalibrated, and a
+large gap can accompany an incorrect answer.
 That distribution only exists over a fixed candidate set, which is why this
 tool is scoped to classification rather than open-ended generation.
 
 ## Mount It
 
-Configure the server in any MCP client that supports a local stdio command.
-Use that client's documented configuration location; the server definition is:
+Run `npm ci` from the repository root, then configure the server in any MCP
+client that supports a local stdio command. Use that client's documented
+configuration location and replace the absolute repository paths below:
 
 ```json
 {
   "mcpServers": {
     "cascade-classify": {
-      "command": "npx",
-      "args": ["tsx", "<path-to-repo>/mcp/server.ts"],
+      "command": "/absolute/path/to/repo/node_modules/.bin/tsx",
+      "args": [
+        "--tsconfig",
+        "/absolute/path/to/repo/tsconfig.json",
+        "/absolute/path/to/repo/mcp/server.ts"
+      ],
       "env": { "AWS_REGION": "us-west-2" }
     }
   }
 }
 ```
+
+The explicit `--tsconfig` lets the shared TypeScript imports resolve even when
+the MCP client starts the server from a different working directory.
 
 Credentials: AWS SDK default chain — whatever makes
 `aws sts get-caller-identity` work makes this server work. The account
@@ -59,9 +78,9 @@ do not predict this generic tool's token shape or cost.
 
 ## Margin is a signal, not a guarantee
 
-The probability margin is structurally honest — when the model is torn
-between two labels, the margin is small no matter how "confident" it claims
-to be. But margin has a known blind spot: **distribution saturation**. When
+The probability margin is computed from the model's generated distribution.
+A narrow margin can be an uncertainty signal, but it is not a calibrated
+correctness estimate. Margin has a known blind spot: **distribution saturation**. When
 the small model assigns ~100% probability to a single label, the margin is
 maximal even if the label is wrong. This is a generic limitation of
 confidence-like routing signals, not a production error-rate claim.

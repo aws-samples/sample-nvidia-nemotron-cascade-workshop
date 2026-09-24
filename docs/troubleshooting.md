@@ -1,7 +1,25 @@
 # Troubleshooting
 
-Use repository-owned synthetic tickets while diagnosing the workshop. Do not
+Use repository-owned synthetic tickets while diagnosing the examples. Do not
 paste customer ticket data into commands, screenshots, logs, or issue reports.
+
+## Jev And The Three-Tier Example
+
+- `Set AI_GATEWAY_API_KEY for Jev`: supply the key to the CLI/MCP server process.
+  Standalone commands do not automatically load `.env.local`.
+- MCP startup fails with `Cannot find module '@/lib/triage/prompts'`: include
+  `--tsconfig /absolute/path/to/repo/tsconfig.json` before the server path in the
+  `tsx` arguments. See [the complete MCP configuration](three-tier-example.md#use-as-an-mcp-tool).
+- HTTP 401/403: check the server's Gateway credential and model access.
+  Authentication errors stop the request.
+- HTTP 429 during collection: use `npm run compare:three-tier:collect`, wait for
+  the account's quota window if throttling persists, and resume. Completed
+  results are checkpointed. This limiter coordinates one process only.
+- Missing baseline caches: `npm run audit:three-tier` audits the public result
+  without caches. To create a new comparison, collect Nano and Sonnet first
+  using the paid commands in [the example guide](three-tier-example.md).
+- The web demo still shows Nano → Sonnet: the new three-tier entry points are
+  `triage_three_tier` over MCP and `npm run triage:three-tier`.
 
 ## AWS Credentials And Bedrock
 

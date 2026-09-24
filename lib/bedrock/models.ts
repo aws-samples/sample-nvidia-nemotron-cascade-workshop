@@ -27,6 +27,19 @@ export const MODELS = {
 
 export type ModelId = (typeof MODELS)[keyof typeof MODELS];
 
+// Evaluation models use their own transport, never Bedrock Converse.
+// Kept separate from MODELS so historical Bedrock cache identities stay intact.
+export const GATEWAY_MODELS = {
+  JEV: "typesafe-ai/jev",
+} as const;
+
+export const JEV_PRICING_SNAPSHOT = {
+  checkedAt: "2026-09-21",
+  source: "https://ai-gateway.vercel.sh/v1/models",
+  inputUsdPerMillionTokens: 0.042,
+  outputUsdPerMillionTokens: 0,
+} as const;
+
 export interface ModelTokenPricing {
   inputUsdPerMillionTokens: number;
   outputUsdPerMillionTokens: number;

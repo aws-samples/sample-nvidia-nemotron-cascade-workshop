@@ -1,0 +1,181 @@
+{
+  "status": "passed",
+  "records": 150,
+  "scenario_families": 11,
+  "summaries": [
+    {
+      "strategy": "sonnet",
+      "n": 150,
+      "category_correct": 141,
+      "joint_correct": 125,
+      "high_priority_recalled": 7,
+      "high_priority_total": 7,
+      "final_model_human_recalled": 9,
+      "review_required_recalled": 9,
+      "human_total": 22,
+      "review_required_false_positives": 0,
+      "non_human_total": 128,
+      "calls": {
+        "jev": 0,
+        "nano": 0,
+        "sonnet": 150
+      },
+      "routes": {
+        "sonnet": 150
+      },
+      "estimated_market_cost_usd": 1.241988,
+      "estimated_p50_ms": 3362,
+      "estimated_p95_ms": 5036,
+      "successful_call_market_cost_usd": 1.241988
+    },
+    {
+      "strategy": "nano",
+      "n": 150,
+      "category_correct": 123,
+      "joint_correct": 111,
+      "high_priority_recalled": 7,
+      "high_priority_total": 7,
+      "final_model_human_recalled": 12,
+      "review_required_recalled": 12,
+      "human_total": 22,
+      "review_required_false_positives": 0,
+      "non_human_total": 128,
+      "calls": {
+        "jev": 0,
+        "nano": 150,
+        "sonnet": 0
+      },
+      "routes": {
+        "nano": 150
+      },
+      "estimated_market_cost_usd": 0.015725519999999996,
+      "estimated_p50_ms": 674,
+      "estimated_p95_ms": 875,
+      "successful_call_market_cost_usd": 0.015725519999999996
+    },
+    {
+      "strategy": "jev",
+      "n": 150,
+      "category_correct": 142,
+      "joint_correct": 135,
+      "high_priority_recalled": 7,
+      "high_priority_total": 7,
+      "final_model_human_recalled": 17,
+      "review_required_recalled": 17,
+      "human_total": 22,
+      "review_required_false_positives": 0,
+      "non_human_total": 128,
+      "calls": {
+        "jev": 150,
+        "nano": 0,
+        "sonnet": 0
+      },
+      "routes": {
+        "jev": 150
+      },
+      "estimated_market_cost_usd": null,
+      "estimated_p50_ms": 7124,
+      "estimated_p95_ms": 7288,
+      "successful_call_market_cost_usd": 0.010859100000000007
+    },
+    {
+      "strategy": "nano-sonnet",
+      "n": 150,
+      "category_correct": 126,
+      "joint_correct": 109,
+      "high_priority_recalled": 7,
+      "high_priority_total": 7,
+      "final_model_human_recalled": 7,
+      "review_required_recalled": 12,
+      "human_total": 22,
+      "review_required_false_positives": 0,
+      "non_human_total": 128,
+      "calls": {
+        "jev": 0,
+        "nano": 150,
+        "sonnet": 12
+      },
+      "routes": {
+        "nano": 138,
+        "nano→sonnet": 12
+      },
+      "estimated_market_cost_usd": 0.11831652000000001,
+      "estimated_p50_ms": 684,
+      "estimated_p95_ms": 4427,
+      "successful_call_market_cost_usd": 0.11831652000000001
+    },
+    {
+      "strategy": "jev-sonnet",
+      "n": 150,
+      "category_correct": 150,
+      "joint_correct": 135,
+      "high_priority_recalled": 7,
+      "high_priority_total": 7,
+      "final_model_human_recalled": 9,
+      "review_required_recalled": 17,
+      "human_total": 22,
+      "review_required_false_positives": 0,
+      "non_human_total": 128,
+      "calls": {
+        "jev": 150,
+        "nano": 0,
+        "sonnet": 31
+      },
+      "routes": {
+        "jev": 119,
+        "jev→sonnet": 31
+      },
+      "estimated_market_cost_usd": null,
+      "estimated_p50_ms": 7129,
+      "estimated_p95_ms": 11268,
+      "successful_call_market_cost_usd": 0.27899010000000013
+    },
+    {
+      "strategy": "jev-nano-sonnet",
+      "n": 150,
+      "category_correct": 150,
+      "joint_correct": 135,
+      "high_priority_recalled": 7,
+      "high_priority_total": 7,
+      "final_model_human_recalled": 9,
+      "review_required_recalled": 17,
+      "human_total": 22,
+      "review_required_false_positives": 0,
+      "non_human_total": 128,
+      "calls": {
+        "jev": 150,
+        "nano": 14,
+        "sonnet": 17
+      },
+      "routes": {
+        "jev": 119,
+        "jev→sonnet": 17,
+        "jev→nano": 14
+      },
+      "estimated_market_cost_usd": null,
+      "estimated_p50_ms": 7129,
+      "estimated_p95_ms": 11268,
+      "successful_call_market_cost_usd": 0.16183368000000006
+    }
+  ],
+  "middle_layer": {
+    "jev_uncertain_non_high_risk": 14,
+    "nano_retained": 14,
+    "sonnet_calls_avoided": 14,
+    "nano_joint_correct_on_deferred": 9,
+    "sonnet_joint_correct_on_deferred": 9,
+    "retained_nano_wrong_sonnet_right": [],
+    "retained_nano_right_sonnet_wrong": []
+  },
+  "claims": {
+    "sonnet_calls_saved_vs_jev_sonnet": 14,
+    "successful_cost_reduction_vs_jev_sonnet": 0.4199303846265513,
+    "successful_cost_increase_vs_nano_sonnet": 0.36780290698205165,
+    "missed_preserved_human_signals": 5,
+    "three_model_paths_observed_in_replay": 0
+  },
+  "source": "docs/research/three-tier-comparison.json",
+  "source_sha256": "4174053128a8bbe078c1c749adb77ceb2d0b38c49a3d808c9b5363cc2563cf82",
+  "records_sha256": "4fbfadfe65eb94a567e42c6f78c2c7478e069a9e67a59d1383178ba05d86dfa3",
+  "scope": "Offline consistency check of public records and reviewed synthetic references; no new inference or external peer review."
+}

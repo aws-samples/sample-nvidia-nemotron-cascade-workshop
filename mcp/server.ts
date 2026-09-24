@@ -2,15 +2,17 @@
 /**
  * cascade-classify MCP server.
  *
- * Exposes one tool: `cascade_classify(text, labels[])` — cost-aware text
+ * Exposes `cascade_classify(text, labels[])` — cost-aware text
  * classification on Amazon Bedrock. NVIDIA Nemotron 3 Nano classifies every
  * request; Anthropic Claude Sonnet is called when Nano's probability margin
  * shows uncertainty or when an explicit caller guardrail requests escalation.
+ * Also exposes `triage_three_tier(ticket)` — Jev → Nano → Sonnet ticket triage.
  *
  * Mount from any MCP client (Claude Code, Cursor, ...):
  *
  *   { "mcpServers": { "cascade-classify": {
- *       "command": "npx", "args": ["tsx", "<repo>/mcp/server.ts"],
+ *       "command": "<repo>/node_modules/.bin/tsx",
+ *       "args": ["--tsconfig", "<repo>/tsconfig.json", "<repo>/mcp/server.ts"],
  *       "env": { "AWS_REGION": "us-west-2" } } } }
  *
  * Credentials: AWS SDK default chain — whatever makes
@@ -20,6 +22,8 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 import { cascadeClassify } from "../lib/cascade/classify";
+import { triageThreeTier } from "../lib/cascade/three-tier";
+import { TicketSchema } from "../lib/triage/schema";
 
 const server = new McpServer({
   name: "cascade-classify",
@@ -31,7 +35,7 @@ server.registerTool(
   {
     title: "Cascade classify",
     description:
-      "Classify text into one of the provided labels at minimum cost. " +
+      "Classify text into one of the provided labels with cost-aware model routing. " +
       "Runs NVIDIA Nemotron 3 Nano (fast, cost-efficient) on every request and " +
       "escalates to Anthropic Claude Sonnet when Nano's probability margin " +
       "shows uncertainty or an explicit caller guardrail fires. Use for any " +
@@ -102,6 +106,31 @@ server.registerTool(
           ),
         },
       ],
+    };
+  },
+);
+
+server.registerTool(
+  "triage_three_tier",
+  {
+    title: "Three-tier ticket triage",
+    description:
+      "Classify a support ticket into category, priority and human-review status. " +
+      "Starts with Jev on Vercel AI Gateway, uses Nemotron Nano on Bedrock for uncertain " +
+      "routine tickets, and escalates to Sonnet on Bedrock when needed. " +
+      "P0/P1 or human-review signals from Jev bypass Nano. Returns all stage decisions, " +
+      "the route, latency and estimated cost. review_required preserves earlier review " +
+      "signals even if the final model disagrees. This is a classification example; " +
+      "it does not modify a ticket or perform the requested account action. " +
+      "Requires AI_GATEWAY_API_KEY and AWS credentials on the server.",
+    inputSchema: { ticket: TicketSchema },
+    annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: true },
+  },
+  async ({ ticket }, extra) => {
+    const result = await triageThreeTier(ticket, { signal: extra.signal });
+    return {
+      content: [{ type: "text" as const, text: JSON.stringify(result, null, 2) }],
+      structuredContent: result,
     };
   },
 );

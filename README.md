@@ -1,19 +1,36 @@
-# sample-nvidia-nemotron-cascade-workshop
+# TicketTriage: model cascade examples
 
-Sample code for **two-tier LLM inference**—also called **LLM cascading** or
-**confidence-based model routing**—on **Amazon Bedrock**. NVIDIA Nemotron 3
-Nano 30B A3B handles the routine, high-volume support-ticket classification
-path; selected tickets escalate to Anthropic Claude Sonnet on the same Bedrock
-API surface. After this first mention, the model is shortened to **Nemotron 3
-Nano**.
+This project started with a classification cascade using **NVIDIA Nemotron 3
+Nano 30B A3B** and **Anthropic Claude Sonnet** on Amazon Bedrock. Nemotron 3 Nano
+handled the first pass, with selected tickets sent to Sonnet. The work focused
+on making those handoffs visible and evaluating quality, latency, and cost together.
+
+The **[three-tier extension](docs/three-tier-example.md)** adds **Jev** through
+Vercel AI Gateway ahead of that cascade. Jev classifies first; Nano handles some
+uncertain requests; Sonnet handles requests selected by confidence and risk rules.
+The question is where each model is useful, and how to measure the resulting
+tradeoff on a defined workload.
+
+```bash
+git clone --branch push-mcp --single-branch https://github.com/aws-samples/sample-nvidia-nemotron-cascade-workshop.git
+cd sample-nvidia-nemotron-cascade-workshop
+npm ci
+# Recompute the published comparison: no credentials or model calls.
+npm run audit:three-tier
+```
+
+Run the new example from source or mount its MCP tool. See the guide for live
+credentials and commands, and [measured results](docs/three-tier-results.md)
+for the evidence and its limits. The existing two-tier web app and workshop
+exercise remain available below.
 
 Support-ticket triage is the example, not a product dependency. The pattern
 also applies to lead scoring, moderation, alert routing, document
 classification, and other workloads where most requests are routine and a
 smaller tail needs a stronger model.
 
-This repository is designed for an **instructor-led workshop first**. It is
-also independently runnable and reproducible: the paths, command order,
+The original app was designed for an **instructor-led workshop**. It is
+independently runnable and reproducible: the paths, command order,
 expected outputs, and manual implementation route are documented below. A
 fully self-paced course—with extensive checkpoints, screenshots, recovery
 flows, and participant provisioning—is intentionally deferred to possible
@@ -21,6 +38,10 @@ Workshop Studio packaging.
 
 ## What's In The Repo
 
+- `lib/cascade/three-tier.ts`: Jev → Nano → Sonnet ticket policy and stage trace
+- `mcp/server.ts`: `triage_three_tier` and the existing `cascade_classify` tools
+- `scripts/compare-three-tier.ts`: paired replay of six model/routing configurations
+- `scripts/audit-three-tier.ts`: independent offline recomputation from public records
 - `POST /api/triage`: a single-ticket Claude Sonnet baseline
 - `POST /api/triage/cascade`: a one-ticket Nemotron 3 Nano to Claude cascade
   streamed as server-sent events (SSE)
@@ -39,12 +60,42 @@ Workshop Studio packaging.
   regression compatibility, not publication evidence
 - `scripts/bakeoff.ts`: the strategy comparison harness
 
-The workshop task is to create the exact file
+The optional, original workshop task is to create the exact file
 `app/api/triage/bulk/route.ts`, implementing `POST /api/triage/bulk` as a
 streaming NDJSON endpoint. The detailed contract and a no-agent manual path
 are in [docs/phase2-change.md](docs/phase2-change.md).
 
 ## Architecture
+
+### Adding Jev to the existing cascade
+
+```mermaid
+flowchart TD
+    T["Ticket via CLI or triage_three_tier MCP"] --> J["Jev / Vercel AI Gateway"]
+    J -->|"P0/P1 or needs_human"| S["Claude Sonnet / Amazon Bedrock"]
+    J -->|"Routine; minimum field confidence below 0.8"| N["Nemotron 3 Nano / Amazon Bedrock"]
+    J -->|"Otherwise"| R["Decision, stage trace, review_required, estimated cost"]
+    N -->|"Confidence below 0.7, P0/P1, or needs_human"| S
+    N -->|"Otherwise"| R
+    S --> R
+```
+
+Jev returns typed choices for category, priority and human review. Nano and
+Sonnet use the existing Bedrock client and ticket schema. Each receives the
+ticket and rubric independently; earlier model answers are not passed forward.
+Jev is an additional provider integration, so the three-tier path does not use
+one Bedrock API for all three models.
+
+Confident routine tickets can stop early. Jev's P0/P1 or human-review signals
+bypass Nano. Customer tier remains context, never an escalation rule by itself.
+Neither model's confidence is a calibrated correctness probability.
+The final model supplies `decision`; `review_required` separately retains
+earlier review signals. See the [exact policy](docs/three-tier-example.md).
+
+### Existing two-tier web app
+
+The Next.js demo and original bulk exercise still use Nano → Sonnet. The new
+three-tier path is exposed through the source CLI and MCP tool.
 
 ```mermaid
 flowchart TB
@@ -82,7 +133,7 @@ flowchart TB
     NANO -.->|"confidence < 0.7\nOR P0/P1\nOR needs_human"| SONNET
 ```
 
-## Instructor-Led Run Of Show
+## Instructor-Led Run Of Show (Original Two-Tier Exercise)
 
 | Stage | Attendee action | Expected result | Sample time |
 |---|---|---|---:|
@@ -103,7 +154,36 @@ labeling run adds 30 separately billed calls.
 
 ## Quickstart
 
-Prerequisites: Node.js, npm, AWS CLI credentials, `curl`, and `jq`.
+### Three-tier example and public result audit
+
+With Node.js 22.13+ on the 22.x line, or Node.js 24+, and npm
+(`.nvmrc` selects Node.js 24):
+
+```bash
+npm ci
+npm run audit:three-tier
+```
+
+This verifies 150 public result records against the reviewed synthetic labels,
+recomputes all six strategies, and checks routing, usage-based cost and aggregate
+metrics. It does not need `.bakeoff-cache`, AWS credentials or a Gateway key.
+It checks the recorded evidence; it does not rerun models.
+
+For a live classification, supply `AI_GATEWAY_API_KEY` and AWS credentials through
+your shell or MCP client's secret settings, then run:
+
+```bash
+export AWS_REGION=us-west-2
+npm run triage:three-tier -- --example
+```
+
+Live calls are paid. The standalone CLI does not automatically load `.env.local`.
+See [MCP setup and input/output examples](docs/three-tier-example.md).
+
+### Existing two-tier web app
+
+Prerequisites: the same Node.js version requirement above, npm, AWS CLI
+credentials, `curl`, and `jq`.
 
 ```bash
 npm ci
@@ -136,7 +216,7 @@ The app uses the AWS SDK default credential chain. Whatever makes
 The sample Region is `us-west-2`; use a Region where the configured models or
 inference profiles are available.
 
-## Workshop Task: Bulk NDJSON
+## Workshop Task: Bulk NDJSON (Original Two-Tier Exercise)
 
 Create `app/api/triage/bulk/route.ts`—not `app/api/triage/bulk.ts` and not an
 alternate route name. The endpoint accepts:
@@ -308,7 +388,38 @@ and human-review recall. Operations
 include escalation count/rate, P50/P95 latency, and estimated comparative
 cost. Opus-reference metrics appear only when matching optional labels exist.
 
-## Current Production-Shaped Locked-Test Result
+## Three-Tier Evaluation (2026-09-21)
+
+The new comparison reuses the 150 reviewed synthetic tickets and the recorded
+2026-08-31 Nano/Sonnet responses, adding new Jev evaluations. These are real
+model responses on synthetic inputs. Routes are composed offline from matching
+responses, not measured by running every cascade end to end. This previously
+examined split is not a fresh holdout.
+
+| Strategy | Category agreement | Joint agreement | Sonnet calls in replay | Successful-call cost estimate, USD |
+|---|---:|---:|---:|---:|
+| Original Nano → Sonnet | 126/150 (84.0%) | 109/150 (72.7%) | 12 | $0.118317 |
+| Jev → Sonnet | 150/150 (100.0%) | 135/150 (90.0%) | 31 | $0.278990 |
+| Jev → Nano → Sonnet | 150/150 (100.0%) | 135/150 (90.0%) | 17 | $0.161834 |
+
+Joint agreement requires category, priority and the **final model's**
+`needs_human` to match. Cost sums successful responses at recorded prices;
+unknown failed/retried attempt charges, hosting and human review are excluded.
+The three-tier estimate is 42.0% lower than Jev → Sonnet, but 36.8% higher
+than the original Nano → Sonnet strategy.
+
+Nano retained 14 requests that Jev deferred. On those requests, Nano and Sonnet
+had the same observed joint correctness (9/14); both missed the human-review
+requirement on the other five. The three-tier path retained review signals on
+17/22 expected cases overall; its final model alone retained 9/22. None of the
+150 replayed tickets went through all three models.
+
+The purpose remains to evaluate a division of work, not rank models universally.
+Read [all six configurations, failure cases and claim boundaries](docs/three-tier-results.md),
+or [the Chinese interpretation](docs/research/three-tier-findings.zh-CN.md).
+Batch latency includes collector queueing and does not support a speed claim.
+
+## Original Production-Shaped Locked-Test Result (2026-08-31)
 
 Riley Lin independently reviewed all 150 blind worksheet items. The predeclared
 policy escalates on confidence below 0.7, P0/P1 priority, or
@@ -342,15 +453,34 @@ intervals, failure analysis, provenance hashes, and limitations.
 
 An earlier synthetic run exposed dataset-coherence and evaluation-design
 problems. It is retained internally as a methodology lesson and is not
-publication evidence. The production-shaped locked test above is the only
-claim-bearing result in this repository.
+publication evidence. The original locked-test result and the later exploratory
+Jev comparison are separate dated artifacts; neither is a production guarantee.
 
 ## Models And Configuration
 
-Model IDs live only in `lib/bedrock/models.ts` and are referenced through
-`MODELS`. The headline application path is `NEMOTRON_NANO` to
-`CLAUDE_SONNET`. `NEMOTRON_SUPER` is retained for experimentation, and the
-Opus model is an offline judge for the bake-off.
+Model IDs live in `lib/bedrock/models.ts`: `MODELS` holds the Bedrock models,
+and `GATEWAY_MODELS.JEV` identifies the evaluation model. The Jev alias does
+not pin an underlying provider version. The original web app uses
+`NEMOTRON_NANO` to `CLAUDE_SONNET`; the new CLI/MCP adds Jev first.
+`NEMOTRON_SUPER` is retained for experimentation, and Opus is an offline
+judge for the original bake-off, not part of the runtime cascade.
+
+### Switching to newer Bedrock models
+
+1. Choose a model ID or inference profile from the
+   [Bedrock model catalog](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
+   available in your `AWS_REGION`; check compatibility with Converse and this
+   sample's tool-calling request.
+2. In [lib/bedrock/models.ts](lib/bedrock/models.ts), replace the values of
+   `MODELS.NEMOTRON_NANO` and/or `MODELS.CLAUDE_SONNET`. Update
+   `MODEL_TOKEN_PRICING` and `PRICING_SNAPSHOT` for the selected models.
+3. Confirm model access/IAM permissions, restart the app or MCP server, and try
+   `npm run triage:three-tier -- --example` before a new evaluation (paid calls).
+
+**Note:** These model and price settings are dated evaluation snapshots, not
+automatic “latest” selections. New models may require request/prompt changes
+and routing recalibration. Published results apply only to the documented
+versions; rerun evaluation after switching.
 
 The workshop demonstrates prompt-based routing with synthetic data. Model
 fine-tuning and NVIDIA NeMo-generated synthetic data are useful **follow-on
@@ -371,6 +501,11 @@ quotas, safety controls, and least-privilege networking. See
 
 | Command | Purpose |
 |---|---|
+| `npm run audit:three-tier` | Recompute public recorded evidence; no model calls or private caches |
+| `npm run triage:three-tier -- --example` | Run one live three-tier example; credentials and paid calls |
+| `npm run mcp` | Start the stdio MCP server |
+| `npm run compare:three-tier:collect` | Collect missing Jev results with pacing; requires baseline caches |
+| `npm run compare:three-tier` | Compose from local matching model caches, without new model calls |
 | `npm run dev` | Start the Next.js development server |
 | `npm run typecheck` | Run TypeScript checking |
 | `npm test` | Run Vitest |
@@ -385,3 +520,6 @@ quotas, safety controls, and least-privilege networking. See
 See [SECURITY.md](SECURITY.md) for reporting security issues and
 [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidance. This sample is
 licensed under the MIT-0 License; see [LICENSE](LICENSE).
+
+The Jev extension's [verification record](docs/verification.md) describes the
+clean-source checks, evidence audit and observed runtime paths.

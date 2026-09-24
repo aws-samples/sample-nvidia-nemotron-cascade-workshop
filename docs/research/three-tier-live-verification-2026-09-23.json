@@ -1,0 +1,611 @@
+{
+  "kind": "Fresh live execution verification on synthetic inputs; not an accuracy, latency or cost benchmark",
+  "verification_date_local": "2026-09-23",
+  "timezone": "America/Los_Angeles",
+  "started_at": "2026-09-24T00:11:44.952Z",
+  "finished_at": "2026-09-24T00:12:13.601Z",
+  "source": {
+    "base_commit": "68cdc943cda441718e80bae02c8b03961198728f",
+    "uncommitted_working_tree_export": true,
+    "source_manifest_sha256": "d98c264d60c041b09c9cb27380467de49b3fffd85056d35f7d532919b84e5b98",
+    "source_file_count": 86,
+    "note": "Freshly installed final export after MCP configuration, input validation, Node requirement and dependency fixes. Hashes identify the source tested; this report was completed after execution. This is not a clone of a published Jev revision.",
+    "files_sha256": {
+      "mcp/server.ts": "0ed4d954a73de65d407a3d53abbcff1cbe16513760c8f46d5790aedb39007c37",
+      "lib/bedrock/client.ts": "7f4cd13b251e6ceb9644484169d1bbd66919c50d31138cc14ba46e86f85a6a5d",
+      "lib/bedrock/models.ts": "a02ace074f649837366fe29c9fe61737d6f7c805206b2b6525a824118f2dd715",
+      "lib/cascade/three-tier.ts": "7faffaf0923055c789e5713bb1b8b3fcbebe7f1d694bd8934681c2f768675c59",
+      "lib/cascade/classify.ts": "1445bf22c3a8fe633cbc9cc8e4227ab24e9e3b0453b730a0af7f466fd80d4697",
+      "lib/jev/client.ts": "53a95cf49a2d3a1afe4c05518c7e981e1229581a366537733f70428ae980d9d5",
+      "scripts/triage-three-tier.ts": "383c00d3af4d7701fe29fef8b5c3da921e458ca15607d1b99d84734bf83ae2ca",
+      "package.json": "8f8a4f90b0b3ca43b093a0fe380f6f8b97a88a8ce044fd32f661f317c08c4463",
+      "package-lock.json": "6e6e0e75a7bbb8b31edc5fbcb3de36249adc6cba9dd0f94de96e53388b92d807",
+      "tsconfig.json": "9c73cf280ef044e5b2557572af01310c7bb24a714ec22d1a7bdb85e6f152cb0b"
+    }
+  },
+  "runtime": {
+    "node": "v25.2.1",
+    "aws_region": "us-west-2",
+    "credentials": "Gateway key supplied in memory; configured AWS authentication; no secret values recorded",
+    "private_files_present_in_export": {
+      ".env.local": false,
+      ".bakeoff-cache": false,
+      "internal": false
+    },
+    "resolved_versions": {
+      "next": "16.3.6",
+      "vitest": "4.1.11",
+      "sharp": "0.35.4",
+      "@modelcontextprotocol/sdk": "1.30.0"
+    }
+  },
+  "initial_failure": {
+    "command": "$REPO/node_modules/.bin/tsx $REPO/mcp/server.ts",
+    "working_directory": "Outside the repository",
+    "error": "Cannot find module '@/lib/triage/prompts'",
+    "provider_calls": 0,
+    "fix": "Add --tsconfig $REPO/tsconfig.json to the documented MCP configuration"
+  },
+  "summary": {
+    "passed": 9,
+    "failed": 0,
+    "blocked": 0
+  },
+  "steps": [
+    {
+      "label": "01-mcp-initialize-tools",
+      "status": "passed",
+      "started_at": "2026-09-24T00:11:45.121Z",
+      "duration_ms": 1613,
+      "command": "$REPO/node_modules/.bin/tsx --tsconfig $REPO/tsconfig.json $REPO/mcp/server.ts",
+      "working_directory": "A temporary directory outside the repository",
+      "tools": [
+        "cascade_classify",
+        "triage_three_tier"
+      ]
+    },
+    {
+      "label": "02-mcp-P-0051",
+      "status": "passed",
+      "started_at": "2026-09-24T00:11:49.137Z",
+      "duration_ms": 605,
+      "route": "jev",
+      "request": {
+        "name": "triage_three_tier",
+        "arguments": {
+          "ticket": {
+            "id": "P-0051",
+            "subject": "Password reset",
+            "body": "Where can I request a new password reset link after the previous link expired?",
+            "customer_tier": "pro"
+          }
+        }
+      },
+      "response": {
+        "schema_version": "three-tier-triage-v1",
+        "policy": {
+          "version": "jev-nano-sonnet-v1",
+          "jevMinimumFieldConfidence": 0.8,
+          "nanoConfidenceThreshold": 0.7,
+          "highRisk": "P0/P1 or needs_human skips directly to Sonnet",
+          "finalDecision": "last model wins; review_required separately preserves earlier human-review signals"
+        },
+        "decision": {
+          "ticket_id": "P-0051",
+          "category": "auth",
+          "priority": "P3",
+          "confidence": 0.95,
+          "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+          "needs_human": false
+        },
+        "final_model": "typesafe-ai/jev",
+        "route": "jev",
+        "review_required": false,
+        "escalated": false,
+        "total_latency_ms": 588,
+        "estimated_market_cost_usd": 7.2408e-05,
+        "known_market_cost_usd": 7.2408e-05,
+        "cost_complete": true,
+        "stages": [
+          {
+            "stage": "jev",
+            "model": "typesafe-ai/jev",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "P-0051",
+              "category": "auth",
+              "priority": "P3",
+              "confidence": 0.95,
+              "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+              "needs_human": false
+            },
+            "latency_ms": 586,
+            "usage": {
+              "inputTokens": 1724,
+              "outputTokens": 153
+            },
+            "estimated_market_cost_usd": 7.2408e-05,
+            "gateway_reported_cost_usd": 0,
+            "confidence_by_field": {
+              "category": 1,
+              "priority": 0.95,
+              "needs_human": 1
+            },
+            "attempts": 1
+          }
+        ]
+      }
+    },
+    {
+      "label": "03-mcp-P-0053",
+      "status": "passed",
+      "started_at": "2026-09-24T00:11:52.145Z",
+      "duration_ms": 1540,
+      "route": "jev→nano",
+      "request": {
+        "name": "triage_three_tier",
+        "arguments": {
+          "ticket": {
+            "id": "P-0053",
+            "subject": "Reconnect Slack",
+            "body": "How do I reconnect our Slack workspace after an admin changed?",
+            "customer_tier": "pro"
+          }
+        }
+      },
+      "response": {
+        "schema_version": "three-tier-triage-v1",
+        "policy": {
+          "version": "jev-nano-sonnet-v1",
+          "jevMinimumFieldConfidence": 0.8,
+          "nanoConfidenceThreshold": 0.7,
+          "highRisk": "P0/P1 or needs_human skips directly to Sonnet",
+          "finalDecision": "last model wins; review_required separately preserves earlier human-review signals"
+        },
+        "decision": {
+          "ticket_id": "P-0053",
+          "category": "integration",
+          "priority": "P3",
+          "confidence": 0.95,
+          "reasoning": "The request is about re-establishing a Slack workspace connection, which falls under integration. It is a routine how-to question with no indication of compromise, billing impact, or policy exception. The customer tier is pro, but that does not change category or priority. This can be answered via documentation or standard guidance, so needs_human is false.",
+          "needs_human": false
+        },
+        "final_model": "nvidia.nemotron-nano-3-30b",
+        "route": "jev→nano",
+        "review_required": false,
+        "escalated": true,
+        "total_latency_ms": 1531,
+        "estimated_market_cost_usd": 0.000178686,
+        "known_market_cost_usd": 0.000178686,
+        "cost_complete": true,
+        "stages": [
+          {
+            "stage": "jev",
+            "model": "typesafe-ai/jev",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "P-0053",
+              "category": "auth",
+              "priority": "P3",
+              "confidence": 0.58,
+              "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+              "needs_human": false
+            },
+            "latency_ms": 451,
+            "usage": {
+              "inputTokens": 1723,
+              "outputTokens": 153
+            },
+            "estimated_market_cost_usd": 7.2366e-05,
+            "gateway_reported_cost_usd": 0,
+            "confidence_by_field": {
+              "category": 0.58,
+              "priority": 0.9,
+              "needs_human": 0.99
+            },
+            "attempts": 1
+          },
+          {
+            "stage": "nano",
+            "model": "nvidia.nemotron-nano-3-30b",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "P-0053",
+              "category": "integration",
+              "priority": "P3",
+              "confidence": 0.95,
+              "reasoning": "The request is about re-establishing a Slack workspace connection, which falls under integration. It is a routine how-to question with no indication of compromise, billing impact, or policy exception. The customer tier is pro, but that does not change category or priority. This can be answered via documentation or standard guidance, so needs_human is false.",
+              "needs_human": false
+            },
+            "latency_ms": 1079,
+            "usage": {
+              "inputTokens": 1260,
+              "outputTokens": 128,
+              "totalTokens": 1388
+            },
+            "estimated_market_cost_usd": 0.00010632
+          }
+        ]
+      }
+    },
+    {
+      "label": "04-mcp-P-0062",
+      "status": "passed",
+      "started_at": "2026-09-24T00:11:56.089Z",
+      "duration_ms": 3502,
+      "route": "jev→sonnet",
+      "request": {
+        "name": "triage_three_tier",
+        "arguments": {
+          "ticket": {
+            "id": "P-0062",
+            "subject": "Possible account takeover",
+            "body": "We see an unrecognized administrator login and unexpected permission changes on the account.",
+            "customer_tier": "pro"
+          }
+        }
+      },
+      "response": {
+        "schema_version": "three-tier-triage-v1",
+        "policy": {
+          "version": "jev-nano-sonnet-v1",
+          "jevMinimumFieldConfidence": 0.8,
+          "nanoConfidenceThreshold": 0.7,
+          "highRisk": "P0/P1 or needs_human skips directly to Sonnet",
+          "finalDecision": "last model wins; review_required separately preserves earlier human-review signals"
+        },
+        "decision": {
+          "ticket_id": "P-0062",
+          "category": "abuse",
+          "priority": "P0",
+          "confidence": 0.95,
+          "reasoning": "The ticket reports an unrecognized administrator login and unexpected permission changes, which are classic indicators of an active account takeover/compromise. This maps directly to the \"abuse\" category (suspected compromise, malicious activity). The combination of unauthorized access and permission changes constitutes a critical active security incident with potential for data exposure or further damage, warranting P0 priority. P0 mandates needs_human=true per rubric invariant.",
+          "needs_human": true
+        },
+        "final_model": "us.anthropic.claude-sonnet-4-6",
+        "route": "jev→sonnet",
+        "review_required": true,
+        "escalated": true,
+        "total_latency_ms": 3486,
+        "estimated_market_cost_usd": 0.008307534,
+        "known_market_cost_usd": 0.008307534,
+        "cost_complete": true,
+        "stages": [
+          {
+            "stage": "jev",
+            "model": "typesafe-ai/jev",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "P-0062",
+              "category": "abuse",
+              "priority": "P0",
+              "confidence": 0.98,
+              "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+              "needs_human": true
+            },
+            "latency_ms": 490,
+            "usage": {
+              "inputTokens": 1727,
+              "outputTokens": 154
+            },
+            "estimated_market_cost_usd": 7.2534e-05,
+            "gateway_reported_cost_usd": 0,
+            "confidence_by_field": {
+              "category": 1,
+              "priority": 0.98,
+              "needs_human": 1
+            },
+            "attempts": 1
+          },
+          {
+            "stage": "sonnet",
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "P-0062",
+              "category": "abuse",
+              "priority": "P0",
+              "confidence": 0.95,
+              "reasoning": "The ticket reports an unrecognized administrator login and unexpected permission changes, which are classic indicators of an active account takeover/compromise. This maps directly to the \"abuse\" category (suspected compromise, malicious activity). The combination of unauthorized access and permission changes constitutes a critical active security incident with potential for data exposure or further damage, warranting P0 priority. P0 mandates needs_human=true per rubric invariant.",
+              "needs_human": true
+            },
+            "latency_ms": 2996,
+            "usage": {
+              "inputTokens": 1655,
+              "outputTokens": 218,
+              "totalTokens": 1873
+            },
+            "estimated_market_cost_usd": 0.008235
+          }
+        ]
+      }
+    },
+    {
+      "label": "05-legacy-mcp-nano",
+      "status": "passed",
+      "started_at": "2026-09-24T00:11:59.595Z",
+      "duration_ms": 570,
+      "request": {
+        "name": "cascade_classify",
+        "arguments": {
+          "text": "Where can I download a PDF of last month's invoice?",
+          "labels": [
+            "billing",
+            "technical_support",
+            "account_security"
+          ],
+          "force_escalate": false
+        }
+      },
+      "response": {
+        "label": "billing",
+        "distribution": [
+          {
+            "label": "billing",
+            "probability": 0.95
+          },
+          {
+            "label": "technical_support",
+            "probability": 0.03
+          },
+          {
+            "label": "account_security",
+            "probability": 0.02
+          }
+        ],
+        "escalated": false,
+        "model_used": "nvidia.nemotron-nano-3-30b",
+        "primary_margin": 0.92,
+        "latency_ms": 560,
+        "approx_cost_usd": 4.6e-05
+      }
+    },
+    {
+      "label": "06-legacy-mcp-forced-sonnet",
+      "status": "passed",
+      "started_at": "2026-09-24T00:12:00.168Z",
+      "duration_ms": 2359,
+      "request": {
+        "name": "cascade_classify",
+        "arguments": {
+          "text": "Where can I download a PDF of last month's invoice?",
+          "labels": [
+            "billing",
+            "technical_support",
+            "account_security"
+          ],
+          "force_escalate": true
+        }
+      },
+      "response": {
+        "label": "billing",
+        "distribution": [
+          {
+            "label": "billing",
+            "probability": 0.92
+          },
+          {
+            "label": "technical_support",
+            "probability": 0.06
+          },
+          {
+            "label": "account_security",
+            "probability": 0.02
+          }
+        ],
+        "escalated": true,
+        "model_used": "us.anthropic.claude-sonnet-4-6",
+        "primary_margin": 0.92,
+        "latency_ms": 2357,
+        "approx_cost_usd": 0.003757
+      }
+    },
+    {
+      "label": "07-cli-example",
+      "status": "passed",
+      "started_at": "2026-09-24T00:12:04.970Z",
+      "duration_ms": 1264,
+      "route": "jev",
+      "exit_code": 0,
+      "command": "npm run triage:three-tier -- --example",
+      "response": {
+        "schema_version": "three-tier-triage-v1",
+        "policy": {
+          "version": "jev-nano-sonnet-v1",
+          "jevMinimumFieldConfidence": 0.8,
+          "nanoConfidenceThreshold": 0.7,
+          "highRisk": "P0/P1 or needs_human skips directly to Sonnet",
+          "finalDecision": "last model wins; review_required separately preserves earlier human-review signals"
+        },
+        "decision": {
+          "ticket_id": "demo-invoice",
+          "category": "billing",
+          "priority": "P3",
+          "confidence": 1,
+          "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+          "needs_human": false
+        },
+        "final_model": "typesafe-ai/jev",
+        "route": "jev",
+        "review_required": false,
+        "escalated": false,
+        "total_latency_ms": 337,
+        "estimated_market_cost_usd": 7.2366e-05,
+        "known_market_cost_usd": 7.2366e-05,
+        "cost_complete": true,
+        "stages": [
+          {
+            "stage": "jev",
+            "model": "typesafe-ai/jev",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "demo-invoice",
+              "category": "billing",
+              "priority": "P3",
+              "confidence": 1,
+              "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+              "needs_human": false
+            },
+            "latency_ms": 336,
+            "usage": {
+              "inputTokens": 1723,
+              "outputTokens": 153
+            },
+            "estimated_market_cost_usd": 7.2366e-05,
+            "gateway_reported_cost_usd": 0,
+            "confidence_by_field": {
+              "category": 1,
+              "priority": 1,
+              "needs_human": 1
+            },
+            "attempts": 1
+          }
+        ]
+      }
+    },
+    {
+      "label": "08-cli-json-file",
+      "status": "passed",
+      "started_at": "2026-09-24T00:12:08.639Z",
+      "duration_ms": 1352,
+      "route": "jev",
+      "exit_code": 0,
+      "command": "npm run triage:three-tier -- <synthetic-ticket.json>",
+      "response": {
+        "schema_version": "three-tier-triage-v1",
+        "policy": {
+          "version": "jev-nano-sonnet-v1",
+          "jevMinimumFieldConfidence": 0.8,
+          "nanoConfidenceThreshold": 0.7,
+          "highRisk": "P0/P1 or needs_human skips directly to Sonnet",
+          "finalDecision": "last model wins; review_required separately preserves earlier human-review signals"
+        },
+        "decision": {
+          "ticket_id": "P-0051",
+          "category": "auth",
+          "priority": "P3",
+          "confidence": 0.94,
+          "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+          "needs_human": false
+        },
+        "final_model": "typesafe-ai/jev",
+        "route": "jev",
+        "review_required": false,
+        "escalated": false,
+        "total_latency_ms": 588,
+        "estimated_market_cost_usd": 7.2408e-05,
+        "known_market_cost_usd": 7.2408e-05,
+        "cost_complete": true,
+        "stages": [
+          {
+            "stage": "jev",
+            "model": "typesafe-ai/jev",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "P-0051",
+              "category": "auth",
+              "priority": "P3",
+              "confidence": 0.94,
+              "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+              "needs_human": false
+            },
+            "latency_ms": 587,
+            "usage": {
+              "inputTokens": 1724,
+              "outputTokens": 153
+            },
+            "estimated_market_cost_usd": 7.2408e-05,
+            "gateway_reported_cost_usd": 0,
+            "confidence_by_field": {
+              "category": 1,
+              "priority": 0.94,
+              "needs_human": 1
+            },
+            "attempts": 1
+          }
+        ]
+      }
+    },
+    {
+      "label": "09-cli-stdin",
+      "status": "passed",
+      "started_at": "2026-09-24T00:12:12.393Z",
+      "duration_ms": 1205,
+      "route": "jev",
+      "exit_code": 0,
+      "command": "npm run triage:three-tier -- -",
+      "response": {
+        "schema_version": "three-tier-triage-v1",
+        "policy": {
+          "version": "jev-nano-sonnet-v1",
+          "jevMinimumFieldConfidence": 0.8,
+          "nanoConfidenceThreshold": 0.7,
+          "highRisk": "P0/P1 or needs_human skips directly to Sonnet",
+          "finalDecision": "last model wins; review_required separately preserves earlier human-review signals"
+        },
+        "decision": {
+          "ticket_id": "P-0051",
+          "category": "auth",
+          "priority": "P3",
+          "confidence": 0.94,
+          "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+          "needs_human": false
+        },
+        "final_model": "typesafe-ai/jev",
+        "route": "jev",
+        "review_required": false,
+        "escalated": false,
+        "total_latency_ms": 380,
+        "estimated_market_cost_usd": 7.2408e-05,
+        "known_market_cost_usd": 7.2408e-05,
+        "cost_complete": true,
+        "stages": [
+          {
+            "stage": "jev",
+            "model": "typesafe-ai/jev",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "P-0051",
+              "category": "auth",
+              "priority": "P3",
+              "confidence": 0.94,
+              "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+              "needs_human": false
+            },
+            "latency_ms": 379,
+            "usage": {
+              "inputTokens": 1724,
+              "outputTokens": 153
+            },
+            "estimated_market_cost_usd": 7.2408e-05,
+            "gateway_reported_cost_usd": 0,
+            "confidence_by_field": {
+              "category": 1,
+              "priority": 0.94,
+              "needs_human": 1
+            },
+            "attempts": 1
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Eight application requests using live providers (three ticket MCP calls, two generic MCP calls and three CLI calls), plus MCP initialization. A request may call multiple models. The 150-ticket benchmark was not rerun.",
+    "No live Jev→Nano→Sonnet path observed; that branch has mocked unit-test coverage.",
+    "Durations describe these individual requests only; not a comparative performance benchmark.",
+    "Returned cost fields use repository price snapshots and are not billing reconciliation.",
+    "This record is a local execution capture, not a signed provider attestation."
+  ],
+  "prior_patched_configuration_run": {
+    "started_at": "2026-09-24T00:04:57.730Z",
+    "finished_at": "2026-09-24T00:05:27.150Z",
+    "summary": {
+      "passed": 9,
+      "failed": 0,
+      "blocked": 0
+    },
+    "source_manifest_sha256": "dc50bf4e999a1c280c7775da88bb646e9775af846a37a6f67e92dfbab4c66a10",
+    "note": "Earlier live run before dependency updates also passed. Full captures retained separately."
+  }
+}

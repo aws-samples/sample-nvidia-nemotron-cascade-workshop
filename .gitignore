@@ -66,3 +66,8 @@ data/production-shaped-150.human-audit-queue.json
 data/production-shaped-50.agent-review-packet.json
 data/production-shaped-50.agent-review-results.json
 internal/
+
+# Historical exploratory notes; keep locally, outside the public reference.
+docs/research/jev-tickettriage-2026-09-20.md
+docs/research/jev-verifier-workshop-design.md
+docs/research/open-source-verified-cascade-plan.md

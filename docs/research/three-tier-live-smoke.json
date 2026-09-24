@@ -1,0 +1,232 @@
+{
+  "generated_at": "2026-09-21T07:46:38.746Z",
+  "kind": "three live MCP calls; illustrative connectivity and routing check, not an accuracy benchmark",
+  "results": [
+    {
+      "ticket": {
+        "id": "P-0051",
+        "subject": "Password reset",
+        "body": "Where can I request a new password reset link after the previous link expired?",
+        "customer_tier": "pro"
+      },
+      "result": {
+        "schema_version": "three-tier-triage-v1",
+        "policy": {
+          "version": "jev-nano-sonnet-v1",
+          "jevMinimumFieldConfidence": 0.8,
+          "nanoConfidenceThreshold": 0.7,
+          "highRisk": "P0/P1 or needs_human skips directly to Sonnet",
+          "finalDecision": "last model wins; review_required separately preserves earlier human-review signals"
+        },
+        "decision": {
+          "ticket_id": "P-0051",
+          "category": "auth",
+          "priority": "P3",
+          "confidence": 0.96,
+          "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+          "needs_human": false
+        },
+        "final_model": "typesafe-ai/jev",
+        "route": "jev",
+        "review_required": false,
+        "escalated": false,
+        "total_latency_ms": 539,
+        "estimated_market_cost_usd": 0.000072408,
+        "known_market_cost_usd": 0.000072408,
+        "cost_complete": true,
+        "stages": [
+          {
+            "stage": "jev",
+            "model": "typesafe-ai/jev",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "P-0051",
+              "category": "auth",
+              "priority": "P3",
+              "confidence": 0.96,
+              "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+              "needs_human": false
+            },
+            "latency_ms": 538,
+            "usage": {
+              "inputTokens": 1724,
+              "outputTokens": 153
+            },
+            "estimated_market_cost_usd": 0.000072408,
+            "gateway_reported_cost_usd": 0,
+            "confidence_by_field": {
+              "category": 1,
+              "priority": 0.96,
+              "needs_human": 1
+            },
+            "attempts": 1
+          }
+        ]
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0053",
+        "subject": "Reconnect Slack",
+        "body": "How do I reconnect our Slack workspace after an admin changed?",
+        "customer_tier": "pro"
+      },
+      "result": {
+        "schema_version": "three-tier-triage-v1",
+        "policy": {
+          "version": "jev-nano-sonnet-v1",
+          "jevMinimumFieldConfidence": 0.8,
+          "nanoConfidenceThreshold": 0.7,
+          "highRisk": "P0/P1 or needs_human skips directly to Sonnet",
+          "finalDecision": "last model wins; review_required separately preserves earlier human-review signals"
+        },
+        "decision": {
+          "ticket_id": "P-0053",
+          "category": "integration",
+          "priority": "P3",
+          "confidence": 0.95,
+          "reasoning": "The request is about re-establishing a Slack workspace connection, which falls under integration. It is a routine how-to question with no indication of compromise, billing impact, or policy exception. The customer tier is pro, but that does not change category or priority. This can be answered via documentation or standard guidance, so needs_human is false.",
+          "needs_human": false
+        },
+        "final_model": "nvidia.nemotron-nano-3-30b",
+        "route": "jev→nano",
+        "review_required": false,
+        "escalated": true,
+        "total_latency_ms": 977,
+        "estimated_market_cost_usd": 0.000178686,
+        "known_market_cost_usd": 0.000178686,
+        "cost_complete": true,
+        "stages": [
+          {
+            "stage": "jev",
+            "model": "typesafe-ai/jev",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "P-0053",
+              "category": "auth",
+              "priority": "P3",
+              "confidence": 0.63,
+              "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+              "needs_human": false
+            },
+            "latency_ms": 240,
+            "usage": {
+              "inputTokens": 1723,
+              "outputTokens": 153
+            },
+            "estimated_market_cost_usd": 0.000072366,
+            "gateway_reported_cost_usd": 0,
+            "confidence_by_field": {
+              "category": 0.63,
+              "priority": 0.9,
+              "needs_human": 0.99
+            },
+            "attempts": 1
+          },
+          {
+            "stage": "nano",
+            "model": "nvidia.nemotron-nano-3-30b",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "P-0053",
+              "category": "integration",
+              "priority": "P3",
+              "confidence": 0.95,
+              "reasoning": "The request is about re-establishing a Slack workspace connection, which falls under integration. It is a routine how-to question with no indication of compromise, billing impact, or policy exception. The customer tier is pro, but that does not change category or priority. This can be answered via documentation or standard guidance, so needs_human is false.",
+              "needs_human": false
+            },
+            "latency_ms": 737,
+            "usage": {
+              "inputTokens": 1260,
+              "outputTokens": 128,
+              "totalTokens": 1388
+            },
+            "estimated_market_cost_usd": 0.00010632
+          }
+        ]
+      }
+    },
+    {
+      "ticket": {
+        "id": "P-0062",
+        "subject": "Possible account takeover",
+        "body": "We see an unrecognized administrator login and unexpected permission changes on the account.",
+        "customer_tier": "pro"
+      },
+      "result": {
+        "schema_version": "three-tier-triage-v1",
+        "policy": {
+          "version": "jev-nano-sonnet-v1",
+          "jevMinimumFieldConfidence": 0.8,
+          "nanoConfidenceThreshold": 0.7,
+          "highRisk": "P0/P1 or needs_human skips directly to Sonnet",
+          "finalDecision": "last model wins; review_required separately preserves earlier human-review signals"
+        },
+        "decision": {
+          "ticket_id": "P-0062",
+          "category": "abuse",
+          "priority": "P0",
+          "confidence": 0.95,
+          "reasoning": "The ticket reports an unrecognized administrator login and unexpected permission changes, which are classic indicators of an active account takeover/compromise. This maps directly to the \"abuse\" category (suspected compromise, malicious activity). The combination of unauthorized access and permission changes constitutes a critical active security incident with potential for data exposure or further damage, warranting P0 priority. needs_human=true is enforced by both the P0 rule and the suspected compromise condition.",
+          "needs_human": true
+        },
+        "final_model": "us.anthropic.claude-sonnet-4-6",
+        "route": "jev→sonnet",
+        "review_required": true,
+        "escalated": true,
+        "total_latency_ms": 3415,
+        "estimated_market_cost_usd": 0.008382534,
+        "known_market_cost_usd": 0.008382534,
+        "cost_complete": true,
+        "stages": [
+          {
+            "stage": "jev",
+            "model": "typesafe-ai/jev",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "P-0062",
+              "category": "abuse",
+              "priority": "P0",
+              "confidence": 0.99,
+              "reasoning": "Programmatic summary of Jev typed choices; confidence is the minimum of three field confidence statistics, not a calibrated correctness probability.",
+              "needs_human": true
+            },
+            "latency_ms": 362,
+            "usage": {
+              "inputTokens": 1727,
+              "outputTokens": 154
+            },
+            "estimated_market_cost_usd": 0.000072534,
+            "gateway_reported_cost_usd": 0,
+            "confidence_by_field": {
+              "category": 1,
+              "priority": 0.99,
+              "needs_human": 1
+            },
+            "attempts": 1
+          },
+          {
+            "stage": "sonnet",
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "status": "completed",
+            "decision": {
+              "ticket_id": "P-0062",
+              "category": "abuse",
+              "priority": "P0",
+              "confidence": 0.95,
+              "reasoning": "The ticket reports an unrecognized administrator login and unexpected permission changes, which are classic indicators of an active account takeover/compromise. This maps directly to the \"abuse\" category (suspected compromise, malicious activity). The combination of unauthorized access and permission changes constitutes a critical active security incident with potential for data exposure or further damage, warranting P0 priority. needs_human=true is enforced by both the P0 rule and the suspected compromise condition.",
+              "needs_human": true
+            },
+            "latency_ms": 3053,
+            "usage": {
+              "inputTokens": 1655,
+              "outputTokens": 223,
+              "totalTokens": 1878
+            },
+            "estimated_market_cost_usd": 0.00831
+          }
+        ]
+      }
+    }
+  ]
+}

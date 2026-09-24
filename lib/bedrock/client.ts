@@ -66,6 +66,7 @@ export interface TriageOptions {
   modelId?: ModelId;
   maxTokens?: number;
   temperature?: number;
+  signal?: AbortSignal;
 }
 
 export interface TokenUsage {
@@ -115,7 +116,9 @@ export async function triageTicketWithUsage(
     },
   };
 
-  const response = await getBedrockClient().send(new ConverseCommand(input));
+  const response = await getBedrockClient().send(new ConverseCommand(input), {
+    abortSignal: options.signal,
+  });
   const blocks: ContentBlock[] = response.output?.message?.content ?? [];
   const usage: TokenUsage | null = response.usage
     ? {

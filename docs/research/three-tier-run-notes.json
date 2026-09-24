@@ -1,0 +1,9 @@
+{
+  "jev_records_sha256": "140c16814f2a45b101f7e921deee19097a2e2749b6388c15f92286b2abeeb5e6",
+  "measurement_notes": [
+    "本次前 59 条 Jev 成功结果来自未生效限速的两次采集；后 91 条通过每次至少间隔 2.4 秒的限速入口收集。批量 Jev 延迟混合了两种采集方式，且包含排队，不能用于模型速度比较。",
+    "批量缓存记录 150 个成功结果、其中 4 个结果记录了第二次尝试；另有两次中断采集中的 HTTP 429 失败尝试，未计入缓存 total_attempts。总账单费用不能据此完全重建。",
+    "150 个成功 Jev 结果报告的 Gateway cost 合计为 0；marketCost 合计约 $0.010859。零 Gateway charge 不意味着市场定价免费。",
+    "另通过真正的 MCP 客户端运行了 3 张工单，观察到 Jev、Jev→Nano、Jev→Sonnet 三条路径。它们是连接和路由验证，不是新的准确率测试集；原始结果见 three-tier-live-smoke.json。"
+  ]
+}

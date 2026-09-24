@@ -1,7 +1,9 @@
 # Production-Shaped Locked-Test Results
 
-This document is the canonical result artifact for the current
-production-shaped evaluation. `docs/bakeoff-results.md` records only the
+This document preserves the original 2026-08-31 two-tier evaluation.
+The later Jev extension has a separate [exploratory result](three-tier-results.md);
+it does not replace this original locked-test result.
+`docs/bakeoff-results.md` records only the
 methodological lesson from the discarded early run.
 
 ## Headline

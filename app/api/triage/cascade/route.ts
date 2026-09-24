@@ -1,4 +1,4 @@
-import { NextRequest } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
 import { triageTicketWithUsage, type TokenUsage } from "@/lib/bedrock/client";
 import { MODELS, estimateModelCostUsd, type ModelId } from "@/lib/bedrock/models";
 import { TicketSchema } from "@/lib/triage/schema";
@@ -15,13 +15,31 @@ function costFromUsage(
 }
 
 export async function POST(request: NextRequest) {
-  const body = await request.json();
-  const ticket = TicketSchema.parse({
-    id: body.id || "cascade-" + Date.now(),
-    subject: body.subject,
-    body: body.body,
-    customer_tier: body.customer_tier || "pro",
+  let body: unknown;
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json(
+      { error: "Request body must be valid JSON" },
+      { status: 400 },
+    );
+  }
+  const fields = body !== null && typeof body === "object" && !Array.isArray(body)
+    ? body as Record<string, unknown>
+    : null;
+  const parsed = TicketSchema.safeParse(fields && {
+    id: fields.id || "cascade-" + Date.now(),
+    subject: fields.subject,
+    body: fields.body,
+    customer_tier: fields.customer_tier || "pro",
   });
+  if (!parsed.success) {
+    return NextResponse.json(
+      { error: "Invalid ticket payload", details: parsed.error.flatten() },
+      { status: 400 },
+    );
+  }
+  const ticket = parsed.data;
 
   const encoder = new TextEncoder();
 
