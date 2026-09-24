@@ -5,7 +5,18 @@ uncommitted public source. The final candidate passed the checks below after
 initial failures were corrected. This is local execution evidence, not a
 production certification or a new model-accuracy evaluation.
 
-At verification time, the public repository's `push-mcp` branch still pointed
+**Publication follow-up:** the implementation was published as
+[commit 2311904](https://github.com/aws-samples/sample-nvidia-nemotron-cascade-workshop/commit/2311904)
+on the [push-mcp branch](https://github.com/aws-samples/sample-nvidia-nemotron-cascade-workshop/tree/push-mcp).
+A clean checkout of that commit passed installation, the offline audit, all
+88 tests, typecheck and build on **Node.js 24.21.0**. A separate fresh clone
+from GitHub matched the tested commit and passed `npm ci`, the public audit,
+and both MCP configurations (repository-root and absolute-path/outside-root).
+These additional checks used no provider credentials or new model calls.
+`.nvmrc` now selects Node.js 24, and the README includes the branch-specific
+clone command. The detailed export verification below remains a dated record.
+
+During the initial export verification, the public repository's `push-mcp` branch still pointed
 to `68cdc943cda441718e80bae02c8b03961198728f` and did **not** contain the Jev
 extension. These checks cover the local publication candidate; cloning the
 public branch did not yet provide this update.
@@ -113,7 +124,8 @@ The 150-ticket live collection, optional Opus labeling, deployment, and manual
 bulk exercise were not run. `/api/triage/bulk` remains the intentional workshop
 task and returns 404 until implemented. Private-cache replay cannot succeed on
 a fresh checkout without prior collection; the public audit can. No integration-
-test platform was invoked. Nothing was committed or published by this verification.
+test platform was invoked. The initial export verification did not commit or
+publish changes; the publication follow-up is described above.
 
 ## Recheck from source
 
